@@ -1,0 +1,2 @@
+gh run list -R thanu2008v-prog/senthamil-marabu --limit 1
+gh run view -R thanu2008v-prog/senthamil-marabu --log
