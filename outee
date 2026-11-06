@@ -1,0 +1,14 @@
+Repo: https://github.com/thanu2008v-prog/senthamil-marabu
+
+Found:
+  Title:    செந்தமிழ் மரபு — Senthamil Marabu: A Critical Edition…
+  Version:  1.0.0
+  Concept:  10.5281/zenodo.<N1>
+  Version:  10.5281/zenodo.<N2>
+
+  .zenodo.json  → doi: 10.5281/zenodo.<N1>
+  CITATION.cff  → doi: 10.5281/zenodo.<N1>
+  README.md     → badge: 10.5281/zenodo.<N1>
+
+Next:
+  git add …
