@@ -1,0 +1,26 @@
+# 1. Workflow file
+mkdir -p .github/workflows
+cat > .github/workflows/build-nool.yml <<'YAML'
+name: build-nool
+on: [push, workflow_dispatch, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: echo "hello from CI"
+YAML
+
+# 2. .gitignore
+echo "build/" > .gitignore
+
+# 3. push
+git add .github .gitignore
+git commit -m "ci: minimal workflow"
+git push
+
+# 4. 30 வினாடி காத்திரு, log-ஐப் பார்
+gh run list -R thanu2008v-prog/https-github.com-USERNAME-senthamil-marabu --limit 1
+gh run view -R thanu2008v-prog/https-github.com-USERNAME-senthamil-marabu --log
