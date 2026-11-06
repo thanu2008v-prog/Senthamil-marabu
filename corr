@@ -1,0 +1,7 @@
+# Repo-வில் என்ன கோப்புகள் உள்ளன
+gh api repos/thanu2008v-prog/https-github.com-USERNAME-senthamil-marabu/contents --jq '.[].name'
+# → ["sc", "scripts"]   (scripts/fetch_doi.py)
+
+# Workflows உள்ளனவா
+gh api repos/thanu2008v-prog/https-github.com-USERNAME-senthamil-marabu/actions/workflows --jq '.workflows[].name'
+# → (காலி)
