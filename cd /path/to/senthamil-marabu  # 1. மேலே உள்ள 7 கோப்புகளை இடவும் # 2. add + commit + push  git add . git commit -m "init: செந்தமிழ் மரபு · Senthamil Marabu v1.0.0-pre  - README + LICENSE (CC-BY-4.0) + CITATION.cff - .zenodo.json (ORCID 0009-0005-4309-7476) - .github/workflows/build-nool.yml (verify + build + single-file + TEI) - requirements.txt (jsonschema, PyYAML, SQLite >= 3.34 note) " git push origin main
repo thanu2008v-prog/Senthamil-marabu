@@ -1,0 +1,14 @@
+cd /path/to/senthamil-marabu
+
+# 1. மேலே உள்ள 7 கோப்புகளை இடவும்
+# 2. add + commit + push
+
+git add .
+git commit -m "init: செந்தமிழ் மரபு · Senthamil Marabu v1.0.0-pre
+
+- README + LICENSE (CC-BY-4.0) + CITATION.cff
+- .zenodo.json (ORCID 0009-0005-4309-7476)
+- .github/workflows/build-nool.yml (verify + build + single-file + TEI)
+- requirements.txt (jsonschema, PyYAML, SQLite >= 3.34 note)
+"
+git push origin main
