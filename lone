@@ -1,0 +1,17 @@
+# (1) repo rename
+gh repo rename senthamil-marabu -R thanu2008v-prog/https-github.com-USERNAME-senthamil-marabu
+
+# (2) local clone-ஐ சரி செய்
+cd ~/senthamil-marabu
+git remote set-url origin https://github.com/thanu2008v-prog/senthamil-marabu.git
+
+# (3) placeholder 'sc' file-ஐ நீக்கு
+git rm sc
+git commit -m "chore: remove placeholder sc"
+git push
+
+# (4) இப்போது log-ஐப் பார் — காலியாக இருக்கும்
+gh run list -R thanu2008v-prog/senthamil-marabu
+# → no runs found
+
+# (5) CI இயங்க workflow + sources சேர் → log கிடைக்கும்
