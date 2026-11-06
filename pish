@@ -1,0 +1,22 @@
+cd senthamil-marabu
+
+# ⚠ orphan-ஐ நகர்த்திய பின்
+cp -r /path/to/project/sources     ./sources      # (merge, override)
+cp -r /path/to/project/scripts     ./scripts
+cp -r /path/to/project/schema      ./schema
+cp -r /path/to/project/tests       ./tests
+cp -r /path/to/project/urai_kit    ./urai_kit
+
+git add sources scripts schema tests urai_kit
+git commit -m "data: sources/ + scripts/ + schema/ + tests/ + urai_kit/
+
+- sources/moolam.json (1602 sutra — immutable per poruḷ 652)
+- sources/urai.json + urai_othu*.{py,json}
+- sources/othu_names.json, othu_of.json, kaandigai_live.json
+- scripts/build_single_file.py (single-file .md)
+- scripts/build_tei.py (TEI P5 XML projection)
+- schema/sutra.schema.json
+- tests/test_mozhimarabu.py
+- urai_kit/ (KATTALAI, check_urai, urai_output.schema.json)
+"
+git push origin main
