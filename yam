@@ -1,0 +1,8 @@
+- name: Build TEI projection
+        run: python3 scripts/build_tei.py
+
+      - name: Validate TEI (optional, non-blocking)
+        continue-on-error: true
+        run: |
+          pip install lxml
+          python3 scripts/build_tei.py --validate
