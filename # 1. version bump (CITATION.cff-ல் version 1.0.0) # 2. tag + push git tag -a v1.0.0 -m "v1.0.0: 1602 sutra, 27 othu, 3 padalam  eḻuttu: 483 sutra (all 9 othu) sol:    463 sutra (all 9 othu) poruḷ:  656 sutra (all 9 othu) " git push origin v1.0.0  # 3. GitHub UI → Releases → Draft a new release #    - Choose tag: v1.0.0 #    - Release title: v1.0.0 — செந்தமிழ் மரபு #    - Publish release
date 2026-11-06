@@ -1,0 +1,14 @@
+# 1. version bump (CITATION.cff-ல் version 1.0.0)
+# 2. tag + push
+git tag -a v1.0.0 -m "v1.0.0: 1602 sutra, 27 othu, 3 padalam
+
+eḻuttu: 483 sutra (all 9 othu)
+sol:    463 sutra (all 9 othu)
+poruḷ:  656 sutra (all 9 othu)
+"
+git push origin v1.0.0
+
+# 3. GitHub UI → Releases → Draft a new release
+#    - Choose tag: v1.0.0
+#    - Release title: v1.0.0 — செந்தமிழ் மரபு
+#    - Publish release
