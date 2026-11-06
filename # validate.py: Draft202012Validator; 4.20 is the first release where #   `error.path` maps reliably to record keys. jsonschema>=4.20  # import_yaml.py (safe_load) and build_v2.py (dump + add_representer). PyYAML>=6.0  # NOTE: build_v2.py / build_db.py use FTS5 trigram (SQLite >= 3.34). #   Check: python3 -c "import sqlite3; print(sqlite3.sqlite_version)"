@@ -1,0 +1,9 @@
+# validate.py: Draft202012Validator; 4.20 is the first release where
+#   `error.path` maps reliably to record keys.
+jsonschema>=4.20
+
+# import_yaml.py (safe_load) and build_v2.py (dump + add_representer).
+PyYAML>=6.0
+
+# NOTE: build_v2.py / build_db.py use FTS5 trigram (SQLite >= 3.34).
+#   Check: python3 -c "import sqlite3; print(sqlite3.sqlite_version)"
