@@ -1,0 +1,5 @@
+# CI நிலை
+gh run list -R thanu2008v-prog/senthamil-marabu --limit 3
+
+# விரிவான log
+gh run view -R thanu2008v-prog/senthamil-marabu --log
