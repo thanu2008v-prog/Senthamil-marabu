@@ -1,0 +1,2 @@
+cd senthamil-marabu
+python3 scripts/fetch_doi.py
