@@ -1,0 +1,4 @@
+git add .zenodo.json CITATION.cff README.md
+git commit -m "docs: add DOI 10.5281/zenodo.<N2> (v1.0.0)"
+git tag -a v1.0.1 -m "v1.0.1: metadata-only (DOI)"
+git push origin main v1.0.1
