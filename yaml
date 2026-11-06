@@ -1,0 +1,6 @@
+files: |
+            build/SENTHAMIL_MARABU.md
+            build/SENTHAMIL_MARABU.tei.xml
+            build/sha.log
+            .zenodo.json
+            CITATION.cff
