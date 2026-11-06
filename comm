@@ -1,0 +1,9 @@
+git add scripts/set_doi.py .zenodo.json CITATION.cff README.md
+git commit -m "docs: add Zenodo DOI 10.5281/zenodo.<N1> (v1.0.0)"
+git push origin main
+
+# v1.0.1 — metadata-only (no CI needed, no files changed)
+gh release create v1.0.1 \
+  --title "v1.0.1 — metadata-only" \
+  --notes "DOI + citation metadata. Same 1602-sutra edition as v1.0.0." \
+  --target main
