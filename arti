@@ -1,0 +1,6 @@
+gh run download -R thanu2008v-prog/senthamil-marabu -n SENTHAMIL_MARABU
+# → SENTHAMIL_MARABU.md (1.2 MB)
+
+# அல்லது
+gh run download -R thanu2008v-prog/senthamil-marabu -n nool-build
+# → SENTHAMIL_MARABU.md, bundle_v2.json, senthamil_v2.db, sha.log, …
