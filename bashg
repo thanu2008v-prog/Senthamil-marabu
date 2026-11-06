@@ -1,0 +1,6 @@
+git tag -a v1.0.0 -m "v1.0.0 — செந்தமிழ் மரபு
+
+1602 sutra · 27 othu · 3 padalam · 1 piṇṭam
+eḻuttu: 483 · sol: 463 · poruḷ: 656
+"
+git push origin v1.0.0
