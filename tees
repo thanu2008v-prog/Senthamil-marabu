@@ -1,0 +1,8 @@
+cd /path/to/senthamil-marabu      # அல்லது clone
+
+# remote-ஐ சரி
+git remote set-url origin https://github.com/thanu2008v-prog/senthamil-marabu.git
+
+# வேறு repo-வில் இருந்தால் clone
+git clone https://github.com/thanu2008v-prog/senthamil-marabu
+cd senthamil-marabu
