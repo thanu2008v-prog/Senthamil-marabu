@@ -1,0 +1,11 @@
+senthamil-marabu/
+├── .gitignore                    ← step 1
+├── requirements.txt              ← step 2
+├── README.md                     ← step 3
+├── LICENSE                       ← step 4
+├── CITATION.cff                  ← step 5
+├── .zenodo.json                  ← step 6
+└── .github/
+    └── workflows/
+        └── build-nool.yml        ← step 7
+	
