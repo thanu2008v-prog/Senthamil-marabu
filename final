@@ -1,0 +1,16 @@
+# 1. DOI resolves
+curl -sI https://doi.org/10.5281/zenodo.<N1> | head -1     # 302 ✓
+curl -sI https://doi.org/10.5281/zenodo.<N2> | head -1     # 302 ✓
+
+# 2. ORCID sync (5–10 நிமிடம்)
+# https://orcid.org/0009-0005-4309-7476 → Works → "Senthamil Marabu" ✓
+
+# 3. Google Scholar (காலம் — 1 முதல் 4 வாரம்)
+# https://scholar.google.com/scholar?q=%2210.5281%2Fzenodo.<N2>%22
+
+# 4. DataCite Commons
+# https://commons.datacite.org/doi.org/10.5281/zenodo.<N2> ✓
+
+# 5. README badge
+gh repo view thanu2008v-prog/senthamil-marabu --web
+# → DOI badge → click → Zenodo record
