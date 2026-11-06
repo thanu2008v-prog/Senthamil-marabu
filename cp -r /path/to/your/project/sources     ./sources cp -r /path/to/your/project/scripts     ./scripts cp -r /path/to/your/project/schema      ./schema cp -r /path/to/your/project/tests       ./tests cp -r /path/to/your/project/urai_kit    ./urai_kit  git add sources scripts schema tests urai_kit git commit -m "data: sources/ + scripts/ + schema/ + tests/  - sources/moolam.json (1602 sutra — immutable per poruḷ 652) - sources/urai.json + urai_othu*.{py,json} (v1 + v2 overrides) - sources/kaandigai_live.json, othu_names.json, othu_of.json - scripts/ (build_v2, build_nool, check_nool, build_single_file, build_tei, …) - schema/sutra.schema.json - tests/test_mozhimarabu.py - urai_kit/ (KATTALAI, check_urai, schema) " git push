@@ -1,0 +1,18 @@
+cp -r /path/to/your/project/sources     ./sources
+cp -r /path/to/your/project/scripts     ./scripts
+cp -r /path/to/your/project/schema      ./schema
+cp -r /path/to/your/project/tests       ./tests
+cp -r /path/to/your/project/urai_kit    ./urai_kit
+
+git add sources scripts schema tests urai_kit
+git commit -m "data: sources/ + scripts/ + schema/ + tests/
+
+- sources/moolam.json (1602 sutra — immutable per poruḷ 652)
+- sources/urai.json + urai_othu*.{py,json} (v1 + v2 overrides)
+- sources/kaandigai_live.json, othu_names.json, othu_of.json
+- scripts/ (build_v2, build_nool, check_nool, build_single_file, build_tei, …)
+- schema/sutra.schema.json
+- tests/test_mozhimarabu.py
+- urai_kit/ (KATTALAI, check_urai, schema)
+"
+git push
