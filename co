@@ -1,0 +1,5 @@
+✓ Build v2
+✓ Build human-readable nūl + round-trip
+✓ Verify against the nūl's own rules
+✓ Build single-file edition + SHA-256
+✓ Sanity-check (1602 sutra)
