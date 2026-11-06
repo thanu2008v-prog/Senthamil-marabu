@@ -1,0 +1,6 @@
+gh repo rename senthamil-marabu \
+  -R thanu2008v-prog/https-github.com-USERNAME-senthamil-marabu
+
+# local remote-ஐ புதுப்பி
+git remote set-url origin https://github.com/thanu2008v-prog/senthamil-marabu.git
+git remote -v
