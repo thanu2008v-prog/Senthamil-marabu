@@ -1,0 +1,5 @@
+curl -sI https://doi.org/10.5281/zenodo.<N1> | head -1   # 302 → latest
+curl -sI https://doi.org/10.5281/zenodo.<N2> | head -1   # 302 → v1.0.0
+
+# ORCID (5–10 நிமிடம்)
+open https://orcid.org/0009-0005-4309-7476   # → Works → Senthamil Marabu ✓
