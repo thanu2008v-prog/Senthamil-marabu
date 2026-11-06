@@ -1,0 +1,16 @@
+sources/
+├── moolam.json                    ← 1602 sutra (immutable)
+├── othu_names.json
+├── othu_of.json
+├── urai.json                      ← v1 bulk (230 KB)
+├── kaandigai_live.json            ← orphan ⚠ (பின்னர் முடிவு)
+├── urai_live.json                 ← orphan ⚠
+├── urai_othu03.py
+├── urai_othu04.py                 ← reference
+├── urai_othu06.json
+├── urai_othu08.json
+├── urai_othu09.json
+├── urai_ezhu_othu01_07.json
+├── urai_sol_othu01.json
+├── urai_sol_othu02-09.json
+└── urai_porul_othu01-09.json
