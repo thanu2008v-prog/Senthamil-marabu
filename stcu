@@ -1,0 +1,14 @@
+scripts/
+├── normalize.py
+├── migrate_v2.py
+├── build_v2.py
+├── build_nool.py
+├── build_db.py                    ← v1 legacy
+├── check_nool.py
+├── validate.py                    ← v1 legacy
+├── export_bundle.py               ← v1 legacy
+├── export_csv.py                  ← v1 legacy
+├── import_yaml.py
+├── make_urai_kit.py
+├── build_single_file.py           ← புதியது (நான் தந்தது)
+└── build_tei.py                   ← புதியது (நான் தந்தது)
