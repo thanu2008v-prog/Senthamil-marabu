@@ -1,0 +1,6 @@
+on:
+  push:
+    branches: [main]
+    tags: ['v*']              # ← இதைச் சேர்
+  pull_request:
+  workflow_dispatch:
