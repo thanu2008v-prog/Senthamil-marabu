@@ -1,0 +1,17 @@
+
+---
+
+## 6. DOI-ஐ மூன்று இடங்களில் புதுப்பி
+
+### 6.1 `.zenodo.json`-ல்
+
+```json
+{
+  ...
+  "related_identifiers": [
+    {"identifier": "https://github.com/thanu2008v-prog/senthamil-marabu", "relation": "isSupplementTo", "resource_type": "software"},
+    ...
+  ],
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.<N2>"
+}
