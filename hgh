@@ -1,0 +1,7 @@
+
+Push:
+
+```bash
+git add .github/RELEASE_NOTE.md
+git commit -m "docs: release note for v1.0.0"
+git push
