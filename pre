@@ -1,0 +1,13 @@
+# ✓ ORCID resolves
+curl -sI https://orcid.org/0009-0005-4309-7476 | head -1
+# → HTTP/2 200
+
+# ✓ Repo public
+gh repo view thanu2008v-prog/senthamil-marabu --json visibility
+# → {"visibility":"PUBLIC"}
+
+# ✓ Latest CI green
+gh run list -R thanu2008v-prog/senthamil-marabu --limit 1
+
+# ✓ Sources SHA verify
+python3 scripts/build_single_file.py --sha
