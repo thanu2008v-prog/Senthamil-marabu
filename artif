@@ -1,0 +1,11 @@
+path: |
+            build/SENTHAMIL_MARABU.md
+            build/SENTHAMIL_MARABU.tei.xml
+            build/bundle_v2.json
+            build/senthamil_v2.db
+            build/sutras_v2.csv
+            build/senthamil_marabu.md
+            build/urai_kit/
+            build/sha.log
+            build/dry.log
+            build/build.log
