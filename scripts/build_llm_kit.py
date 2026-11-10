@@ -55,7 +55,7 @@ for r in RECS:
         body.append(f"=== {NAMES[r['padalam']]['_']} · ஓத்து {r['othu']} {NAMES[r['padalam']][str(r['othu'])]} ===\n")
     body.append(f"[{r['id']}] {PAD[r['padalam']]} {r['sutra']}\n{r['moolam']}\n")
 nool_text = "\n".join(H) + "\n" + "\n".join(body)
-(OUT / NOOL_F).write_text(nool_text, "utf-8")
+(OUT / NOOL_F).write_bytes(nool_text.encode("utf-8"))
 SHA = hashlib.sha256(nool_text.encode("utf-8")).hexdigest()
 
 # ── 2. நெறிக் கோப்பு
@@ -349,7 +349,7 @@ ollama run senthamil "$(cat nurpa.txt) — இந்நூற்பாக்க�
 
 மேற்கோள்: Varnakulasingam, T. (2026). செந்தமிழ் மரபு. DOI {sm.DOI}. சூத்திரங்கள் பொதுவுடைமை; சொல், பொருள் மின்பாடம் © Project Madurai (நூல் கோப்பின் தலைப்பைப் பிரிக்காமல் பகிர்க).
 """
-(OUT / NERI_F).write_text(NERI, "utf-8")
+(OUT / NERI_F).write_bytes(NERI.encode("utf-8"))
 
 # ── 3. உட்பொதித்த நிரல்களை இங்கேயே சோதித்தல்
 with tempfile.TemporaryDirectory() as d:
