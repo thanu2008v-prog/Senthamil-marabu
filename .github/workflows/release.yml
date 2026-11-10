@@ -34,6 +34,7 @@ jobs:
             /senthamil_marabu/
             /seyali/
             /sources/
+            !/sources/ *
             /tests/
             /urai_kit/
             /.gitattributes

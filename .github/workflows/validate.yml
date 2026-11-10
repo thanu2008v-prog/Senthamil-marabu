@@ -12,6 +12,7 @@ on:
       - 'Makefile'
       - 'senthamil_marabu/**'
       - 'karuvi/**'
+      - '.github/workflows/**'
   pull_request:
     branches: [main]
 jobs:
@@ -46,6 +47,7 @@ jobs:
             /senthamil_marabu/
             /seyali/
             /sources/
+            !/sources/ *
             /tests/
             /urai_kit/
             /.gitattributes
