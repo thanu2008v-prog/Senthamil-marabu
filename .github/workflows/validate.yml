@@ -21,6 +21,53 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.github/
+            /alavai/
+            /app/
+            /book/
+            /data/
+            /data_v2/
+            /docs/
+            /examples/
+            /export/
+            /fonts/
+            /karuvi/
+            /kuriyaakkam/
+            /orunguri/
+            /pirankol/
+            /pothu/
+            /punarchi/
+            /rules/
+            /schema/
+            /scripts/
+            /senthamil_marabu/
+            /seyali/
+            /sources/
+            /tests/
+            /urai_kit/
+            /.gitattributes
+            /.gitignore
+            /.zenodo.json
+            /CHANGES.md
+            /CITATION.cff
+            /CONTRIBUTING.md
+            /datapackage.json
+            /ai_console.py
+            /hfst-3.12.2.4b0.tar.gz
+            /index.html
+            /install_tamil_font.bat
+            /install_tamil_font.ps1
+            /LICENSE.md
+            /Makefile
+            /pyproject.toml
+            /README.md
+            /requirements.txt
+            /run_aakkam.bat
+            /run_ai.bat
+            /senthamil_app.py
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
