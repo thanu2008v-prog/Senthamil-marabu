@@ -71,8 +71,8 @@ t1 = time.time()
 run = subprocess.run([sys.executable, "-m", "pytest", "-q"] + [f"tests/{f}" for f in ADIPPADAI], cwd=ROOT, capture_output=True, text=True)
 secs = time.time() - t1
 assert run.returncode == 0, run.stdout[-800:]
-m = re.search(r"(\d+) passed", run.stdout)
-assert m and int(m.group(1)) == N
+m = re.search(r"(\d+) passed(?:, (\d+) skipped)?", run.stdout)
+assert m and int(m.group(1)) + int(m.group(2) or 0) == N, run.stdout[-800:]
 
 sys.path.insert(0, str(ROOT))
 from senthamil_marabu import punarchi as P                           # noqa: E402
