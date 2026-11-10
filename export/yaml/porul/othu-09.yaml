@@ -1,0 +1,3271 @@
+# இக்கோப்பு data_v2-இலிருந்து உருவானது. 'moolam' (சூத்திரம்) திருத்தக் கூடாது (பொருள். 652).
+- id: porul.545
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 545
+  moolam: |-
+    மாற்ற அருஞ் சிறப்பின் மரபு இயல் கிளப்பின்
+    பார்ப்பும் பறழும் குட்டியும் குருளையும்
+    கன்றும் பிள்ளையும் மகவும் மறியும் என்று
+    ஒன்பதும் குழவியொடு இளமைப் பெயரே
+  kaandigai:
+    porul: 'மரபியலைக் கூறுமிடத்து, இளமைப் பெயர் ஒன்பது: பார்ப்பு, பறழ், குட்டி, குருளை, கன்று, பிள்ளை, மகவு, மறி — குழவியொடு. "ஒன்பதும்" நூற்பாவிலேயே உள்ளது; எண்ணிப் பார்க்க ஒத்தது.'
+    en:
+      kooruvathu: 9
+      enniyathu: 9
+    ethu: மரபியல் முதலில் பெயர் மரபைக் கூறுகிறது — இளமைப் பெயர், பின் ஆண்பாற் பெயர் "யாத்த ஆண்பாற் பெயர் என மொழிப" (பொருள். 546), பெண்பாற் பெயர் "அந்தம் சான்ற பிடியொடு பெண்ணே" (பொருள். 547). மரபு திரியின் பிறிதாகும் என்பதால் (பொருள். 637) பெயர் மரபு முதலில்.
+    eduthukkaattu:
+    - text: யாத்த ஆண்பாற் பெயர் என மொழிப
+      from: porul.546
+    - text: அந்தம் சான்ற பிடியொடு பெண்ணே
+      from: porul.547
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: ilamai_peyar
+    count: 9
+  links: []
+  urai:
+    iyaipu:
+    - porul.546
+    - porul.547
+    text: 'இயைபு (649): பொருள். 546, 547 · மரபியலின் நுதலியது: முதலில் பெயர் மரபு — இளமைப் பெயர் ஒன்பது (எண் சூத்திரத்தில்), ஆண்பால் 546; பின்னர் நூல் மரபு (638–656). "மாற்ற அருஞ் சிறப்பின்" — மரபு மாற்றக் கூடாதது; ஆகவே சொல். 452-இன் "காலத்துப் படின்" மரபுப் பெயர்களுக்குப் பொருந்துமா என்பது ஒருதலை அன்மை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: ஒன்பதும்
+- id: porul.546
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 546
+  moolam: |-
+    ஏறும் ஏற்றையும் ஒருத்தலும் களிறும்
+    சேவும் சேவலும் இரலையும் கலையும்
+    மோத்தையும் தகரும் உதளும் அப்பரும்
+    போத்தும் கண்டியும் கடுவனும் பிறவும்
+    யாத்த ஆண்பாற் பெயர் என மொழிப
+  kaandigai:
+    porul: 'ஆண்பாற் பெயர்கள்: ஏறு, ஏற்றை, ஒருத்தல், களிறு, சே, சேவல், இரலை, கலை, மோத்தை, தகர், உதள், அப்பர், போத்து, கண்டி, கடுவன் — பிறவும். பெயர்ப் பட்டியல் பதினைந்து; நூற்பா எண்ணைச் சொல்லவில்லை (நம் எண்ணிக்கை).'
+    en:
+      kooruvathu: null
+      enniyathu: 15
+    ethu: 545 இளமை என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: aanpaal_peyar
+    count: 15
+  links: []
+  urai:
+    iyaipu:
+    - porul.545
+    - porul.547
+    - porul.579
+    text: 'இயைபு (649): 547 பெண்பாற் பெயர் — இணை; 579 ''வேழக்கு உரித்தே விதந்து களிறு''. ''பிறவும்'' உள்ளது.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: வந்தது கொண்டு வாராதது உணர்த்தல்
+    saanru: பிறவும்
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: மொழிப
+  - peyar: தான் குறியிடுதல்
+    saanru: என மொழிப
+- id: porul.547
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 547
+  moolam: |-
+    பேடையும் பெடையும் பெட்டையும் பெண்ணும்
+    மூடும் நாகும் கடமையும் அளகும்
+    மந்தியும் பாட்டியும் பிணையும் பிணவும்
+    அந்தம் சான்ற பிடியொடு பெண்ணே
+  kaandigai:
+    porul: 'பெண்பாற் பெயர்கள்: பேடை, பெடை, பெட்டை, பெண், மூடு, நாகு, கடமை, அளகு, மந்தி, பாட்டி, பிணை, பிணவு, பிடி. பதின்மூன்று என்பது நம் எண்ணிக்கை.'
+    en:
+      kooruvathu: null
+      enniyathu: 13
+    ethu: 546 ஆண்பாற் பெயர் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: penpaal_peyar
+    count: 13
+  links: []
+  urai:
+    iyaipu:
+    - porul.546
+    - porul.548
+    - porul.595
+    text: 'இயைபு (649): 546 ஆண்; 548 இளமை மறுபடி; 595 பெண்பால் பொது.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.548
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 548
+  moolam: |-
+    அவற்றுள்
+    பார்ப்பும் பிள்ளையும் பறப்பவற்று இளமை
+  kaandigai:
+    porul: அவற்றுள் பார்ப்பும் பிள்ளையும் பறப்பவற்றின் இளமை.
+    ethu: 547 பெண்பால் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: parappavai_ilamai
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.545
+    - porul.547
+    - porul.549
+    text: 'இயைபு (649): 545 இளமை 9; 547 பெண்பால்; 549 தவழ்பவை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: அதிகார முறை
+    saanru: அவற்றுள்
+- id: porul.549
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 549
+  moolam: |-
+    தவழ்பவைதாமும் அவற்று ஓரன்ன
+  kaandigai:
+    porul: தவழ்வனவும் அவற்றைப் போன்றவை.
+    ethu: 548 புள்ளின் இளமை என்றது; தவழ்பவை (ஊர்வன) — அவற்றுக்கும் அன்ன (பார்ப்பு, பிள்ளை முதலியன).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: thavazhbavai_ilamai
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.548
+    - porul.550
+    text: 'இயைபு (649): 548 புள்ளினம்; 550 குட்டி (நான்கு).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.550
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 550
+  moolam: |-
+    மூங்கா வெருகு எலி மூவரி அணிலொடு
+    ஆங்கு அவை நான்கும் குட்டிக்கு உரிய
+  kaandigai:
+    porul: மூங்கா, வெருகு, எலி, மூவரி அணில் — இந்நான்கும் குட்டி எனப்படும்.
+    en:
+      kooruvathu: 4
+      enniyathu: 4
+    ethu: 549 தவழ்பவை என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: kutti_vagai
+    count: 4
+  links: []
+  urai:
+    iyaipu:
+    - porul.549
+    - porul.551
+    text: 'இயைபு (649): 549 தவழ்பவை; 551 பறழ். எண்: 4 (நூற்பா ''நான்கும்'').'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: நான்கும்
+- id: porul.551
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 551
+  moolam: |-
+    பறழ் எனப்படினும் உறழ் ஆண்டு இல்லை
+  kaandigai:
+    porul: (அவை) பறழ் எனப்பட்டாலும் முரண் இல்லை.
+    ethu: 550 குட்டி என்றது; பறழ் எனப்படினும் உறழ் ஆண்டு (அவ்விடத்து) இல்லை — அவற்றுக்குப் பறழ் என்பதும் மாறுபாடு இன்றி அமையும்.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: parazh_sammathi
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.545
+    - porul.550
+    - porul.554
+    text: 'இயைபு (649): 545 இளமை 9; 550 குட்டி 4; 554 குட்டி/பறழ்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: ஒருதலை அன்மை
+    saanru: உறழ்
+- id: porul.552
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 552
+  moolam: |-
+    நாயே பன்றி புலி முயல் நான்கும்
+    ஆயும் காலை குருளை என்ப
+  kaandigai:
+    porul: நாய், பன்றி, புலி, முயல் — நான்கும் குருளை.
+    en:
+      kooruvathu: 4
+      enniyathu: 4
+    ethu: 551 பறழ் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: kurulai_vagai
+    count: 4
+  links: []
+  urai:
+    iyaipu:
+    - porul.551
+    - porul.553
+    text: 'இயைபு (649): 551 பறழ்; 553 நரி. எண்: 4 (நூற்பா ''நான்கும்'').'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: நான்கும்
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: என்ப
+  - peyar: தான் குறியிடுதல்
+    saanru: என்ப
+- id: porul.553
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 553
+  moolam: |-
+    நரியும் அற்றே நாடினர் கொளினே
+  kaandigai:
+    porul: நரியும் அவ்வாறே — 552-இன்படி நரியின் இளமையும் "குருளை" எனப்படும் (சுட்டு அண்மையால்). இதே நூற்பா 611-இலும் வருகிறது.
+    ethu: 552 நான்கு என்றது; நரியும் அற்றே — நரியின் குருளையும் அன்ன.
+  nilai: ஒருதலை அன்மை
+  kanini:
+    kind: rule
+    class: kurulai_nari
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.552
+    - porul.611
+    text: 'இயைபு (649): 552 குருளை 4; 611 நரி (பிணவு).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக; காண்டிகை சுட்டிய ஐயம் ஒருதலை அன்மை
+  utthi:
+  - peyar: ஒப்பக் கூறல்
+    saanru: அற்றே
+- id: porul.554
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 554
+  moolam: |-
+    குட்டியும் பறழும் கூற்று அவண் வரையார்
+  kaandigai:
+    porul: குட்டியும் பறழும் அங்கே (அவற்றுக்கு) விலக்கார்.
+    ethu: 553 நரி என்றது; குட்டி, பறழ் — கூற்று அவண் வரையார் (வேறுபாடு வரையப்படவில்லை).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: exception
+    class: kutti_parazh_vilakku
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.550
+    - porul.551
+    - porul.553
+    text: 'இயைபு (649): 550 குட்டி; 551 பறழ்; 553 நரி.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக; 'வரையார்' — இசைவு (வரையறை இன்மை)
+  utthi:
+  - peyar: ஒருதலை அன்மை
+    saanru: வரையார்
+- id: porul.555
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 555
+  moolam: |-
+    பிள்ளைப் பெயரும் பிழைப்பு ஆண்டு இல்லை
+    கொள்ளும் காலை நாய் அலங்கடையே
+  kaandigai:
+    porul: பிள்ளைப் பெயரும் அங்குப் பிழையன்று — நாய் அல்லாதவிடத்து.
+    ethu: 554 என்றது; பிள்ளைப் பெயரும் பிழைப்பு ஆண்டு இல்லை — நாய் அலங்கடையே (நாய்க்குப் பொருந்தாது).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: exception
+    class: pillai_nai_vilakku
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.545
+    - porul.552
+    - porul.554
+    text: 'இயைபு (649): 545 பிள்ளை (9-இல்); 552 நாய்; 554 கூற்று. ''நாய் அலங்கடையே'' — நாய்க்குப் பிள்ளை என்பது பொருந்தாது.'
+    vagai: விலக்கு
+    vilakkukkuriyathu:
+    - porul.545
+    thunivu: நூலில் நேரடியாக
+- id: porul.556
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 556
+  moolam: |-
+    யாடும் குதிரையும் நவ்வியும் உழையும்
+    ஓடும் புல்வாய் உளப்பட மறியே
+  kaandigai:
+    porul: யாடு, குதிரை, நவ்வி, உழை, ஓடும் புல்வாய் — மறி.
+    en:
+      kooruvathu: null
+      enniyathu: 5
+    ethu: 555 நாய் விலக்கு என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: mari_vagai
+    count: 5
+  links: []
+  urai:
+    iyaipu:
+    - porul.555
+    - porul.557
+    text: 'இயைபு (649): 555 நாய் விலக்கு; 557 குரங்கு.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக; 'உளப்பட' — இசைவு (வரையறை இன்மை)
+- id: porul.557
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 557
+  moolam: |-
+    கோடு வாழ் குரங்கும் குட்டி கூறுப
+  kaandigai:
+    porul: மரத்தில் வாழும் குரங்கும் குட்டி எனப்படும்.
+    ethu: 556 மறி என்றது; கோடுவாழ் குரங்கும் குட்டி கூறுப — குரங்கின் குட்டி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: kurangu_kutti
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.556
+    - porul.558
+    text: 'இயைபு (649): 556 மறி; 558 மகவு.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.558
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 558
+  moolam: |-
+    மகவும் பிள்ளையும் பறழும் பார்ப்பும்
+    அவையும் அன்ன அப் பாலான
+  kaandigai:
+    porul: மகவு, பிள்ளை, பறழ், பார்ப்பு ஆகியவையும் அவற்றுக்கு அவ்வாறே.
+    en:
+      kooruvathu: null
+      enniyathu: 4
+    ethu: 557 குரங்கு என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: peyar_moonru
+    count: 4
+  links: []
+  urai:
+    iyaipu:
+    - porul.548
+    - porul.556
+    - porul.557
+    text: 'இயைபு (649): 548 பார்ப்பு/பிள்ளை; 556 மறி; 557 குட்டி.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.559
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 559
+  moolam: |-
+    யானையும் குதிரையும் கழுதையும் கடமையும்
+    மானொடு ஐந்தும் கன்று எனற்கு உரிய
+  kaandigai:
+    porul: யானை, குதிரை, கழுதை, கடமை, மான் — ஐந்தும் கன்று.
+    en:
+      kooruvathu: 5
+      enniyathu: 5
+    ethu: 558 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: kandru_vagai
+    count: 5
+  links: []
+  urai:
+    iyaipu:
+    - porul.558
+    - porul.560
+    text: 'இயைபு (649): 558 அப்பாலான; 560 எருமை/மரை. எண்: 5 (நூற்பா ''ஐந்தும்'').'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: ஐந்தும்
+- id: porul.560
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 560
+  moolam: |-
+    எருமையும் மரையும் வரையார் ஆண்டே
+  kaandigai:
+    porul: எருமையும் மரையும் (கன்றுக்கு) விலக்கார்.
+    ethu: 559 ஐந்து என்றது; எருமை, மரை — ஆண்டு (அவ்விடத்து, கன்று எனல்) வரையார்.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: exception
+    class: kandru_erumai_mari
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.559
+    - porul.561
+    text: 'இயைபு (649): 559 கன்று; 561 கவரி/கராம்.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக; 'வரையார்' — இசைவு (வரையறை இன்மை)
+  utthi:
+  - peyar: ஒருதலை அன்மை
+    saanru: வரையார்
+- id: porul.561
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 561
+  moolam: |-
+    கவரியும் கராமும் நிகர் அவற்றுள்ளே
+  kaandigai:
+    porul: கவரியும் கராமும் அவற்றுள் ஒக்கும்.
+    ethu: 560 வரையார் என்றது; கவரி, கராம் — நிகர் (ஒப்பு) அவற்றுள்.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: kavari_karam
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.560
+    - porul.562
+    text: 'இயைபு (649): 560 எருமை/மரை; 562 ஒட்டகம். எண்: 2 (கவரி, கராம்).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.562
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 562
+  moolam: |-
+    ஒட்டகம் அவற்றொடு ஒரு வழி நிலையும்
+  kaandigai:
+    porul: ஒட்டகமும் அவற்றொடு ஒரு வழி நிற்கும்.
+    ethu: 561 கவரி/கராம் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: ottakam_kandru
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.561
+    - porul.563
+    text: 'இயைபு (649): 561 கவரி/கராம்; 563 குஞ்சரம்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.563
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 563
+  moolam: |-
+    குஞ்சரம் பெறுமே குழவிப் பெயர்க்கொடை
+  kaandigai:
+    porul: குஞ்சரம் (யானை) குழவிப் பெயர் பெறும்.
+    ethu: 562 ஒட்டகம் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: kunjcharam_kuzhavi
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.545
+    - porul.562
+    text: 'இயைபு (649): 545 குழவி (9-இல்); 562 ஒட்டகம்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.564
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 564
+  moolam: |-
+    ஆவும் எருமையும் அது சொலப்படுமே
+  kaandigai:
+    porul: ஆவும் எருமையும் அப்பெயர் பெறும்.
+    ethu: 563 குஞ்சரம் என்றது; ஆ, எருமை — அது சொலப்படுமே (குழவிப் பெயர்).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: aa_erumai_kuzhavi
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.563
+    - porul.565
+    text: 'இயைபு (649): 563 குஞ்சரம்; 565 கடமை/மரை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.565
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 565
+  moolam: |-
+    கடமையும் மரையும் முதல் நிலை ஒன்றும்
+  kaandigai:
+    porul: கடமையும் மரையும் முதல்நிலை (கன்று) ஒன்றும்.
+    ethu: 564 ஆ/எருமை என்றது; கடமை, மரை — முதல் நிலை ஒன்றும் (குழவிப் பெயர் ஒன்றே).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: kadamai_mari
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.564
+    - porul.566
+    text: 'இயைபு (649): 564 ஆ/எருமை; 566 குரங்கு/முசு/ஊகம்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: ஒன்றும்
+- id: porul.566
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 566
+  moolam: |-
+    குரங்கும் முசுவும் ஊகமும் மூன்றும்
+    நிரம்ப நாடின் அப் பெயர்க்கு உரிய
+  kaandigai:
+    porul: குரங்கு, முசு, ஊகம் மூன்றும் அப்பெயர்க்கு உரியன.
+    en:
+      kooruvathu: 3
+      enniyathu: 3
+    ethu: 565 ஒன்றும் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: kurangu_musu_uhagam
+    count: 3
+  links: []
+  urai:
+    iyaipu:
+    - porul.565
+    - porul.567
+    text: 'இயைபு (649): 565 கடமை/மரை; 567 குழவி/மகவு. எண்: 3 (நூற்பா ''மூன்றும்'').'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: மூன்றும்
+- id: porul.567
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 567
+  moolam: |-
+    குழவியும் மகவும் ஆயிரண்டு அல்லவை
+    கிழவ அல்ல மக்கட்கண்ணே
+  kaandigai:
+    porul: மக்களிடத்துக் குழவி, மகவு என்ற இரண்டு அல்லாதவை உரியவை அல்ல.
+    en:
+      kooruvathu: 2
+      enniyathu: 2
+    ethu: 566 மூன்று என்றது; குழவி, மகவு — ஆயிரண்டு அல்லவை மக்கட்கண் கிழவ அல்ல (உரியன அல்ல).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: makkal_ilamai
+    count: 2
+  links: []
+  urai:
+    iyaipu:
+    - porul.545
+    - porul.566
+    text: 'இயைபு (649): 545 குழவி/மகவு; 566 மூன்று. எண்: 2 (குழவி, மகவு).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.568
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 568
+  moolam: |-
+    பிள்ளை குழவி கன்றே போத்து எனக்
+    கொள்ளவும் அமையும் ஓர் அறிவு உயிர்க்கே
+  kaandigai:
+    porul: ஓரறிவு உயிர்க்கும் பிள்ளை, குழவி, கன்று, போத்து எனக் கொள்ளலாம்.
+    en:
+      kooruvathu: null
+      enniyathu: 4
+    ethu: 567 இரண்டு என்றது; பிள்ளை, குழவி, கன்று, போத்து — ஒரு அறிவு உயிர்க்கு அமையும்.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: orarivu_uyir_ilamai
+    count: 4
+  links: []
+  urai:
+    iyaipu:
+    - porul.567
+    - porul.571
+    text: 'இயைபு (649): 567 குழவி; 571 6 அறிவு. எண்: 4 (பிள்ளை, குழவி, கன்று, போத்து).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.569
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 569
+  moolam: |-
+    நெல்லும் புல்லும் நேரார் ஆண்டே
+  kaandigai:
+    porul: நெல்லும் புல்லும் (இளமைப் பெயர்) பெறா.
+    ethu: 568 என்றது; நெல், புல் — ஆண்டு (அவ்விடத்து, 568-இன் இளமைப் பெயர்கள்) நேரார்.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: exception
+    class: nel_pul_vilakku
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.568
+    - porul.572
+    text: 'இயைபு (649): 568 அறிவு; 572 புல்/மரம் (1 அறிவு).'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக; 'நேரார்' — இசைவு (வரையறை இன்மை)
+- id: porul.570
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 570
+  moolam: |-
+    சொல்லிய மரபின் இளமைதானே
+    சொல்லும் காலை அவை அல இலவே
+  kaandigai:
+    porul: கூறிய மரபின் இளமைப் பெயர் இவையல்லாமல் இல்லை.
+    ethu: 569 நெல்/புல் என்றது; இளமை — சொல்லிய மரபின் இளமை; அவை அல இலவே.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: ilamai_mudivu
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.545
+    - porul.569
+    text: 'இயைபு (649): 545 இளமை 9; 569 நெல்/புல்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: கூறிற்று என்றல்
+    saanru: சொல்லிய
+- id: porul.571
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 571
+  moolam: |-
+    ஒன்று அறிவதுவே உற்று அறிவதுவே
+    இரண்டு அறிவதுவே அதனொடு நாவே
+    மூன்று அறிவதுவே அவற்றொடு மூக்கே
+    நான்கு அறிவதுவே அவற்றொடு கண்ணே
+    ஐந்து அறிவதுவே அவற்றொடு செவியே
+    ஆறு அறிவதுவே அவற்றொடு மனனே
+    நேரிதின் உணர்ந்தோர் நெறிப்படுத்தினரே
+  kaandigai:
+    porul: 'உயிர்ப் பகுப்பு ஆறு: ஓரறிவு உற்றறிவு (உடல்); ஈரறிவு அதனொடு நா; மூவறிவு அவற்றொடு மூக்கு; நான்கறிவு அவற்றொடு கண்; ஐயறிவு அவற்றொடு செவி; ஆறறிவு அவற்றொடு மனம். ஒவ்வொரு படியும் முந்தையதைக் கொண்டே கூடுகிறது.'
+    en:
+      kooruvathu: 6
+      enniyathu: 6
+    ethu: 570 இளமை என்றது; அறிவு 6 — ஒன்று (உற்று), இரண்டு (நா), மூன்று (மூக்கு), நான்கு (கண்), ஐந்து (செவி), ஆறு (மனம்).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: enumeration
+    class: arivu_vagai
+    count: 6
+  links: []
+  urai:
+    iyaipu:
+    - porul.570
+    - porul.572
+    - porul.577
+    text: 'இயைபு (649): 572-577 ஒவ்வொன்றின் வகை; 570 இளமை. எண்: 6 (நூற்பா) = 6 (ஒன்று–ஆறு).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: ஒன்று
+- id: porul.572
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 572
+  moolam: |-
+    புல்லும் மரனும் ஓர் அறிவினவே
+    பிறவும் உளவே அக் கிளைப் பிறப்பே
+  kaandigai:
+    porul: புல்லும் மரமும் ஓரறிவின; அக்கிளையில் பிறவும் உள.
+    en:
+      kooruvathu: null
+      enniyathu: 2
+    ethu: 571 அறிவு என்றது; புல், மரம் — 1 அறிவு; பிறவும் அக்கிளைப் பிறப்பே.
+  nilai: ஒருதலை அன்மை
+  kanini:
+    kind: classification
+    class: orarivu_uyir
+    count: 2
+  links: []
+  urai:
+    iyaipu:
+    - porul.571
+    - porul.573
+    text: 'இயைபு (649): 571 அறிவு 6; 573 நந்து/முரள். ''பிறவும்'' — எவை என நூல் பெயரிடவில்லை — ஒருதலை அன்மை.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக; 'பிறவும்' ஒருதலை அன்மை
+  utthi:
+  - peyar: வந்தது கொண்டு வாராதது உணர்த்தல்
+    saanru: பிறவும்
+- id: porul.573
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 573
+  moolam: |-
+    நந்தும் முரளும் ஈர் அறிவினவே
+    பிறவும் உளவே அக்கிளைப் பிறப்பே
+  kaandigai:
+    porul: நந்தும் முரளும் ஈரறிவின; பிறவும் உள.
+    en:
+      kooruvathu: null
+      enniyathu: 2
+    ethu: 572 1 அறிவு என்றது; நந்து, முரள் — 2 அறிவு (உற்று + நா).
+  nilai: ஒருதலை அன்மை
+  kanini:
+    kind: classification
+    class: irarivu_uyir
+    count: 2
+  links: []
+  urai:
+    iyaipu:
+    - porul.572
+    - porul.574
+    text: 'இயைபு (649): 572 1 அறிவு; 574 சிதல்/எறும்பு.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக; 'பிறவும்' ஒருதலை அன்மை
+  utthi:
+  - peyar: வந்தது கொண்டு வாராதது உணர்த்தல்
+    saanru: பிறவும்
+- id: porul.574
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 574
+  moolam: |-
+    சிதலும் எறும்பும் மூ அறிவினவே
+    பிறவும் உளவே அக் கிளைப் பிறப்பே
+  kaandigai:
+    porul: சிதலும் எறும்பும் மூவறிவின; பிறவும் உள.
+    en:
+      kooruvathu: null
+      enniyathu: 2
+    ethu: 573 2 அறிவு என்றது; சிதல், எறும்பு — 3 அறிவு (+ மூக்கு).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: moovarivu_uyir
+    count: 2
+  links: []
+  urai:
+    iyaipu:
+    - porul.573
+    - porul.575
+    text: 'இயைபு (649): 573 2 அறிவு; 575 நண்டு/தும்பி.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக
+  utthi:
+  - peyar: வந்தது கொண்டு வாராதது உணர்த்தல்
+    saanru: பிறவும்
+- id: porul.575
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 575
+  moolam: |-
+    நண்டும் தும்பியும் நான்கு அறிவினவே
+    பிறவும் உளவே அக் கிளைப் பிறப்பே
+  kaandigai:
+    porul: நண்டும் தும்பியும் நான்கறிவின; பிறவும் உள.
+    en:
+      kooruvathu: null
+      enniyathu: 2
+    ethu: 574 3 அறிவு என்றது; நண்டு, தும்பி — 4 அறிவு (+ கண்).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: naangarivu_uyir
+    count: 2
+  links: []
+  urai:
+    iyaipu:
+    - porul.574
+    - porul.576
+    text: 'இயைபு (649): 574 3 அறிவு; 576 மா/மாக்கள்.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: நான்கு
+  - peyar: வந்தது கொண்டு வாராதது உணர்த்தல்
+    saanru: பிறவும்
+- id: porul.576
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 576
+  moolam: |-
+    மாவும் மாக்களும் ஐ அறிவினவே
+    பிறவும் உளவே அக் கிளைப் பிறப்பே
+  kaandigai:
+    porul: மாவும் மாக்களும் ஐயறிவின; பிறவும் உள.
+    en:
+      kooruvathu: null
+      enniyathu: 2
+    ethu: 575 4 அறிவு என்றது; மா, மாக்கள் — 5 அறிவு (+ செவி).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: aiyarivu_uyir
+    count: 2
+  links: []
+  urai:
+    iyaipu:
+    - porul.575
+    - porul.577
+    text: 'இயைபு (649): 575 4 அறிவு; 577 மக்கள்.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக
+  utthi:
+  - peyar: வந்தது கொண்டு வாராதது உணர்த்தல்
+    saanru: பிறவும்
+- id: porul.577
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 577
+  moolam: |-
+    மக்கள்தாமே ஆறு அறிவு உயிரே
+    பிறவும் உளவே அக் கிளைப் பிறப்பே
+  kaandigai:
+    porul: மக்கள் ஆறறிவு உயிர்; பிறவும் உள. "பிறவும் உள" ஆறறிவுக்கும் சொல்லப்படுவது கவனிக்கத்தக்கது — அவை எவை என்பது நூலில் இல்லை (ஒருதலை அன்மை).
+    ethu: 576 5 அறிவு என்றது; மக்கள் — 6 அறிவு (+ மனம்); பிறவும் அக்கிளைப் பிறப்பே.
+  nilai: ஒருதலை அன்மை
+  kanini:
+    kind: definition
+    class: aaruvarivu_uyir
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.571
+    - porul.576
+    - porul.578
+    text: 'இயைபு (649): 571-576 ஐந்து அறிவு; 578 ஒரு சார்.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக; 'பிறவும்' ஒருதலை அன்மை
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: ஆறு
+  - peyar: வந்தது கொண்டு வாராதது உணர்த்தல்
+    saanru: பிறவும்
+- id: porul.578
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 578
+  moolam: |-
+    ஒரு சார் விலங்கும் உள என மொழிப
+  kaandigai:
+    porul: ஒருசார் விலங்கும் (ஆறறிவுடையன) உள என்பர். 577-இன் "பிறவும் உள" இதுவா என நூல் கூறவில்லை (ஒருதலை அன்மை).
+    ethu: 577 6 அறிவு என்றது; ஒரு சார் விலங்கும் உள — வேறு சில விலங்குகளும்.
+  nilai: ஒருதலை அன்மை
+  kanini:
+    kind: rule
+    class: vilangu_aararivu
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.577
+    - porul.579
+    text: 'இயைபு (649): 577 மக்கள்; 579 களிறு. ''ஒரு சார்'' — எவை என நூல் விரிக்கவில்லை — ஒருதலை அன்மை.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக; 'ஒரு சார்' — எவை என ஒருதலை அன்மை
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: மொழிப
+  - peyar: தான் குறியிடுதல்
+    saanru: என மொழிப
+- id: porul.579
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 579
+  moolam: |-
+    வேழக்கு உரித்தே விதந்து களிறு என்றல்
+  kaandigai:
+    porul: களிறு என்று சிறப்பித்தல் வேழத்துக்கு உரியது.
+    ethu: 578 என்றது; வேழம் — களிறு என்று விதந்து கூறல் உரித்து.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: kaliru_vezham
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.546
+    - porul.578
+    - porul.580
+    text: 'இயைபு (649): 546 ஆண்பாற் பெயர் (களிறு); 578 ஒரு சார்; 580 கேழல்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: ஒருதலை அன்மை
+    saanru: உரித்தே
+- id: porul.580
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 580
+  moolam: |-
+    கேழற்கண்ணும் கடி வரை இன்றே
+  kaandigai:
+    porul: கேழலுக்கும் (பன்றி) விலக்கில்லை.
+    ethu: 579 களிறு என்றது; கேழல் (பன்றி) — கடிவரை இன்றே (வரையறை இல்லை).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: exception
+    class: kezhal_kaliru
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.579
+    - porul.582
+    text: 'இயைபு (649): 579 களிறு; 582 கோட்டு யானை/பன்றி.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக; 'கடிவரை இன்றே' — இசைவு (வரையறை இன்மை)
+- id: porul.581
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 581
+  moolam: |-
+    புல்வாய் புலி உழை மரையே கவரி
+    சொல்லிய கராமொடு ஒருத்தல் ஒன்றும்
+  kaandigai:
+    porul: புல்வாய், புலி, உழை, மரை, கவரி, கராம் — இவற்றுக்கு ஒருத்தல் என்பது ஒக்கும்.
+    en:
+      kooruvathu: null
+      enniyathu: 6
+    ethu: 580 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: oruthal_vagai
+    count: 6
+  links: []
+  urai:
+    iyaipu:
+    - porul.546
+    - porul.580
+    - porul.583
+    text: 'இயைபு (649): 546 ஆண்பால்; 580 கேழல்; 583 எருமை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: ஒன்றும்
+  - peyar: கூறிற்று என்றல்
+    saanru: சொல்லிய
+- id: porul.582
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 582
+  moolam: |-
+    வார் கோட்டு யானையும் பன்றியும் அன்ன
+  kaandigai:
+    porul: நீண்ட கொம்புடைய யானையும் பன்றியும் அவ்வாறே.
+    ethu: 581 ஒருத்தல் என்றது; வார்கோட்டு யானை, பன்றி — அன்ன (ஒருத்தல் வகை).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: yanai_pandri_oruthal
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.580
+    - porul.581
+    text: 'இயைபு (649): 580 கேழல்; 581 ஒருத்தல்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.583
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 583
+  moolam: |-
+    ஏற்புடைத்து என்ப எருமைக்கண்ணும்
+  kaandigai:
+    porul: எருமைக்கும் ஏற்புடையது.
+    ethu: 582 என்றது; ஏற்புடைத்து — எருமைக்கும் (ஆண்).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: erumai_oruthal
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.581
+    - porul.584
+    text: 'இயைபு (649): 581 ஒருத்தல்; 584 ஏறு.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: என்ப
+  - peyar: தான் குறியிடுதல்
+    saanru: என்ப
+- id: porul.584
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 584
+  moolam: |-
+    பன்றி புல்வாய் உழையே கவரி
+    என்று இவை நான்கும் ஏறு எனற்கு உரிய
+  kaandigai:
+    porul: பன்றி, புல்வாய், உழை, கவரி — நான்கும் ஏறு எனப்படும்.
+    en:
+      kooruvathu: 4
+      enniyathu: 4
+    ethu: 583 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: eru_vagai
+    count: 4
+  links: []
+  urai:
+    iyaipu:
+    - porul.583
+    - porul.585
+    text: 'இயைபு (649): 583 எருமை; 585 எருமை/மரை/பெற்றம். எண்: 4 (நூற்பா ''நான்கும்'').'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: நான்கும்
+- id: porul.585
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 585
+  moolam: |-
+    எருமையும் மரையும் பெற்றமும் அன்ன
+  kaandigai:
+    porul: எருமை, மரை, பெற்றம் ஆகியவையும் அவ்வாறே.
+    ethu: 584 ஏறு என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: erumai_mari_petram_eru
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.584
+    - porul.586
+    text: 'இயைபு (649): 584 ஏறு 4; 586 சுறா.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.586
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 586
+  moolam: |-
+    கடல் வாழ் சுறவும் ஏறு எனப்படுமே
+  kaandigai:
+    porul: கடல் வாழ் சுறவும் ஏறு எனப்படும்.
+    ethu: 585 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: sura_eru
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.585
+    - porul.587
+    - porul.588
+    text: 'இயைபு (649): 585 ஏறு; 587 போத்து; 588 நீர்வாழ்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தான் குறியிடுதல்
+    saanru: எனப்படுமே
+- id: porul.587
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 587
+  moolam: |-
+    பெற்றம் எருமை புலி மரை புல்வாய்
+    மற்று இவை எல்லாம் போத்து எனப்படுமே
+  kaandigai:
+    porul: பெற்றம், எருமை, புலி, மரை, புல்வாய் — போத்து எனப்படும்.
+    en:
+      kooruvathu: null
+      enniyathu: 5
+    ethu: 586 சுறா என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: poththu_vagai
+    count: 5
+  links: []
+  urai:
+    iyaipu:
+    - porul.586
+    - porul.588
+    text: 'இயைபு (649): 586 சுறா; 588 நீர்வாழ். எண்: 5 (பெற்றம், எருமை, புலி, மரை, புல்வாய்).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தான் குறியிடுதல்
+    saanru: எனப்படுமே
+- id: porul.588
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 588
+  moolam: |-
+    நீர் வாழ் சாதியும் அது பெறற்கு உரிய
+  kaandigai:
+    porul: நீர் வாழ் சாதியும் அப்பெயர் பெறும்.
+    ethu: 587 போத்து என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: neervazh_poththu
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.586
+    - porul.587
+    - porul.589
+    text: 'இயைபு (649): 586 சுறா; 587 போத்து; 589 மயில்/எழால்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.589
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 589
+  moolam: |-
+    மயிலும் எழாலும் பயிலத் தோன்றும்
+  kaandigai:
+    porul: மயிலும் எழாலும் (போத்து) பயிலத் தோன்றும்.
+    ethu: 588 நீர்வாழ் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: mayil_ezhal
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.588
+    - porul.590
+    text: 'இயைபு (649): 588 நீர்; 590 இரலை/கலை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.590
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 590
+  moolam: |-
+    இரலையும் கலையும் புல்வாய்க்கு உரிய
+  kaandigai:
+    porul: இரலையும் கலையும் புல்வாய்க்கு உரியன.
+    ethu: 589 மயில் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: iralai_kalai
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.546
+    - porul.589
+    - porul.591
+    text: 'இயைபு (649): 546 ஆண் (இரலை, கலை); 589 மயில்; 591 கலை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.591
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 591
+  moolam: |-
+    கலை என் காட்சி உழைக்கும் உரித்தே
+    நிலையிற்று அப் பெயர் முசுவின்கண்ணும்
+  kaandigai:
+    porul: கலை என்பது உழைக்கும் உரியது; முசுவுக்கும் அப்பெயர் நிலைக்கும்.
+    ethu: 590 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: kalai_uzhai_musu
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.590
+    - porul.592
+    text: 'இயைபு (649): 590 இரலை/கலை; 592 மோத்தை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: ஒருதலை அன்மை
+    saanru: உரித்தே
+- id: porul.592
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 592
+  moolam: |-
+    மோத்தையும் தகரும் உதளும் அப்பரும்
+    யாத்த என்ப யாட்டின்கண்ணே
+  kaandigai:
+    porul: மோத்தை, தகர், உதள், அப்பர் — யாட்டுக்கு உரியன.
+    en:
+      kooruvathu: null
+      enniyathu: 4
+    ethu: 591 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: yaattu_aan
+    count: 4
+  links: []
+  urai:
+    iyaipu:
+    - porul.546
+    - porul.591
+    text: 'இயைபு (649): 546 ஆண் (மோத்தை முதலியன); 591 கலை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: என்ப
+  - peyar: தான் குறியிடுதல்
+    saanru: என்ப
+- id: porul.593
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 593
+  moolam: |-
+    சேவல் பெயர்க்கொடை சிறகொடு சிவணும்
+    மா இருந் தூவி மயில் அலங்கடையே
+  kaandigai:
+    porul: சேவல் என்ற பெயர் சிறகுடையவற்றுக்குப் பொருந்தும் — மயில் அல்லாதவிடத்து.
+    ethu: 592 என்றது; சேவல் — பெயர்க்கொடை சிறகொடு சிவணும்; மயில் அலங்கடையே (மயிலுக்கு 'சேவல்' பொருந்தாது).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: sevval_vagai
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.546
+    - porul.592
+    text: 'இயைபு (649): 546 சேவல்; 592 மோத்தை. ''மயில் அலங்கடையே'' — மயிலுக்குச் சேவல் என்பது விலக்கு.'
+    vagai: விலக்கு
+    vilakkukkuriyathu:
+    - porul.546
+    thunivu: நூலில் நேரடியாக
+- id: porul.594
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 594
+  moolam: |-
+    ஆற்றலொடு புணர்ந்த ஆண்பாற்கு எல்லாம்
+    ஏற்றைக் கிளவி உரித்து என மொழிப
+  kaandigai:
+    porul: ஆற்றலுடைய ஆண்பால் எல்லாவற்றுக்கும் ஏற்றை என்பது உரியது.
+    ethu: 593 சேவல் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: etraik_kilavi
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.546
+    - porul.593
+    - porul.595
+    text: 'இயைபு (649): 546 ஆண்; 593 சேவல்; 595 ஆண் பொது.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: மொழிப
+  - peyar: தான் குறியிடுதல்
+    saanru: என மொழிப
+  - peyar: ஒருதலை அன்மை
+    saanru: உரித்து
+- id: porul.595
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 595
+  moolam: |-
+    ஆண்பால் எல்லாம் ஆண் எனற்கு உரிய
+    பெண்பால் எல்லாம் பெண் எனற்கு உரிய
+    காண்ப அவை அவை அப்பாலான
+  kaandigai:
+    porul: ஆண்பால் எல்லாம் ஆண் எனவும், பெண்பால் எல்லாம் பெண் எனவும் உரியன.
+    ethu: 594 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: aan_pen_pothu
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.547
+    - porul.594
+    - porul.596
+    text: 'இயைபு (649): 547 பெண்பால்; 594 ஏற்றை; 596 பிடி.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.596
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 596
+  moolam: |-
+    பிடி என் பெண் பெயர் யானை மேற்றே
+  kaandigai:
+    porul: பிடி என்ற பெண் பெயர் யானைக்கு உரியது.
+    ethu: 595 பெண்பால் என்றது; பிடி — யானைக்கே உரிய பெண்பால் பெயர்.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: pidi_yanaip_pen
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.547
+    - porul.595
+    - porul.597
+    text: 'இயைபு (649): 547 பெண்பால்; 595 பெண் பொது; 597 பெட்டை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.597
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 597
+  moolam: |-
+    ஒட்டகம் குதிரை கழுதை மரை இவை
+    பெட்டை என்னும் பெயர்க்கொடைக்கு உரிய
+  kaandigai:
+    porul: ஒட்டகம், குதிரை, கழுதை, மரை — பெட்டை எனப்படும்.
+    en:
+      kooruvathu: null
+      enniyathu: 4
+    ethu: 596 பிடி என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: pettai_vagai
+    count: 4
+  links: []
+  urai:
+    iyaipu:
+    - porul.547
+    - porul.596
+    - porul.598
+    text: 'இயைபு (649): 547 பெண்; 596 பிடி; 598 புள்ளும். எண்: 4 (ஒட்டகம், குதிரை, கழுதை, மரை).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.598
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 598
+  moolam: |-
+    புள்ளும் உரிய அப் பெயர்க்கு என்ப
+  kaandigai:
+    porul: புள்ளும் அப்பெயர்க்கு உரியன.
+    ethu: 597 பெட்டை என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: pullum_pettai
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.597
+    - porul.599
+    text: 'இயைபு (649): 597 பெட்டை 4; 599 பேடை/பெடை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: என்ப
+  - peyar: தான் குறியிடுதல்
+    saanru: என்ப
+- id: porul.599
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 599
+  moolam: |-
+    பேடையும் பெடையும் நாடின் ஒன்றும்
+  kaandigai:
+    porul: பேடையும் பெடையும் ஆராய்ந்தால் (அவற்றுக்கு) ஒன்றும்.
+    ethu: 598 புள்ளும் என்றது; பேடை, பெடை — நாடின் ஒன்றும் (ஒரே பொருள்).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: pedai_oru_porul
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.547
+    - porul.598
+    - porul.600
+    text: 'இயைபு (649): 547 பேடை; 598 புள்ளும்; 600 கோழி/கூகை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: ஒன்றும்
+- id: porul.600
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 600
+  moolam: |-
+    கோழி கூகை ஆயிரண்டு அல்லவை
+    சூழும் காலை அளகு எனல் அமையா
+  kaandigai:
+    porul: கோழி, கூகை இரண்டு அல்லாதவை அளகு எனப்படா.
+    en:
+      kooruvathu: 2
+      enniyathu: 2
+    ethu: 599 பேடை/பெடை என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: exception
+    class: alagu_koli_kugai
+    count: 2
+  links: []
+  urai:
+    iyaipu:
+    - porul.547
+    - porul.599
+    - porul.601
+    text: 'இயைபு (649): 599 பேடை; 601 மயில். எண்: 2 (கோழி, கூகை).'
+    vagai: விலக்கு
+    vilakkukkuriyathu:
+    - porul.599
+    thunivu: நூலில் நேரடியாக
+- id: porul.601
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 601
+  moolam: |-
+    அப் பெயர்க் கிழமை மயிற்கும் உரித்தே
+  kaandigai:
+    porul: அப்பெயர் மயிலுக்கும் உரியது.
+    ethu: 600 கோழி/கூகை என்றது; அப் பெயர்க் கிழமை (அளகு எனப்படும் உரிமை) மயிற்கும் உரித்து.
+  nilai: ஒருதலை அன்மை
+  kanini:
+    kind: rule
+    class: alagu_mayil
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.547
+    - porul.600
+    - porul.602
+    text: 'இயைபு (649): 547 அளகு; 600 கோழி/கூகை; 602 பிணை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக; காண்டிகை சுட்டிய ஐயம் ஒருதலை அன்மை
+  utthi:
+  - peyar: ஒருதலை அன்மை
+    saanru: உரித்தே
+- id: porul.602
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 602
+  moolam: |-
+    புல்வாய் நவ்வி உழையே கவரி
+    சொல்வாய் நாடின் பிணை எனப்படுமே
+  kaandigai:
+    porul: புல்வாய், நவ்வி, உழை, கவரி — பிணை எனப்படும்.
+    en:
+      kooruvathu: null
+      enniyathu: 4
+    ethu: 601 மயில் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: pinai_vagai
+    count: 4
+  links: []
+  urai:
+    iyaipu:
+    - porul.547
+    - porul.601
+    - porul.603
+    text: 'இயைபு (649): 547 பிணை; 601 மயில்; 603 பிணவு. எண்: 4 (புல்வாய், நவ்வி, உழை, கவரி).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தான் குறியிடுதல்
+    saanru: எனப்படுமே
+- id: porul.603
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 603
+  moolam: |-
+    பன்றி புல்வாய் நாய் என மூன்றும்
+    ஒன்றிய என்ப பிணவின் பெயர்க்கொடை
+  kaandigai:
+    porul: பன்றி, புல்வாய், நாய் — மூன்றும் பிணவு எனப்படும்.
+    en:
+      kooruvathu: 3
+      enniyathu: 3
+    ethu: 602 பிணை என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: pinavu_vagai
+    count: 3
+  links: []
+  urai:
+    iyaipu:
+    - porul.547
+    - porul.602
+    - porul.604
+    text: 'இயைபு (649): 547 பிணவு; 602 பிணை; 604 பிணவல். எண்: 3 (நூற்பா ''மூன்றும்'').'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: மூன்றும்
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: என்ப
+  - peyar: தான் குறியிடுதல்
+    saanru: என்ப
+- id: porul.604
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 604
+  moolam: |-
+    பிணவல் எனினும் அவற்றின் மேற்றே
+  kaandigai:
+    porul: பிணவல் என்றாலும் அவற்றுக்கே.
+    ethu: 603 மூன்று என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: pinaval_sammathi
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.603
+    - porul.605
+    text: 'இயைபு (649): 603 பிணவு; 605 பெற்றம்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.605
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 605
+  moolam: |-
+    பெற்றமும் எருமையும் மரையும் ஆவே
+  kaandigai:
+    porul: பெற்றம், எருமை, மரை — ஆ எனப்படும்.
+    en:
+      kooruvathu: 3
+      enniyathu: 3
+    ethu: 604 பிணவல் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: aa_vagai
+    count: 3
+  links: []
+  urai:
+    iyaipu:
+    - porul.547
+    - porul.604
+    - porul.606
+    text: 'இயைபு (649): 547 பெண்பால்; 604 பிணவல்; 606 பெண்/பிணா.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.606
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 606
+  moolam: |-
+    பெண்ணும் பிணாவும் மக்கட்கு உரிய
+  kaandigai:
+    porul: பெண், பிணா என்பவை மக்களுக்கு உரியன.
+    en:
+      kooruvathu: 2
+      enniyathu: 2
+    ethu: 605 பெற்றம் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: makkal_pen_pinaa
+    count: 2
+  links: []
+  urai:
+    iyaipu:
+    - porul.605
+    - porul.607
+    text: 'இயைபு (649): 605 பெற்றம்; 607 எருமை/மரை/நாகு.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.607
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 607
+  moolam: |-
+    எருமையும் மரையும் பெற்றமும் நாகே
+  kaandigai:
+    porul: எருமை, மரை, பெற்றம் — நாகு எனப்படும்.
+    en:
+      kooruvathu: 3
+      enniyathu: 3
+    ethu: 606 பெண்/பிணா என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: naaku_vagai
+    count: 3
+  links: []
+  urai:
+    iyaipu:
+    - porul.605
+    - porul.606
+    - porul.608
+    text: 'இயைபு (649): 606 பெண்; 608 நந்து/நாகு.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.608
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 608
+  moolam: |-
+    நீர் வாழ் சாதியுள் நந்தும் நாகே
+  kaandigai:
+    porul: நீர் வாழ் சாதியுள் நந்தும் நாகு.
+    ethu: 607 நாகு என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: nandhu_naaku
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.588
+    - porul.607
+    - porul.609
+    text: 'இயைபு (649): 588 நீர்வாழ்; 607 நாகு; 609 மூடு/கடமை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.609
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 609
+  moolam: |-
+    மூடும் கடமையும் யாடு அல பெறாஅ
+  kaandigai:
+    porul: மூடும் கடமையும் யாடு அல்லாதவை பெறா.
+    en:
+      kooruvathu: null
+      enniyathu: 2
+    ethu: 608 நாகு என்றது; மூடு, கடமை — யாடு அல்லவை அப்பெயர் பெறா (யாட்டுக்கே உரியன).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: exception
+    class: mudu_kadamai_vilakku
+    count: 2
+  links: []
+  urai:
+    iyaipu:
+    - porul.547
+    - porul.608
+    text: 'இயைபு (649): 547 மூடு/கடமை; 608 நாகு; 609 ''யாடு அல''.'
+    vagai: விலக்கு
+    vilakkukkuriyathu:
+    - porul.547
+    thunivu: நூலில் நேரடியாக
+- id: porul.610
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 610
+  moolam: |-
+    பாட்டி என்ப பன்றியும் நாயும்
+  kaandigai:
+    porul: பன்றியும் நாயும் பாட்டி எனப்படும்.
+    en:
+      kooruvathu: 2
+      enniyathu: 2
+    ethu: 609 யாடு அல என்றது; பாட்டி — பன்றி, நாய் — இரண்டும்.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: patti_vagai
+    count: 2
+  links: []
+  urai:
+    iyaipu:
+    - porul.547
+    - porul.609
+    - porul.611
+    text: 'இயைபு (649): 547 பாட்டி; 609 யாடு அல; 611 நரி. எண்: 2 (பன்றி, நாய்).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: என்ப
+  - peyar: தான் குறியிடுதல்
+    saanru: என்ப
+- id: porul.611
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 611
+  moolam: |-
+    நரியும் அற்றே நாடினர் கொளினே
+  kaandigai:
+    porul: நரியும் அவ்வாறே — 610-இன்படி நரியும் "பாட்டி" எனப்படும் (சுட்டு அண்மையால்). இதே நூற்பா 553-இலும் வருகிறது.
+    ethu: 610 பாட்டி என்றது; நரியும் அற்றே (நரியின் பெண் 'பாட்டி' ஆகலாம்).
+  nilai: ஒருதலை அன்மை
+  kanini:
+    kind: rule
+    class: nari_patti
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.553
+    - porul.610
+    - porul.612
+    text: 'இயைபு (649): 553 நரி; 610 பாட்டி; 612 குரங்கு/முசு/ஊகம்/மந்தி.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக; காண்டிகை சுட்டிய ஐயம் ஒருதலை அன்மை
+  utthi:
+  - peyar: ஒப்பக் கூறல்
+    saanru: அற்றே
+- id: porul.612
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 612
+  moolam: |-
+    குரங்கும் முசுவும் ஊகமும் மந்தி
+  kaandigai:
+    porul: குரங்கு, முசு, ஊகம் — மந்தி.
+    en:
+      kooruvathu: 3
+      enniyathu: 3
+    ethu: 611 நரி என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: manthi_vagai
+    count: 3
+  links: []
+  urai:
+    iyaipu:
+    - porul.547
+    - porul.611
+    text: 'இயைபு (649): 547 மந்தி; 611 நரி. குரங்கு, முசு, ஊகம் மூன்றும் (566 ''மூன்றும்'' போல) — பெண்பாற் பெயர் ''மந்தி'' (547).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.613
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 613
+  moolam: |-
+    குரங்கின் ஏற்றினைக் கடுவன் என்றலும்
+    மரம் பயில் கூகையைக் கோட்டான் என்றலும்
+    செவ் வாய்க் கிளியைத் தத்தை என்றலும்
+    வெவ் வாய் வெருகினைப் பூசை என்றலும்
+    குதிரையுள் ஆணினைச் சேவல் என்றலும்
+    இருள் நிறப் பன்றியை ஏனம் என்றலும்
+    எருமையுள் ஆணினைக் கண்டி என்றலும்
+    முடிய வந்த அவ் வழக்கு உண்மையின்
+    கடியல் ஆகா கடன் அறிந்தோர்க்கே
+  kaandigai:
+    porul: 'குரங்கின் ஆணைக் கடுவன், கூகையைக் கோட்டான், கிளியைத் தத்தை, வெருகைப் பூசை, குதிரை ஆணைச் சேவல், பன்றியை ஏனம், எருமை ஆணைக் கண்டி என்றல் — அவ்வழக்கு உண்மையால் விலக்கத் தகாது. காண்க: சொல். 27.'
+    en:
+      kooruvathu: null
+      enniyathu: 7
+    ethu: 612 என்றது; வழக்குப் பெயர்கள் 7 — குரங்கின் ஆண் கடுவன், மரம் பயில் கூகை கோட்டான், செவ்வாய்க் கிளி தத்தை, வெவ்வாய் வெருகு பூசை, குதிரை ஆண் சேவல், இருணிறப் பன்றி ஏனம், எருமை ஆண் கண்டி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: vazhakkup_peyar
+    count: 7
+  links: []
+  urai:
+    iyaipu:
+    - porul.546
+    - porul.612
+    - porul.614
+    text: 'இயைபு (649): 546 ஆண்; 612 குரங்கு/முசு; 614 பிள்ளை. எண்: 7 (கடுவன், கோட்டான், தத்தை, பூசை, சேவல், ஏனம், கண்டி).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.614
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 614
+  moolam: |-
+    பெண்ணும் ஆணும் பிள்ளையும் அவையே
+  kaandigai:
+    porul: பெண், ஆண், பிள்ளை என்பவையும் அவையே (பொது).
+    en:
+      kooruvathu: null
+      enniyathu: 3
+    ethu: 613 வழக்கு என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: pen_aan_pillai
+    count: 3
+  links: []
+  urai:
+    iyaipu:
+    - porul.547
+    - porul.595
+    - porul.613
+    text: 'இயைபு (649): 547 பெண்; 595 ஆண்; 613 வழக்கு. எண்: 3 (பெண், ஆண், பிள்ளை).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.615
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 615
+  moolam: |-
+    நூலே கரகம் முக்கோல் மணையே
+    ஆயும் காலை அந்தணர்க்கு உரிய
+  kaandigai:
+    porul: நூல், கரகம், முக்கோல், மணை — அந்தணர்க்கு உரியன என்கிறது நூல்.
+    en:
+      kooruvathu: null
+      enniyathu: 4
+    ethu: 614 என்றது; அந்தணர்க்கு உரிய — நூல், கரகம், முக்கோல், மணை — நான்கும்.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: anthanar_uriyana
+    count: 4
+  links: []
+  urai:
+    iyaipu:
+    - porul.74
+    - porul.614
+    - porul.616
+    text: 'இயைபு (649): 74 பார்ப்பனப் பக்கம்; 614 பெண்/ஆண்; 616 அரசர். எண்: 4 (நூல், கரகம், முக்கோல், மணை).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.616
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 616
+  moolam: |-
+    படையும் கொடியும் குடையும் முரசும்
+    நடை நவில் புரவியும் களிறும் தேரும்
+    தாரும் முடியும் நேர்வன பிறவும்
+    தெரிவு கொள் செங்கோல் அரசர்க்கு உரிய
+  kaandigai:
+    porul: படை, கொடி, குடை, முரசு, புரவி, களிறு, தேர், தார், முடி முதலியன செங்கோல் அரசர்க்கு உரியன என்கிறது நூல்.
+    en:
+      kooruvathu: null
+      enniyathu: 9
+    ethu: 615 அந்தணர் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: ஒருதலை அன்மை
+  kanini:
+    kind: classification
+    class: arasarku_uriyana
+    count: 9
+  links: []
+  urai:
+    iyaipu:
+    - porul.615
+    - porul.617
+    - porul.74
+    text: 'இயைபு (649): 615 அந்தணர்; 617 பொது; 74 அரசர். ''நேர்வன பிறவும்'' — எவை என நூல் பெயரிடவில்லை — ஒருதலை அன்மை.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக; 'நேர்வன பிறவும்' ஒருதலை அன்மை
+  utthi:
+  - peyar: வந்தது கொண்டு வாராதது உணர்த்தல்
+    saanru: பிறவும்
+- id: porul.617
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 617
+  moolam: |-
+    அந்தணாளர்க்கு உரியவும் அரசர்க்கு
+    ஒன்றிய வரூஉம் பொருளுமார் உளவே
+  kaandigai:
+    porul: அந்தணர்க்கு உரியனவும் அரசர்க்குப் பொருந்தி வருவனவும் உள.
+    ethu: 616 அரசர் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: anthanar_arasar_pothu
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.615
+    - porul.616
+    - porul.618
+    text: 'இயைபு (649): 615 அந்தணர்; 616 அரசர்; 618 பரிசில்.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக; 'உளவே' — இசைவு (வரையறை இன்மை)
+- id: porul.618
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 618
+  moolam: |-
+    பரிசில் பாடாண் திணைத் துறைக் கிழமைப்பெயர்
+    நெடுந்தகை செம்மல் என்று இவை பிறவும்
+    பொருந்தச் சொல்லுதல் அவர்க்கு உரித்தன்றே
+  kaandigai:
+    porul: பரிசில், பாடாண் துறைக் கிழமைப் பெயர், நெடுந்தகை, செம்மல் முதலியன அவர்க்குப் பொருந்தச் சொல்லுதல் உரியதன்று. "அவர்" யார் என நூற்பா பெயரிடவில்லை (ஒருதலை அன்மை).
+    en:
+      kooruvathu: null
+      enniyathu: 3
+    ethu: 617 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: ஒருதலை அன்மை
+  kanini:
+    kind: rule
+    class: parisil_kizhamai
+    count: 3
+  links: []
+  urai:
+    iyaipu:
+    - porul.617
+    - porul.619
+    text: 'இயைபு (649): 617 பொது; 619 ஊர்/பெயர். ''பிறவும்'' — எவை என நூல் பெயரிடவில்லை — ஒருதலை அன்மை.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக; 'பிறவும்' ஒருதலை அன்மை
+  utthi:
+  - peyar: வந்தது கொண்டு வாராதது உணர்த்தல்
+    saanru: பிறவும்
+  - peyar: ஒருதலை அன்மை
+    saanru: உரித்தன்றே
+- id: porul.619
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 619
+  moolam: |-
+    ஊரும் பெயரும் உடைத்தொழிற் கருவியும்
+    யாரும் சார்த்தி அவை அவை பெறுமே
+  kaandigai:
+    porul: ஊர், பெயர், தொழிற்கருவி — யாவரும் சார்த்தி அவ்வவை பெறுவர்.
+    en:
+      kooruvathu: null
+      enniyathu: 3
+    ethu: 618 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: uur_peyar_karuvi
+    count: 3
+  links: []
+  urai:
+    iyaipu:
+    - porul.618
+    - porul.620
+    text: 'இயைபு (649): 618 பரிசில்; 620 தலைமைக் குணம்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.620
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 620
+  moolam: |-
+    தலைமைக் குணச் சொலும் தம்தமக்கு உரிய
+    நிலைமைக்கு ஏற்ப நிகழ்த்துப என்ப
+  kaandigai:
+    porul: தலைமைக் குணச்சொல்லும் தம்தம் நிலைமைக்கு ஏற்பக் கூறுவர்.
+    ethu: 619 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: thalaimai_kunasol
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.619
+    - porul.621
+    text: 'இயைபு (649): 619 ஊர்/பெயர்; 621 இடை இரு வகையோர்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: என்ப
+  - peyar: தான் குறியிடுதல்
+    saanru: என்ப
+- id: porul.621
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 621
+  moolam: |-
+    இடை இரு வகையோர் அல்லது நாடின்
+    படை வகை பெறாஅர் என்மனார் புலவர்
+  kaandigai:
+    porul: '"இடை இரு வகையோர்" அல்லாதோர் படைவகை பெறார். "இடை இரு வகையோர்" யார் என்பது இந்நூற்பாவில் பெயரிடப்படவில்லை. ஆனால் மரபியல் நால்வரை இம்முறையில் கூறுகிறது: அந்தணர் (615), அரசர் (616), வைசிகன் (622), வேளாண் மாந்தர் (625). அம்முறையில் இடையிலுள்ள இருவர் அரசரும் வைசிகரும்; படை அரசர்க்கு உரியது என்பது 616-இல் நேரடியாக உள்ளது; வேளாளர் "வேந்து விடு தொழிலின்" படை பெறுவது (626) விலக்கு; அந்தணர்க்கு "அரசு வரைவு இன்றே" (627) என்பதும் தனி விலக்கு (இம்முறையை நூல் பெயரிட்டுக் கூறவில்லை — ஒருதலை அன்மை).'
+    en:
+      kooruvathu: 2
+      enniyathu: 2
+    ethu: 620 என்றது; இடை இரு வகையோர் அல்லது நாடின் படை வகை பெறார் — இருவர் யார் என நூற்பா பெயரிடவில்லை.
+  nilai: ஒருதலை அன்மை
+  kanini:
+    kind: rule
+    class: padai_vagai
+    count: 2
+  links: []
+  urai:
+    iyaipu:
+    - porul.622
+    - porul.625
+    - porul.620
+    text: 'இயைபு (649): 620 தலைமை; 622 வைசிகன்; 625 வேளாளர். எண்: இரண்டு (நூற்பா ''இரு வகையோர்''); அவர் 622 வைசிகன், 625 வேளாண் மாந்தர் எனக் கொள்வது அடுத்த நூற்பாக்களின் வரிசையால் — ஒருதலை அன்மை.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக; இரு வகையோர் யார் என்பது ஒருதலை அன்மை
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: இரு வகையோர்
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: என்மனார்
+- id: porul.622
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 622
+  moolam: |-
+    வைசிகன் பெறுமே வாணிக வாழ்க்கை
+  kaandigai:
+    porul: வைசிகன் வாணிக வாழ்க்கை பெறுவான் என்கிறது நூல்.
+    ethu: 621 இரு வகையோர் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: vaisikan_vaniham
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.621
+    - porul.623
+    text: 'இயைபு (649): 621 இரு வகையோர்; 623 உணவு.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.623
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 623
+  moolam: |-
+    மெய் தெரி வகையின் எண் வகை உணவின்
+    செய்தியும் வரையார் அப் பாலான
+  kaandigai:
+    porul: மெய் தெரி வகையின் எண்வகை உணவின் செய்தியும் அப்பாலுக்கு விலக்கார். "எண்வகை உணவு" எவை என்பது நூலில் பட்டியலிடப்படவில்லை.
+    en:
+      kooruvathu: 8
+      enniyathu: null
+    ethu: 622 வைசிகன் என்றது; மெய்தெரி வகையின் எண்வகை உணவின் செய்தி — அப்பாலான (வைசிகனுக்கும்).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: en_vagai_unavu
+    count: 8
+  links: []
+  urai:
+    iyaipu:
+    - porul.622
+    - porul.624
+    text: 'இயைபு (649): 622 வைசிகன்; 624 கண்ணி/தார். எண்: 8 (எண்வகை உணவு).'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக; 'வரையார்' — இசைவு (வரையறை இன்மை)
+  utthi:
+  - peyar: ஒருதலை அன்மை
+    saanru: வரையார்
+- id: porul.624
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 624
+  moolam: |-
+    கண்ணியும் தாரும் எண்ணினர் ஆண்டே
+  kaandigai:
+    porul: கண்ணியும் தாரும் அங்கு எண்ணினர்.
+    en:
+      kooruvathu: null
+      enniyathu: 2
+    ethu: 623 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: kanni_tharu
+    count: 2
+  links: []
+  urai:
+    iyaipu:
+    - porul.622
+    - porul.623
+    - porul.625
+    text: 'இயைபு (649): 623 உணவு; 625 வேளாளர்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.625
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 625
+  moolam: |-
+    வேளாண் மாந்தர்க்கு உழுதூண் அல்லது
+    இல் என மொழிப பிற வகை நிகழ்ச்சி
+  kaandigai:
+    porul: வேளாண் மாந்தர்க்கு உழுதுண்டல் அல்லது பிறவகை நிகழ்ச்சி இல்லை என்கிறது நூல்.
+    ethu: 624 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: velalar_uzhavu
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.621
+    - porul.624
+    - porul.626
+    text: 'இயைபு (649): 621 இரு வகையோர்; 624 கண்ணி; 626 வேந்து தொழில்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: மொழிப
+  - peyar: தான் குறியிடுதல்
+    saanru: என மொழிப
+- id: porul.626
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 626
+  moolam: |-
+    வேந்து விடு தொழிலின் படையும் கண்ணியும்
+    வாய்ந்தனர் என்ப அவர் பெறும் பொருளே
+  kaandigai:
+    porul: வேந்து ஏவிய தொழிலால் படையும் கண்ணியும் அவர் பெறும் பொருள்.
+    en:
+      kooruvathu: null
+      enniyathu: 2
+    ethu: 625 வேளாளர் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: velalar_padai_kanni
+    count: 2
+  links: []
+  urai:
+    iyaipu:
+    - porul.616
+    - porul.625
+    - porul.627
+    text: 'இயைபு (649): 616 அரசர்; 625 வேளாளர்; 627 அந்தணர்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: என்ப
+  - peyar: தான் குறியிடுதல்
+    saanru: என்ப
+- id: porul.627
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 627
+  moolam: |-
+    அந்தணாளர்க்கு அரசு வரைவு இன்றே
+  kaandigai:
+    porul: அந்தணர்க்கு அரசு விலக்கில்லை.
+    ethu: 626 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: exception
+    class: anthanar_arasu
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.615
+    - porul.626
+    text: 'இயைபு (649): 615 அந்தணர்; 626 வேந்து தொழில்.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக; 'வரைவு இன்றே' — இசைவு (வரையறை இன்மை)
+  utthi:
+  - peyar: ஒருதலை அன்மை
+    saanru: வரைவு இன்றே
+- id: porul.628
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 628
+  moolam: |-
+    வில்லும் வேலும் கழலும் கண்ணியும்
+    தாரும் மாலையும் தேரும் மாவும்
+    மன் பெறு மரபின் ஏனோர்க்கும் உரிய
+  kaandigai:
+    porul: வில், வேல், கழல், கண்ணி, தார், மாலை, தேர், மா — மன்பெறு மரபின் ஏனோர்க்கும் உரியன.
+    en:
+      kooruvathu: null
+      enniyathu: 8
+    ethu: 627 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: veerar_uriyana
+    count: 8
+  links: []
+  urai:
+    iyaipu:
+    - porul.616
+    - porul.627
+    - porul.629
+    text: 'இயைபு (649): 616 அரசர்; 627 அந்தணர்; 629 இழிந்தோர். எண்: 8 (வில், வேல், கழல், கண்ணி, தார், மாலை, தேர், மா).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.629
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 629
+  moolam: |-
+    அன்னர் ஆயினும் இழிந்தோர்க்கு இல்லை
+  kaandigai:
+    porul: அன்னராயினும் இழிந்தோர்க்கு இல்லை என்கிறது நூல்.
+    ethu: 628 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: exception
+    class: izhinthorkku_ila
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.628
+    - porul.630
+    text: 'இயைபு (649): 628 ஏனோர்; 630 புல்.'
+    vagai: விலக்கு
+    vilakkukkuriyathu:
+    - porul.628
+    thunivu: நூலில் நேரடியாக
+- id: porul.630
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 630
+  moolam: |-
+    புறக் காழனவே புல் என மொழிப
+  kaandigai:
+    porul: புறம் வைரமுடையன புல்.
+    ethu: 629 இழிந்தோர் என்றது; புறக்காழனவே (வெளிக்காழ் உடையன) — புல் என மொழி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: definition
+    class: pul_ilakkanam
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.629
+    - porul.631
+    text: 'இயைபு (649): 629 இழிந்தோர்; 631 மரம்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: மொழிப
+  - peyar: தான் குறியிடுதல்
+    saanru: என மொழிப
+- id: porul.631
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 631
+  moolam: |-
+    அகக் காழனவே மரம் என மொழிப
+  kaandigai:
+    porul: அகம் வைரமுடையன மரம்.
+    ethu: 630 புல் என்றது; அகக்காழனவே (உட்காழ் உடையன) — மரம் என மொழி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: definition
+    class: maram_ilakkanam
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.630
+    - porul.632
+    text: 'இயைபு (649): 630 புல்; 632 புல்லின் உறுப்புகள்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: மொழிப
+  - peyar: தான் குறியிடுதல்
+    saanru: என மொழிப
+- id: porul.632
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 632
+  moolam: |-
+    தோடே மடலே ஓலை என்றா
+    ஏடே இதழே பாளை என்றா
+    ஈர்க்கே குலை என நேர்ந்தன பிறவும்
+    புல்லொடு வரும் எனச் சொல்லினர் புலவர்
+  kaandigai:
+    porul: தோடு, மடல், ஓலை, ஏடு, இதழ், பாளை, ஈர்க்கு, குலை முதலியன புல்லொடு வரும் சொற்கள்.
+    en:
+      kooruvathu: null
+      enniyathu: 8
+    ethu: 631 மரம் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: pullin_uruppu
+    count: 8
+  links: []
+  urai:
+    iyaipu:
+    - porul.630
+    - porul.631
+    - porul.633
+    text: 'இயைபு (649): 630 புல்; 631 மரம்; 633 மரத்தின் உறுப்புகள்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: வந்தது கொண்டு வாராதது உணர்த்தல்
+    saanru: பிறவும்
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: புலவர்
+- id: porul.633
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 633
+  moolam: |-
+    இலையே தளிரே முறியே தோடே
+    சினையே குழையே பூவே அரும்பே
+    நனை உள்ளுறுத்த அனையவை எல்லாம்
+    மரனொடு வரூஉம் கிளவி என்ப
+  kaandigai:
+    porul: இலை, தளிர், முறி, தோடு, சினை, குழை, பூ, அரும்பு, நனை முதலியன மரத்தொடு வரும் சொற்கள்.
+    en:
+      kooruvathu: null
+      enniyathu: 9
+    ethu: 632 புல் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: marathin_uruppu
+    count: 9
+  links: []
+  urai:
+    iyaipu:
+    - porul.631
+    - porul.632
+    - porul.634
+    text: 'இயைபு (649): 631 மரம்; 632 புல்; 634 காய்/பழம்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: என்ப
+  - peyar: தான் குறியிடுதல்
+    saanru: என்ப
+- id: porul.634
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 634
+  moolam: |-
+    காயே பழமே தோலே செதிளே
+    வீழொடு என்று ஆங்கு அவையும் அன்ன
+  kaandigai:
+    porul: காய், பழம், தோல், செதிள், வீழ் ஆகியவையும் அவ்வாறே.
+    en:
+      kooruvathu: null
+      enniyathu: 5
+    ethu: 633 மரம் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: marathin_vilai
+    count: 5
+  links: []
+  urai:
+    iyaipu:
+    - porul.633
+    - porul.635
+    text: 'இயைபு (649): 633 மரம்; 635 ஐம்பூதம். எண்: 5 (காய், பழம், தோல், செதில், வீழ்).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.635
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 635
+  moolam: |-
+    நிலம் தீ நீர் வளி விசும்பொடு ஐந்தும்
+    கலந்த மயக்கம் உலகம் ஆதலின்
+    இரு திணை ஐம் பால் இயல் நெறி வழாஅமைத்
+    திரிவு இல் சொல்லொடு தழாஅல் வேண்டும்
+  kaandigai:
+    porul: 'நிலம், தீ, நீர், வளி, விசும்பு — ஐந்தும் கலந்த மயக்கமே உலகம்; ஆகவே இருதிணை ஐம்பால் இயல்நெறி வழுவாமல் திரிவில்லாச் சொல்லால் தழுவ வேண்டும். இருதிணை ஐம்பால்: சொல். 1–4.'
+    en:
+      kooruvathu: 5
+      enniyathu: 5
+    ethu: 634 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: ulagam_aimpudal
+    count: 5
+  links: []
+  urai:
+    iyaipu:
+    - porul.634
+    - porul.636
+    text: 'இயைபு (649): 634 காய்/பழம்; 636 மரபுநிலை. எண்: 5 (நிலம், தீ, நீர், வளி, விசும்பு).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: ஐந்தும்
+  - peyar: ஆணை கூறல்
+    saanru: வேண்டும்
+- id: porul.636
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 636
+  moolam: |-
+    மரபுநிலை திரிதல் செய்யுட்கு இல்லை
+    மரபு வழிப் பட்ட சொல்லினானே
+  kaandigai:
+    porul: மரபு வழிப்பட்ட சொல்லால் (வருவதால்) செய்யுளுக்கு மரபுநிலை திரிதல் இல்லை.
+    ethu: 635 ஐம்பூதம் என்றது; மரபுநிலை திரிதல் செய்யுட்கு இல்லை — மரபுவழிப்பட்ட சொல்லினால்.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: marabu_thiriyamai
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.635
+    - porul.637
+    text: 'இயைபு (649): 635 ஐம்பூதம்; 637 மரபுநிலை திரியின்.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.637
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 637
+  moolam: |-
+    மரபுநிலை திரியின் பிறிது பிறிது ஆகும்
+  kaandigai:
+    porul: மரபுநிலை திரிந்தால் பொருள் பிறிது பிறிதாகும்.
+    ethu: 636 மரபுநிலை என்றது; அது திரியின் பிறிது பிறிது ஆகும் — பொருள் மாறும்.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: marabu_thiri_porul
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.636
+    - porul.638
+    text: 'இயைபு (649): 636 மரபுநிலை; 638 வழக்கு.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.638
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 638
+  moolam: |-
+    வழக்கு எனப்படுவது உயர்ந்தோர் மேற்றே
+    நிகழ்ச்சி அவர் கட்டு ஆகலான
+  kaandigai:
+    porul: வழக்கு என்பது உயர்ந்தோர் மேலது — நிகழ்ச்சி அவர் கட்டுப்பாட்டில் ஆதலால்.
+    ethu: நூல் பல இடங்களில் வழக்கைச் சான்றாக்குகிறது — "வழங்கியல் மருங்கின்" (எழு. 483); இயற்சொல் "செந்தமிழ் நிலத்து வழக்கொடு சிவணி" (சொல். 398). ஆகவே எவருடைய வழக்கு என்பதை இங்கே வரையறுக்கிறது.
+    eduthukkaattu:
+    - text: வழங்கியல் மருங்கின்
+      from: ezhu.483
+    - text: செந்தமிழ் நிலத்து வழக்கொடு சிவணி
+      from: sol.398
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: definition
+    class: vazhakku_ilakkanam
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - ezhu.171
+    - ezhu.483
+    - sol.17
+    - sol.452
+    text: '"வழக்கு எனப்படுவது உயர்ந்தோர் மேற்றே" — காரணம் "நிகழ்ச்சி அவர் கட்டு ஆகலான". நூல் பல இடங்களில் வழக்கைச் சான்றாக்குகிறது (எழு. 171, 483; சொல். 17, 452); எந்த வழக்கு என்பதற்கு இதுவே எல்லை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தான் குறியிடுதல்
+    saanru: எனப்படுவது
+- id: porul.639
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 639
+  moolam: |-
+    மரபுநிலை திரியா மாட்சிய ஆகி
+    உரை படு நூல்தாம் இரு வகை இயல
+    முதலும் வழியும் என நுதலிய நெறியின
+  kaandigai:
+    porul: 'மரபுநிலை திரியாத மாட்சியுடைய உரைபடு நூல் இருவகை: முதல், வழி.'
+    en:
+      kooruvathu: 2
+      enniyathu: 2
+    ethu: 638 வழக்கு என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: nool_vagai
+    count: 2
+  links: []
+  urai:
+    iyaipu:
+    - porul.638
+    - porul.640
+    - porul.641
+    text: 'இயைபு (649): 638 வழக்கு; 640 முதல் நூல்; 641 வழி நூல். எண்: 2 (முதல், வழி).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: இரு வகை
+- id: porul.640
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 640
+  moolam: |-
+    வினையின் நீங்கி விளங்கிய அறிவின்
+    முனைவன் கண்டது முதல் நூல் ஆகும்
+  kaandigai:
+    porul: வினையின் நீங்கி விளங்கிய அறிவுடைய முனைவன் கண்டது முதல்நூல்.
+    ethu: நூல் இரு வகை — "முதலும் வழியும் என நுதலிய நெறியின" (பொருள். 639); முதலாவதன் இலக்கணம் இது. அதனால் "சிதைவு இல் என்ப முதல்வன் கண்ணே" (பொருள். 652).
+    eduthukkaattu:
+    - text: முதலும் வழியும் என நுதலிய நெறியின
+      from: porul.639
+    - text: சிதைவு இல் என்ப முதல்வன் கண்ணே
+      from: porul.652
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: definition
+    class: muthal_nool
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.639
+    - porul.641
+    text: 'இயைபு (649): பொருள். 639, 641 · முதல் நூல்: "வினையின் நீங்கி விளங்கிய அறிவின் / முனைவன் கண்டது". 652 "சிதைவு இல் என்ப முதல்வன் கண்ணே" இதன் இணை — முதல் நூலில் சிதைவு இல்லை; வழிநூலில் சிதையலாம் (653).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.641
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 641
+  moolam: |-
+    வழி எனப்படுவது அதன் வழித்து ஆகும்
+  kaandigai:
+    porul: அதன் வழியில் வருவது வழிநூல்.
+    ethu: முதல்நூலின் இலக்கணம் (பொருள். 640) கூறிய பின் வழிநூல். அதன் வழிகள் நான்கு — "தொகுத்தல் விரித்தல் தொகைவிரி மொழிபெயர்த்து" (பொருள். 643). வழிநூலும் சிதையலாம் — "முதல் வழி ஆயினும் யாப்பினுள் சிதையும்" (பொருள். 653).
+    eduthukkaattu:
+    - text: தொகுத்தல் விரித்தல் தொகைவிரி மொழிபெயர்த்து
+      from: porul.643
+    - text: முதல் வழி ஆயினும் யாப்பினுள் சிதையும்
+      from: porul.653
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: definition
+    class: vazhi_nool
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.640
+    - porul.642
+    - porul.643
+    text: 'இயைபு (649): பொருள். 640, 642, 643 · வழிநூல் "அதன் வழித்து" — முதல் நூலின் வழியது. 642 நால் வகை; 643 தொகுத்தல், விரித்தல், தொகைவிரி, மொழிபெயர்த்தல். இவ்வாவணம் செய்த மாற்றங்கள் (புதிய நூல், சுருக்கம், மென்பொருள்) இந்நான்கனுள் அடங்குவன (ஆய்வு 22).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தான் குறியிடுதல்
+    saanru: எனப்படுவது
+- id: porul.642
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 642
+  moolam: |-
+    வழியின் நெறியே நால் வகைத்து ஆகும்
+  kaandigai:
+    porul: வழிநூலின் நெறி நான்கு வகை.
+    en:
+      kooruvathu: 4
+      enniyathu: 4
+    ethu: 641 வழி என்றது; அது 4 வகை — தொகுத்தல், விரித்தல், தொகைவிரி, மொழிபெயர்த்து (அதர்ப்பட யாத்தல்).
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: vazhi_nool_vagai
+    count: 4
+  links: []
+  urai:
+    iyaipu:
+    - porul.641
+    - porul.643
+    text: 'இயைபு (649): 641 வழி; 643 4-ஐ விரிக்கிறது. எண்: 4 (நூற்பா ''நால் வகைத்து'').'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: நால் வகைத்து
+- id: porul.643
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 643
+  moolam: |-
+    தொகுத்தல் விரித்தல் தொகைவிரி மொழிபெயர்த்து
+    அதர்ப்பட யாத்தலொடு அனை மரபினவே
+  kaandigai:
+    porul: தொகுத்தல், விரித்தல், தொகைவிரி, மொழிபெயர்ப்பு — அதர்ப்பட யாத்தலோடு. செந்தமிழ் மரபு இந்நூற்பாவின்படி "வழிநூல் (தொகுத்தல்)" எனத் தன்னைக் குறிக்கிறது.
+    en:
+      kooruvathu: 4
+      enniyathu: 5
+    ethu: 642 4 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: ஒருதலை அன்மை
+  kanini:
+    kind: classification
+    class: vazhi_nool_vagai
+    count: 5
+  links: []
+  urai:
+    iyaipu:
+    - porul.642
+    - porul.644
+    text: 'இயைபு (649): 642 வழி 4; 644 நூல் இயல்பு. எண்: நான்கு (642 ''நால் வகைத்து'') = நான்கு (தொகுத்தல், விரித்தல், தொகைவிரி, மொழிபெயர்த்து). ''அனை மரபினவே'' — மேலும் உள — ஒருதலை அன்மை.'
+    vagai: விதி
+    thunivu: விதி நூலில் நேரடியாக; 'அனை மரபினவே' ஒருதலை அன்மை
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: மொழிபெயர்த்து
+- id: porul.644
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 644
+  moolam: |-
+    ஒத்த சூத்திரம் உரைப்பின் காண்டிகை
+    மெய்ப்படக் கிளந்த வகையது ஆகி
+    ஈர் ஐங் குற்றமும் இன்றி நேரிதின்
+    முப்பத்திரு வகை உத்தியொடு புணரின்
+    நூல் என மொழிப நுணங்கு மொழிப் புலவர்
+  kaandigai:
+    porul: ஒத்த சூத்திரத்தைக் காண்டிகையால் மெய்ப்படக் கூறி, பத்துக் குற்றமும் (ஈர் ஐங்குற்றம்) இன்றி, முப்பத்திருவகை உத்தியொடு புணர்ந்தால் அது நூல். 10, 32 என்ற இரு எண்ணும் 654, 656-இன் பட்டியல்களோடு ஒத்தன (எண்ணிச் சரிபார்த்தது).
+    en:
+      kooruvathu: 32
+      enniyathu: 32
+    ethu: 'நூலின் கூறுகள் நூலிலேயே விரிக்கப்படுகின்றன: காண்டிகை (பொருள். 647, 648), குற்றம் பத்து (பொருள். 654), உத்தி முப்பத்திரண்டு (பொருள். 656). "நூல் எனப்படுவது" என்ற வரையறையும் உண்டு — "முதலும் முடிவும் மாறுகோள் இன்றி" (பொருள். 468).'
+    eduthukkaattu:
+    - text: நூல் எனப்படுவது
+      from: porul.468
+    - text: முதலும் முடிவும் மாறுகோள் இன்றி
+      from: porul.468
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: nool_ilakkanam
+    count: 32
+  links: []
+  urai:
+    iyaipu:
+    - porul.647
+    - porul.649
+    - porul.654
+    - porul.656
+    text: 'இயைபு (649): பொருள். 647, 649, 654, 656 · நூலின் இலக்கணம் — நான்கு கூறு: ஒத்த சூத்திரம்; காண்டிகை "மெய்ப்படக் கிளந்த வகையது"; "ஈர் ஐங் குற்றமும் இன்றி" (654-இன் பத்து); "முப்பத்திரு வகை உத்தியொடு" (656). நூலைப் பரிசோதிக்கும் அளவுகோல் இந்நூலே தருகிறது.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: ஈர் ஐங்
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: மொழிப
+  - peyar: கூறிற்று என்றல்
+    saanru: கிளந்த
+  - peyar: தான் குறியிடுதல்
+    saanru: என மொழிப
+- id: porul.645
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 645
+  moolam: |-
+    உரை எடுத்து அதன் முன் யாப்பினும் சூத்திரம்
+    புரை தப உடன்படக் காண்டிகை புணர்ப்பினும்
+    விதித்தலும் விலக்கலும் என இரு வகையொடு
+    புரை தப நாடிப் புணர்க்கவும் படுமே
+  kaandigai:
+    porul: உரையை எடுத்து அதன் முன் சூத்திரம் யாத்தும், குற்றமற உடன்படக் காண்டிகை புணர்த்தும், விதித்தல் விலக்கல் என இருவகையொடு ஆராய்ந்து புணர்க்கவும் படும்.
+    en:
+      kooruvathu: 2
+      enniyathu: 2
+    ethu: 644 32 உத்தி என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: urai_vagai
+    count: 2
+  links: []
+  urai:
+    iyaipu:
+    - porul.644
+    - porul.647
+    - porul.648
+    - porul.649
+    text: 'இயைபு (649): 644 32 உத்தி; 647 காண்டிகை வரையறை; 648 காண்டிகை மேலும்; 649 உரை வரையறை. எண்: 2 (விதித்தல், விலக்கல்).'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தொகுத்துக் கூறல்
+    saanru: இரு வகையொடு
+- id: porul.646
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 646
+  moolam: |-
+    மேற் கிளந்தெடுத்த யாப்பினுள் பொருளொடு
+    சில் வகை எழுத்தின் செய்யுட்கு ஆகி
+    சொல்லும் காலை உரை அகத்து அடக்கி
+    நுண்மையொடு புணர்ந்த ஒண்மைத்து ஆகி
+    துளக்கல் ஆகாத் துணைமை எய்தி
+    அளக்கல் ஆகா அரும் பொருட்டு ஆகி
+    பல வகையானும் பயன் தெரிபு உடையது
+    சூத்திரத்து இயல்பு என யாத்தனர் புலவர்
+  kaandigai:
+    porul: 'சூத்திர இயல்பு: சில எழுத்தால் பொருளோடு செய்யுளாகி, உரையை அகத்து அடக்கி, நுண்மையொடு ஒண்மையுடையதாய், அசைக்க முடியாத துணையாய், அளக்க முடியாத அரும்பொருளதாய், பலவகையாலும் பயன் தெரிவது.'
+    en:
+      kooruvathu: null
+      enniyathu: 6
+    ethu: 645 என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: definition
+    class: suthiram_ilakkanam
+    count: 6
+  links: []
+  urai:
+    iyaipu:
+    - porul.645
+    - porul.647
+    - porul.648
+    text: 'இயைபு (649): 645 காண்டிகை விதி; 647 காண்டிகை; 648 காண்டிகை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: புலவர்
+  - peyar: கூறிற்று என்றல்
+    saanru: கிளந்தெடுத்த
+- id: porul.647
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 647
+  moolam: |-
+    பழிப்பு இல் சூத்திரம் பட்ட பண்பின்
+    கரப்பு இன்றி முடிவது காண்டிகை ஆகும்
+  kaandigai:
+    porul: குற்றமற்ற சூத்திரத்தின் பண்பால் மறைவின்றி முடிவது காண்டிகை. இந்த ஆவணத்தில் ஒவ்வொரு சூத்திரத்தின் கீழும் உள்ள "காண்டிகை" இவ்வரையறையைப் பின்பற்றுகிறது.
+    ethu: 'உரை வகைகளுள் காண்டிகை சூத்திரத்தோடு நேரே இயைவது — "சூத்திரம் / புரை தப உடன்படக் காண்டிகை புணர்ப்பினும்" (பொருள். 645). அதன் நெறி அடுத்த சூத்திரத்தில்: "ஏது நடையினும் எடுத்துக்காட்டினும்" (பொருள். 648).'
+    eduthukkaattu:
+    - text: சூத்திரம் / புரை தப உடன்படக் காண்டிகை புணர்ப்பினும்
+      from: porul.645
+    - text: ஏது நடையினும் எடுத்துக்காட்டினும்
+      from: porul.648
+  nilai: ஒருதலை அன்மை
+  kanini:
+    kind: definition
+    class: kandikai_ilakkanam
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.644
+    - porul.648
+    text: 'இயைபு (649): பொருள். 644, 648 · காண்டிகை: "பழிப்பு இல் சூத்திரம் பட்ட பண்பின் / கரப்பு இன்றி முடிவது". 648 அதன் நெறி: விட்டு அகலாது, விரிவொடு, "ஏது நடையினும் எடுத்துக்காட்டினும்". ஐயம்: "உம்" — இரண்டும் வேண்டுமா, இரண்டில் ஒன்றா — ஒருதலை அன்மை; இவ்வாவணக் காண்டிகைகள் நூலில் இல்லாத எடுத்துக்காட்டைச் சேர்க்கவில்லை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக; உரை சுட்டிய ஐயம் ஒருதலை அன்மை
+- id: porul.648
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 648
+  moolam: |-
+    விட்டு அகல்வு இன்றி விரிவொடு பொருந்தி
+    சுட்டிய சூத்திரம் முடித்தற் பொருட்டா
+    ஏது நடையினும் எடுத்துக்காட்டினும்
+    மேவாங்கு அமைந்த மெய்ந் நெறித்து அதுவே
+  kaandigai:
+    porul: 'அது விட்டகலாமல் விரிவொடு பொருந்தி, சுட்டிய சூத்திரத்தை முடிக்க, ஏது நடையாலும் எடுத்துக்காட்டாலும் அமைந்த மெய்ந்நெறியது. குறிப்பு: இந்த ஆவணத்தின் காண்டிகை பெரும்பாலும் ஏதுவும் நூலுள் ஒப்பும் தருகிறது; புறநூல் எடுத்துக்காட்டுகளைத் தரவில்லை (பிறன் கோள் கலவாமைக்காக). எடுத்துக்காட்டு சேர்த்தல் அடுத்த "உரை" நிலையின் பணி.'
+    en:
+      kooruvathu: 2
+      enniyathu: 2
+    ethu: 647 என்றது; காண்டிகை — விட்டகல்வின்றி விரிவொடு பொருந்தி, ஏது நடையினும் எடுத்துக்காட்டினும் மெய்ந்நெறித்து.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: definition
+    class: kandikai_amaippu
+    count: 2
+  links: []
+  urai:
+    iyaipu:
+    - porul.645
+    - porul.647
+    - porul.649
+    text: 'இயைபு (649): 647 காண்டிகை முதல் வரையறை; 649 உரை வரையறை. எடுத்துக்காட்டு நூல் தரவில்லை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.649
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 649
+  moolam: |-
+    சூத்திரத்துட் பொருள் அன்றியும் யாப்புற
+    இன்றியமையாது இயைபவை எல்லாம்
+    ஒன்ற உரைப்பது உரை எனப்படுமே
+  kaandigai:
+    porul: சூத்திரத்துப் பொருளல்லாமலும் இன்றியமையாது இயைபவை எல்லாம் பொருந்த உரைப்பது உரை.
+    ethu: காண்டிகை சூத்திரப் பொருளை முடிக்கிறது (பொருள். 647); உரை அதற்கு மேல் இயைபவற்றையும் சேர்க்கிறது. உரையின் நெறி அடுத்த சூத்திரத்தில் — "மறுதலைக் கடாஅ மாற்றமும் உடைத்தாய்" (பொருள். 650); நூல் "உள் நின்று அகன்ற உரையொடு புணர்ந்து" (பொருள். 468).
+    eduthukkaattu:
+    - text: மறுதலைக் கடாஅ மாற்றமும் உடைத்தாய்
+      from: porul.650
+    - text: உள் நின்று அகன்ற உரையொடு புணர்ந்து
+      from: porul.468
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: definition
+    class: urai_ilakkanam
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.645
+    - porul.648
+    - porul.650
+    text: 'இயைபு (649): பொருள். 645, 648, 650 · உரை: "சூத்திரத்துட் பொருள் அன்றியும் யாப்புற / இன்றியமையாது இயைபவை எல்லாம் / ஒன்ற உரைப்பது". காண்டிகை சூத்திரம் சொன்னதை முடிக்கும் (647); உரை, சொல்லப்படாத ஆனால் இன்றியமையாத இயைபைச் சேர்க்கும். இவ்வாவண உரைகளின் "இயைபு (649)" இதனின்று.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: தான் குறியிடுதல்
+    saanru: எனப்படுமே
+- id: porul.650
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 650
+  moolam: |-
+    மறுதலைக் கடாஅ மாற்றமும் உடைத்தாய்
+    தன் நூலானும் முடிந்த நூலானும்
+    ஐயமும் மருட்கையும் செவ்விதின் நீக்கி
+    தெற்றென ஒரு பொருள் ஒற்றுமை கொளீஇ
+    துணிவொடு நிற்றல் என்மனார் புலவர்
+  kaandigai:
+    porul: (உரை) மறுதலைக் கடாவும் மாற்றமும் உடையதாய், தன் நூலாலும் முடிந்த நூலாலும் ஐயமும் மருட்கையும் நீக்கி, தெளிவாக ஒரு பொருள் ஒற்றுமை கொண்டு துணிவோடு நிற்றல். இதுவே செந்தமிழ் மரபின் "கேள்வி நெறி" அடிப்படை.
+    en:
+      kooruvathu: 3
+      enniyathu: 3
+    ethu: உரையின் இலக்கணம் (பொருள். 649) கூறிய பின் அது எவ்வாறு அமைய வேண்டும் என்பது; ஐயம் நீக்கலின் கருவிகள் உத்திகள் — "மறுதலை சிதைத்துத் தன் துணிபு உரைத்தல்" (பொருள். 656). இவ்வழிநூலின் ஒவ்வொரு உரையும் இதனால் "துணிவு" கொண்டு முடிகிறது.
+    eduthukkaattu:
+    - text: மறுதலை சிதைத்துத் தன் துணிபு உரைத்தல்
+      from: porul.656
+  nilai: ஒருதலை அன்மை
+  kanini:
+    kind: definition
+    class: urai_amaippu
+    count: 3
+  links: []
+  urai:
+    iyaipu:
+    - porul.649
+    - porul.656
+    text: 'இயைபு (649): பொருள். 649, 656 · உரையின் நெறி: மறுதலைக் கடாஅ, மாற்றம்; "தன் நூலானும் முடிந்த நூலானும்" ஐயமும் மருட்கையும் நீக்கல்; "தெற்றென ஒரு பொருள் ஒற்றுமை கொளீஇ / துணிவொடு நிற்றல்". ஐயம்: "முடிந்த நூல்" — பிற நூலா, இந்நூலின் முடிந்த பகுதியா — ஒருதலை அன்மை; பயனர் ஆணையால் இவ்வாவணம் தன் நூலை மட்டும் சான்றாகக் கொள்கிறது.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக; உரை சுட்டிய ஐயம் ஒருதலை அன்மை
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: என்மனார்
+- id: porul.651
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 651
+  moolam: |-
+    சொல்லப்பட்டன எல்லா மாண்பும்
+    மறுதலை ஆயினும் மற்று அது சிதைவே
+  kaandigai:
+    porul: சொல்லப்பட்ட எல்லா மாண்பும் மறுதலையானால் அது சிதைவு.
+    ethu: 650 மறுதலை என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: definition
+    class: sithaivu_ilakkanam
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.650
+    - porul.652
+    - porul.653
+    text: 'இயைபு (649): 650 மறுதலை; 652 சிதைவு இல்; 653 யாப்பு சிதைவு.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.652
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 652
+  moolam: |-
+    சிதைவு இல் என்ப முதல்வன் கண்ணே
+  kaandigai:
+    porul: முதல்வனிடத்துச் சிதைவு இல்லை என்பர்.
+    ethu: முதல்நூல் "வினையின் நீங்கி விளங்கிய அறிவின் / முனைவன் கண்டது" (பொருள். 640); ஆகவே அதில் சிதைவு இல்லை. வழிநூலுக்கு அது இல்லை — "முதல் வழி ஆயினும் யாப்பினுள் சிதையும்" (பொருள். 653) — ஆகவே இவ்வழிநூல் மூலத்தை மாற்றவில்லை.
+    eduthukkaattu:
+    - text: வினையின் நீங்கி விளங்கிய அறிவின் / முனைவன் கண்டது
+      from: porul.640
+    - text: முதல் வழி ஆயினும் யாப்பினுள் சிதையும்
+      from: porul.653
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: muthalvan_sithaivu
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.640
+    - porul.653
+    text: 'இயைபு (649): பொருள். 640, 653 · "சிதைவு இல் என்ப முதல்வன் கண்ணே" — முதல்வன் (640) நூலில் சிதைவு இல்லை; 653 "முதல் வழி ஆயினும் யாப்பினுள் சிதையும் / வல்லோன் புணரா வாரம் போன்றே". ஆகவே மாறுபாடு தோன்றும் இடம் பாட ஐயம் / வாசிப்பு ஐயம்; முதல்வன் மேல் பிழை ஏற்றப்படாது — இவ்வாவணத்தின் நிலையான நெறி.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: என்ப
+  - peyar: தான் குறியிடுதல்
+    saanru: என்ப
+- id: porul.653
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 653
+  moolam: |-
+    முதல் வழி ஆயினும் யாப்பினுள் சிதையும்
+    வல்லோன் புணரா வாரம் போன்றே
+  kaandigai:
+    porul: முதல்நூலாயினும் வழிநூலாயினும் யாப்பினுள் சிதையும் — வல்லோன் புணராத வாரம் போல.
+    ethu: 652 முதல்வன் என்றது; இது அதன் தொடர்ச்சி.
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: rule
+    class: nool_sithaivu
+    count: null
+  links: []
+  urai:
+    iyaipu:
+    - porul.287
+    - porul.651
+    - porul.652
+    text: 'இயைபு (649): 652 முதல்வன்; 651 சிதைவு; 287 ''போல'' உவம உருபு. எடுத்துக்காட்டு நூல் தரவில்லை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+- id: porul.654
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 654
+  moolam: |-
+    சிதைவு எனப்படுபவை வசை அற நாடின்
+    கூறியது கூறல் மாறு கொளக் கூறல்
+    குன்றக் கூறல் மிகை படக் கூறல்
+    பொருள் இல கூறல் மயங்கக் கூறல்
+    கேட்போர்க்கு இன்னா யாப்பிற்று ஆதல்
+    பழித்த மொழியான் இழுக்கம் கூறல்
+    தன்னான் ஒரு பொருள் கருதிக் கூறல்
+    என்ன வகையினும் மனம் கோள் இன்மை
+    அன்ன பிறவும் அவற்று விரி ஆகும்
+  kaandigai:
+    porul: 'சிதைவு: கூறியது கூறல், மாறுகொளக் கூறல், குன்றக் கூறல், மிகைபடக் கூறல், பொருளில கூறல், மயங்கக் கூறல், கேட்போர்க்கு இன்னா யாப்பு, பழித்த மொழியான் இழுக்கம் கூறல், தன்னான் ஒரு பொருள் கருதிக் கூறல், என்ன வகையினும் மனங்கோள் இன்மை — அன்ன பிறவும். எண்ணிப் பார்க்கப் பத்து; 644-இன் "ஈர் ஐங் குற்றம்" உடன் ஒத்தது.'
+    en:
+      kooruvathu: null
+      enniyathu: 10
+    ethu: நூலின் மாண்புகளின் மறுதலையே சிதைவு — "சொல்லப்பட்டன எல்லா மாண்பும் / மறுதலை ஆயினும் மற்று அது சிதைவே" (பொருள். 651). நூல் இலக்கணம் "ஈர் ஐங் குற்றமும் இன்றி" (பொருள். 644) எனக் கேட்டதால் பத்தும் இங்கே பெயரிடப்படுகின்றன.
+    eduthukkaattu:
+    - text: சொல்லப்பட்டன எல்லா மாண்பும் / மறுதலை ஆயினும் மற்று அது சிதைவே
+      from: porul.651
+    - text: ஈர் ஐங் குற்றமும் இன்றி
+      from: porul.644
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: classification
+    class: sithaivu_vagai
+    count: 10
+  links: []
+  urai:
+    iyaipu:
+    - porul.651
+    - porul.655
+    - porul.644
+    text: 'இயைபு (649): பொருள். 651, 655, 644 · சிதைவு பத்து: கூறியது கூறல், மாறு கொளக் கூறல், குன்றக் கூறல், மிகை படக் கூறல், பொருள் இல கூறல், மயங்கக் கூறல், கேட்போர்க்கு இன்னா யாப்பு, பழித்த மொழியான் இழுக்கம், தன்னான் ஒரு பொருள் கருதிக் கூறல், மனம் கோள் இன்மை — எண்ணிப் பார்க்கப் பத்து (644 "ஈர் ஐங் குற்றம்" உடன் ஒத்தது); "அன்ன பிறவும் அவற்று விரி". "தன் கோள் வேண்டாம்" என்ற ஆணை ஒன்பதாவது சிதைவின் தவிர்ப்பே.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: வந்தது கொண்டு வாராதது உணர்த்தல்
+    saanru: பிறவும்
+  - peyar: கூறிற்று என்றல்
+    saanru: கூறியது
+  - peyar: தான் குறியிடுதல்
+    saanru: எனப்படுபவை
+- id: porul.655
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 655
+  moolam: |-
+    எதிர் மறுத்து உணரின் அத் திறத்தவும் அவையே
+  kaandigai:
+    porul: எதிர்மறுத்து உணர்ந்தால் அத்திறத்தனவும் அவையே — பத்துச் சிதைவின் எதிர் பத்தும் நூலின் அழகா என்பதை நூல் சொல்லால் கூறவில்லை (ஒருதலை அன்மை).
+    en:
+      kooruvathu: null
+      enniyathu: 10
+    ethu: 654 சிதைவு 10 என்றது; எதிர் மறுத்து உணரின் அத்திறத்தவும் அவையே — சிதைவுகள்.
+  nilai: ஒருதலை அன்மை
+  kanini:
+    kind: rule
+    class: sithaivu_ethirmarai
+    count: 10
+  links: []
+  urai:
+    iyaipu:
+    - porul.654
+    text: 'இயைபு (649): 654 சிதைவு 10; 655 முடிவு.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக; காண்டிகை சுட்டிய ஐயம் ஒருதலை அன்மை
+  utthi:
+  - peyar: எதிர் பொருள் உணர்த்தல்
+    saanru: எதிர் மறுத்து
+- id: porul.656
+  pindam: 1
+  padalam: porul
+  othu: 9
+  sutra: 656
+  moolam: |-
+    ஒத்த காட்சி உத்தி வகை விரிப்பின்
+    நுதலியது அறிதல் அதிகார முறையே
+    தொகுத்துக் கூறல் வகுத்து மெய்ந் நிறுத்தல்
+    மொழிந்த பொருளொடு ஒன்ற அவ்வயின்
+    மொழியாததனை முட்டு இன்றி முடித்தல்
+    வாராததனான் வந்தது முடித்தல்
+    வந்தது கொண்டு வாராதது உணர்த்தல்
+    முந்து மொழிந்ததன் தலைதடுமாற்றே
+    ஒப்பக் கூறல் ஒருதலை மொழிதல்
+    தன் கோள் கூறல் முறை பிறழாமை
+    பிறன் உடன்பட்டது தான் உடம்படுதல்
+    இறந்தது காத்தல் எதிரது போற்றல்
+    மொழிவாம் என்றல் கூறிற்று என்றல்
+    தான் குறியிடுதல் ஒருதலை அன்மை
+    முடிந்தது காட்டல் ஆணை கூறல்
+    பல் பொருட்கு ஏற்பின் நல்லது கோடல்
+    தொகுத்த மொழியான் வகுத்தனர் கோடல்
+    மறுதலை சிதைத்துத் தன் துணிபு உரைத்தல்
+    பிறன் கோள் கூறல் அறியாது உடம்படல்
+    பொருள் இடையிடுதல் எதிர் பொருள் உணர்த்தல்
+    சொல்லின் எச்சம் சொல்லியாங்கு உணர்த்தல்
+    தந்து புணர்ந்து உரைத்தல் ஞாபகம் கூறல்
+    உய்த்துக்கொண்டு உணர்த்தலொடு மெய்ப்பட நாடிச்
+    சொல்லிய அல்ல பிற அவண் வரினும்
+    சொல்லிய வகையான் சுருங்க நாடி
+    மனத்தின் எண்ணி மாசு அறத் தெரிந்துகொண்டு
+    இனத்தின் சேர்த்தி உணர்த்தல் வேண்டும்
+    நுனித்தகு புலவர் கூறிய நூலே
+  kaandigai:
+    porul: 'முப்பத்திரண்டு உத்தி. (1) நுதலியது அறிதல், (2) அதிகார முறை, (3) தொகுத்துக் கூறல், (4) வகுத்து மெய்ந்நிறுத்தல், (5) மொழிந்த பொருளோடு ஒன்ற மொழியாததை முடித்தல், (6) வாராததனான் வந்தது முடித்தல், (7) வந்தது கொண்டு வாராதது உணர்த்தல், (8) முந்து மொழிந்ததன் தலைதடுமாற்று; (9) ஒப்பக் கூறல், (10) ஒருதலை மொழிதல், (11) தன் கோள் கூறல், (12) முறை பிறழாமை, (13) பிறன் உடன்பட்டது தான் உடம்படுதல், (14) இறந்தது காத்தல், (15) எதிரது போற்றல், (16) மொழிவாம் என்றல்; (17) கூறிற்று என்றல், (18) தான் குறியிடுதல், (19) ஒருதலை அன்மை, (20) முடிந்தது காட்டல், (21) ஆணை கூறல், (22) பல்பொருட்கு ஏற்பின் நல்லது கோடல், (23) தொகுத்த மொழியான் வகுத்தனர் கோடல், (24) மறுதலை சிதைத்துத் தன் துணிபு உரைத்தல்; (25) பிறன் கோள் கூறல், (26) அறியாது உடம்படல், (27) பொருள் இடையிடுதல், (28) எதிர்பொருள் உணர்த்தல், (29) சொல்லின் எச்சம் சொல்லியாங்கு உணர்த்தல், (30) தந்து புணர்ந்து உரைத்தல், (31) ஞாபகம் கூறல், (32) உய்த்துக்கொண்டு உணர்த்தல். சொல்லாதவை வந்தாலும் சொல்லிய வகையால் சுருங்க ஆராய்ந்து, மனத்தால் எண்ணி மாசறத் தெரிந்து, இனத்தோடு
+      சேர்த்து உணர்த்த வேண்டும். இக்காண்டிகை முழுதும் பயன்படுத்திய "பிறன் கோள்", "ஒருதலை அன்மை" என்ற குறிகள் இந்நூற்பாவின் உத்திப் பெயர்களே. விரிவு: செந்தமிழ் மரபு "சிந்திக்கும் முறை (32 உத்தி)" பகுதி. — இத்துடன் பொருளதிகாரம் 656 நூற்பாவுக்கும் காண்டிகை நிறைவு.'
+    en:
+      kooruvathu: 32
+      enniyathu: 32
+    ethu: நூல் இலக்கணம் "முப்பத்திரு வகை உத்தியொடு புணரின்" (பொருள். 644) எனக் கேட்டதால் இறுதிச் சூத்திரம் அவற்றைப் பெயரிடுகிறது; சொல்லாதவற்றுக்கும் வழி தந்து முடிகிறது — "சொல்லிய அல்ல பிற அவண் வரினும்". இதே நெறி எல்லா அதிகாரப் புறனடைகளிலும் (எழு. 483; சொல். 463).
+    eduthukkaattu:
+    - text: முப்பத்திரு வகை உத்தியொடு புணரின்
+      from: porul.644
+    - text: சொல்லிய அல்ல பிற அவண் வரினும்
+      from: porul.656
+  nilai: நூலில் நேரடியாக
+  kanini:
+    kind: enumeration
+    class: utthi_vagai
+    count: 32
+  links: []
+  urai:
+    iyaipu:
+    - ezhu.483
+    - sol.463
+    text: 'நூலின் இறுதிச் சூத்திரம் — நூலைப் படிக்கும் கருவியைத் தானே தருகிறது: முப்பத்திரண்டு உத்தி. முதல் இரண்டு — நுதலியது அறிதல், அதிகார முறை — இவ்வாவணத்தின் உரை முறை (ஒவ்வொரு ஓத்தின் முதற் சூத்திர உரையும் "நுதலியது"). இறுதி வரிகள்: "சொல்லிய அல்ல பிற அவண் வரினும் … இனத்தின் சேர்த்தி உணர்த்தல் வேண்டும்" — புதியவற்றுக்கு நூல் தரும் வழி; எழு. 483, சொல். 463 உடன் மூன்றாம் அதிகாரப் புறனடை.'
+    vagai: விதி
+    thunivu: நூலில் நேரடியாக
+  utthi:
+  - peyar: பிறன் உடன்பட்டது தான் உடம்படுதல்
+    saanru: புலவர்
+  - peyar: ஆணை கூறல்
+    saanru: வேண்டும்

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "senthamil-marabu"
+version = "1.0.0"
+description = "செந்தமிழ் மரபு — 1602 தொல்காப்பிய நூற்பா, காண்டிகை, உரை, துணிவு; நூல் வழி இலக்கண, யாப்பு, குறியாக்கக் கருவிகள்"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "CC-BY-NC-4.0" }
+authors = [{ name = "Thanushanthan Varnakulasingam" }]
+keywords = ["Tamil", "Tolkappiyam", "தொல்காப்பியம்", "grammar", "prosody", "corpus"]
+classifiers = ["Natural Language :: Tamil", "Programming Language :: Python :: 3", "Topic :: Text Processing :: Linguistic"]
+
+[project.optional-dependencies]
+pandas = ["pandas>=1.5"]
+punarchi = ["pyfoma>=1.1"]
+test = ["pytest>=7", "jsonschema>=4.20"]
+
+[project.urls]
+DOI = "https://doi.org/10.5281/zenodo.24011590"
+Repository = "https://github.com/thanu2008v-prog/senthamil-marabu"
+
+[tool.setuptools]
+packages = ["senthamil_marabu"]
+
+[tool.setuptools.package-data]
+senthamil_marabu = ["data/*.jsonl", "data/*.json", "data/pori/*.att", "data/pori/*.json"]

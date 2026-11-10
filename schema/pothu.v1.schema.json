@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/thanu2008v-prog/senthamil-marabu/schema/pothu.v1.schema.json",
+  "title": "பொதுச் சூத்திர வடிவம் v1",
+  "description": "ஒவ்வொரு நூற்பாவும் ஒரே அமைப்பில்: வகை, எழுவாய், நிபந்தனை, விளைவு, முறைமை, அளவு, மாட்டேறு, சான்று, நிலை. docs/THOGUPPU.md §10.",
+  "type": "object",
+  "required": ["id", "vagai", "murai", "nilai", "saanru"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^(ezhu|sol|porul)\\.[0-9]+$"},
+    "vagai": {"enum": ["வரையறை", "எண்ணல்", "பகுப்பு", "விதி", "விலக்கு", "மாட்டேறு", "நெறி"]},
+    "ezhuvaai": {"type": "array", "items": {"type": "string"}, "description": "எதைப் பற்றியது"},
+    "nibanthanai": {"type": "array", "items": {"type": "string"}, "description": "எப்போது"},
+    "vilaivu": {"type": "array", "items": {"type": "string"}, "description": "என்ன ஆகும்"},
+    "uruppugal": {"type": "array", "description": "எண்ணல், பகுப்பின் உறுப்புகள்"},
+    "alavu": {"type": ["integer", "null"], "description": "நூற்பா கூறும் எண்"},
+    "murai": {
+      "type": "array", "minItems": 1,
+      "items": {"enum": ["கட்டாயம்", "இசைவு", "விலக்கின்மை", "மறுப்பு", "புலவர் கூற்று", "மாட்டேறு", "நேர்க் கூற்று"]}
+    },
+    "murai_mothal": {"type": "boolean", "description": "ஒரே நூற்பாவில் கட்டாயமும் இசைவும்/விலக்கின்மையும் — ஆசிரியர் முடிவுக்கு"},
+    "maatteru": {
+      "type": ["object", "null"],
+      "properties": {"sol": {"type": "string"}, "suttu": {"type": "array", "items": {"type": "string"}},
+                     "vazhi": {"enum": ["காண்டிகை", "அண்மை", "சொல் தேடல்", "பழைய புலம்"]}, "karuthu": {"type": "string"}},
+      "description": "«இயற்றே», «அற்றே» … எனில்: மூலச் சொல்லும் சுட்டப்படும் நூற்பாக்களும்"
+    },
+    "saanru": {
+      "type": "object",
+      "description": "புலம் → மூலத்தில் உள்ள சொற்கள்; ஒவ்வொன்றும் மூலத்தில் இருக்க வேண்டும்",
+      "additionalProperties": {"type": "array", "items": {"type": "string"}}
+    },
+    "saanru_vazhi": {"type": "object", "additionalProperties": {"enum": ["பெயர் பொருத்தம்", "அமைப்பு"]},
+                     "description": "சான்று எவ்வழிக் கண்டது"},
+    "nilai": {"enum": ["நூலில் நேரடியாக", "ஒருதலை அன்மை", "நூலில் இல்லை"]},
+    "iyakkam": {"type": "array", "items": {"type": "string"}, "description": "இந்நூற்பாவை இயக்கும் நிரல் கூறுகள்"}
+  }
+}

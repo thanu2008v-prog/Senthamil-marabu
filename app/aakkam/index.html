@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#145c50">
+<meta name="description" content="திணை, உணர்வு, கூற்று தேர்ந்து புதிய செந்தமிழ்ப் பாடலோ கட்டுரையோ உருவாக்கும் செயலி.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<style>@font-face { font-family: "Noto Serif Tamil"; font-weight: 400; font-display: swap; src: url("fonts/noto-serif-tamil-tamil-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Noto Serif Tamil"; font-weight: 700; font-display: swap; src: url("fonts/noto-serif-tamil-tamil-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Noto Sans Tamil"; font-weight: 400; font-display: swap; src: url("fonts/noto-sans-tamil-tamil-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Noto Sans Tamil"; font-weight: 700; font-display: swap; src: url("fonts/noto-sans-tamil-tamil-700-normal.woff2") format("woff2"); }
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px) }
+body { margin: 0 }
+</style>
+</head>
+<body>
+<title>செந்தமிழ் ஆக்கம்</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+
+<style>
+/* இடப்பக்கம் ஆணை, வலப்பக்கம் ஆக்கம் — ஓலையின் இலைப் பச்சையும் மையும்; ஆக்கமே பக்கத்தின் மையம் */
+:root {
+  --bg: #eef2ee; --surface: #ffffff; --ink: #16201b; --muted: #56655d; --line: #d3dbd5;
+  --accent: #145c50; --accent-soft: #dcebe6; --leaf: #f6f4ea; --warn: #9a5800;
+  --display: "Noto Serif Tamil", "Latha", "Tamil Sangam MN", serif;
+  --body: "Hind Madurai", "Noto Sans Tamil", "Latha", "Tamil Sangam MN", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0e1411; --surface: #16201b; --ink: #e1eae4; --muted: #95a59c; --line: #29352f;
+  --accent: #5cc3ad; --accent-soft: #173a33; --leaf: #1b231e; --warn: #f0b65e; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0e1411; --surface: #16201b; --ink: #e1eae4; --muted: #95a59c; --line: #29352f;
+  --accent: #5cc3ad; --accent-soft: #173a33; --leaf: #1b231e; --warn: #f0b65e; color-scheme: dark }
+* { box-sizing: border-box }
+[hidden] { display: none !important }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 40px }
+.wrap { max-width: 1040px; margin: 0 auto; display: grid; gap: 22px }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 5vw, 40px); line-height: 1.25; margin: 0 }
+.lede { color: var(--muted); margin: 4px 0 0; max-width: 60ch }
+.grid { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 24px; align-items: start }
+@media (max-width: 760px) { .grid { grid-template-columns: minmax(0, 1fr) } }
+form { display: grid; gap: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px }
+.seg { display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden }
+.seg button { flex: 1; font: inherit; font-weight: 600; padding: 8px; border: 0; background: none; color: var(--muted); cursor: pointer }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--surface) }
+.field { display: grid; gap: 5px }
+.field label { font-size: 14px; color: var(--muted); font-weight: 500 }
+select, input, textarea { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; width: 100% }
+textarea { min-height: 70px; resize: vertical }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px }
+button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.go { font: inherit; font-weight: 600; font-size: 16px; padding: 10px; border-radius: 8px; border: 0; background: var(--accent); color: var(--surface); cursor: pointer }
+.go:disabled { opacity: .55; cursor: default }
+.out { display: grid; gap: 12px; min-width: 0 }
+.leaf { background: var(--leaf); border: 1px solid var(--line); border-radius: 10px; padding: clamp(18px, 4vw, 34px); min-height: 280px; min-width: 0 }
+.tag { font-size: 13px; color: var(--muted); margin-bottom: 14px }
+.poem { font-family: var(--display); font-size: clamp(18px, 2.6vw, 22px); line-height: 2; white-space: pre-wrap; overflow-wrap: anywhere; margin: 0 }
+.essay { font-family: var(--display); font-size: 18px; line-height: 1.9; overflow-wrap: anywhere }
+.essay h2 { font-size: 22px; margin: 0 0 12px }
+.essay p { margin: 0 0 14px; max-width: 68ch }
+.status { color: var(--muted); font-size: 15px; display: flex; gap: 10px; align-items: center }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); animation: p 1.2s infinite ease-in-out }
+@keyframes p { 50% { opacity: .25 } }
+@media (prefers-reduced-motion: reduce) { .dot { animation: none } }
+.actions { display: flex; flex-wrap: wrap; gap: 8px }
+.btn { font: inherit; font-size: 14px; font-weight: 600; border-radius: 6px; padding: 7px 14px; cursor: pointer; border: 1px solid var(--line); background: var(--surface); color: var(--ink) }
+.msg { color: var(--warn); font-size: 14px }
+details.box { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px }
+details.box summary { cursor: pointer; font-weight: 600 }
+.note { font-size: 13px; color: var(--muted); margin: 0 }
+.hist { display: grid; gap: 6px; margin-top: 10px }
+.hist button { text-align: left; font: inherit; font-size: 14px; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; color: var(--ink); cursor: pointer; overflow-wrap: anywhere }
+.hist small { color: var(--muted); display: block }
+footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px }
+footer a { color: var(--accent) }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>செந்தமிழ் ஆக்கம்</h1>
+    <p class="lede">வடிவம், திணை, பொருள் தேர்ந்தால் புதிய பாடலோ கட்டுரையோ உருவாகும்.</p>
+  </header>
+
+  <div class="grid">
+    <form id="form" autocomplete="off">
+      <div class="seg" role="group" aria-label="வடிவம்">
+        <button type="button" id="k-paa" aria-pressed="true">பாடல்</button>
+        <button type="button" id="k-katturai" aria-pressed="false">கட்டுரை</button>
+      </div>
+
+      <div id="f-paa" class="field" style="gap:14px">
+        <div class="two">
+          <div class="field"><label for="thinai">திணை</label>
+            <select id="thinai">
+              <option>முல்லை</option><option>குறிஞ்சி</option><option>மருதம்</option><option>நெய்தல்</option><option>பாலை</option>
+            </select></div>
+          <div class="field"><label for="uri">உணர்வு</label>
+            <select id="uri">
+              <option>இருத்தல்</option><option>புணர்தல்</option><option>பிரிதல்</option><option>இரங்கல்</option><option>ஊடல்</option>
+            </select></div>
+        </div>
+        <div class="two">
+          <div class="field"><label for="koorru">கூறுபவர்</label>
+            <select id="koorru"><option>தலைவி</option><option>தோழி</option><option>தலைவன்</option><option>செவிலி</option></select></div>
+          <div class="field"><label for="adi">அடிகள்</label>
+            <input id="adi" type="number" min="3" max="12" value="6"></div>
+        </div>
+        <div class="field"><label for="karu">காட்சியில் வர வேண்டியவை (விருப்பம்)</label>
+          <textarea id="karu" placeholder="எ.கா. மழை மேகம், கொன்றை மலர், மான்"></textarea></div>
+      </div>
+
+      <div id="f-katturai" class="field" style="gap:14px" hidden>
+        <div class="field"><label for="thalaippu">தலைப்பு</label>
+          <input id="thalaippu" value="தாய்மொழியில் கல்வி"></div>
+        <div class="field"><label for="neelam">நீளம்</label>
+          <select id="neelam"><option value="3">சிறிது — மூன்று பத்தி</option><option value="5" selected>நடுத்தரம் — ஐந்து பத்தி</option><option value="8">விரிவு — எட்டுப் பத்தி</option></select></div>
+        <div class="field"><label for="kuripu">சேர்க்க வேண்டிய கருத்துகள் (விருப்பம்)</label>
+          <textarea id="kuripu" placeholder="எ.கா. அறிவியல் கலைச்சொற்கள், பெற்றோர் பங்கு"></textarea></div>
+      </div>
+
+      <button class="go" id="go" type="submit">ஆக்கு</button>
+      <div class="msg" id="msg" hidden></div>
+      <details class="box" id="settings" hidden>
+        <summary>அமைப்பு — Claude இணைப்பு</summary>
+        <div class="field" style="margin-top:10px"><label for="apikey">Anthropic API திறவுகோல்</label>
+          <input id="apikey" type="password" placeholder="sk-ant-…" autocomplete="off" spellcheck="false"></div>
+        <div class="field"><label for="model">மாதிரி</label>
+          <select id="model">
+            <option value="claude-sonnet-5-5">Claude Sonnet 5.5 — தரமும் வேகமும்</option>
+            <option value="claude-opus-5-5">Claude Opus 5.5 — மிக உயர் தரம்</option>
+            <option value="claude-haiku-5-5">Claude Haiku 5.5 — விரைவு, குறைந்த செலவு</option>
+          </select></div>
+        <div class="actions"><button class="btn" id="savekey" type="button">சேமி</button><button class="btn" id="delkey" type="button">நீக்கு</button></div>
+        <p class="note" id="keynote">திறவுகோல் இத்தொலைபேசியில் மட்டுமே சேமிக்கப்படும்; நேரடியாக Anthropic-க்கு மட்டுமே அனுப்பப்படும். செலவு உங்கள் API கணக்கில்.</p>
+      </details>
+    </form>
+
+    <section class="out" aria-live="polite">
+      <div class="leaf">
+        <div class="tag" id="tag">எடுத்துக்காட்டு · முல்லை · இருத்தல்</div>
+        <div id="status" class="status" hidden><span class="dot"></span><span id="status-t"></span></div>
+        <pre class="poem" id="poem">கார்வான் முழங்கக் கானம் தளிர்ப்ப
+மாலை வந்தது மனையகம் நோக்கி
+வருவர் என்ற சொல்லே துணையாக
+இருந்தனள் தலைவி இனிதுயில் மறந்தே</pre>
+        <div class="essay" id="essay" hidden></div>
+      </div>
+      <div class="actions">
+        <button class="btn" id="copy" type="button">படியெடு</button>
+        <button class="btn" id="again" type="button" hidden>இன்னொன்று</button>
+        <button class="btn" id="stop" type="button" hidden>நிறுத்து</button>
+      </div>
+      <details class="box" id="history" hidden>
+        <summary>முந்தைய ஆக்கங்கள்</summary>
+        <div class="hist" id="hist"></div>
+        <div class="actions"><button class="btn" id="histclear" type="button">எல்லாவற்றையும் அழி</button></div>
+      </details>
+    </section>
+  </div>
+
+  <footer>© 2026 தனுசாந்தன் வர்ணகுலசிங்கம் — உரிமம்: CC BY-NC 4.0; வணிக உரிமை ஆசிரியருக்கு மட்டும்; தொழில்நுட்ப உதவி: Claude (Anthropic). · <a href="thaniyurimai.html">தனியுரிமை</a></footer>
+</div>
+
+<script>
+// நூல்வழிச் சோதனை — இலக்கணச் சரிபார்ப்பும் யாப்புச் சோதனையும். விதிகள் எல்லாம் «செந்தமிழ் மரபு» நூற்பாக்களிலிருந்து.
+// உலாவியிலும் node-இலும் இயங்கும் (module.exports).
+const NOOL = {
+  "எழு. 22": "அம்மூ வாறும் வழங்கியல் மருங்கின் / மெய்ம்மயங் குடனிலை தெரியுங் காலை",
+  "எழு. 23": "ட ற ல ள என்னும் புள்ளி முன்னர்க் / க ச ப என்னும் மூவெழுத் துரிய",
+  "எழு. 24": "அவற்றுள் / லள ஃகான் முன்னர் ய வ வுந் தோன்றும்",
+  "எழு. 25": "ஙஞண நமன எனும்புள்ளி முன்னர்த் / தத்தம் இசைகள் ஒத்தன நிலையே",
+  "எழு. 26": "அவற்றுள் / ண னஃகான் முன்னர்க் / க ச ஞ ப ம ய வ ஏழு முரிய",
+  "எழு. 27": "ஞ ந ம வ என்னும் புள்ளி முன்னர் / யஃகான் நிற்றல் மெய்பெற் றன்றே",
+  "எழு. 28": "மஃகான் புள்ளிமுன் வவ்வுந் தோன்றும்",
+  "எழு. 29": "ய ர ழ என்னும் புள்ளிமுன்னர் / முதலா கெழுத்து ஙகரமொடு தோன்றும்",
+  "எழு. 30": "மெய்ந்நிலை சுட்டி னெல்லா வெழுத்துந் / தம்முற்றாம் வரூஉம் ரழவலங் கடையே",
+  "எழு. 48": "ய ர ழ என்னும் மூன்றும் ஒற்றக் / க ச த ப ங ஞ ந ம ஈரொற் றாகும்",
+  "எழு. 49": "அவற்றுள் / ரகார ழகாரங் குற்றொற் றாகா",
+  "எழு. 59": "பன்னீ ருயிரும் மொழிமுத லாகும்",
+  "எழு. 60": "உயிர்மெய் அல்லன மொழிமுத லாகா",
+  "எழு. 61": "கதந பமஎனும் ஆவைந் தெழுத்தும் / எல்லா உயிரொடுஞ் செல்லுமார் முதலே",
+  "எழு. 62": "சகரக் கிளவியும் அவற்றோ ரற்றே / அ ஐ ஔ எனும் மூன்றலங் கடையே",
+  "எழு. 63": "உஊ ஒஓ என்னும் நான்குயிர் / வ என் எழுத்தொடு வருத லில்லை",
+  "எழு. 64": "ஆ எ ஒ / என்னும் மூவுயிர் ஞகாரத் துரிய",
+  "எழு. 65": "ஆவோ டல்லது யகர முதலாது",
+  "எழு. 66": "முதலா ஏன தம்பெயர் முதலும்",
+  "எழு. 69": "உயிர்ஔ எஞ்சிய இறுதி யாகும்",
+  "எழு. 70": "கவவோ டியையின் ஔவு மாகும்",
+  "எழு. 71": "எ என வருமுயிர் மெய்யீ றாகாது",
+  "எழு. 72": "ஒவ்வும் அற்றே நவ்வலங் கடையே",
+  "எழு. 73": "ஏ ஓ எனும் உயிர் ஞகாரத் தில்லை",
+  "எழு. 74": "உ ஊ காரம் நவவொடு நவிலா",
+  "எழு. 78": "ஞ ண ந ம ன ய ர ல வ ழ ள என்னும் / அப்பதி னொன்றே புள்ளி யிறுதி",
+  "எழு. 108": "நிறுத்த சொல்லின் ஈறா கெழுத்தொடு / குறித்துவரு கிளவி முதலெழுத் தியையப் / பெயரொடு பெயரைப் புணர்க்குங் காலும் …",
+  "பொருள். 321": "இயலசை மயக்கம் இயற்சீர் ஏனை / உரியசை மயக்கம் ஆசிரிய உரிச்சீர்",
+  "பொருள். 327": "இயற்சீர் இறுதி முன் நேர் அவண் நிற்பின் / உரிச்சீர் வெண்பா ஆகும் என்ப",
+  "பொருள். 328": "வஞ்சிச் சீர் என வகை பெற்றனவே / வெண் சீர் அல்லா மூ அசை என்ப",
+  "பொருள். 335": "இசைநிலை நிறைய நிற்குவது ஆயின் / அசைநிலை வரையார் சீர் நிலை பெறவே",
+  "பொருள். 340": "நாற் சீர் கொண்டது அடி எனப்படுமே",
+  "பொருள். 352": "வஞ்சி அடியே இரு சீர்த்து ஆகும்",
+  "பொருள். 354": "முச் சீரானும் வரும் இடன் உடைத்தே",
+  "சொல். 401": "வடசொல் கிளவி வட எழுத்து ஒரீஇ / எழுத்தொடு புணர்ந்த சொல் ஆகும்மே",
+  "பொருள். 312": "குறிலே நெடிலே குறில் இணை குறில் நெடில் / ஒற்றொடு வருதலொடு மெய்ப் பட நாடி / நேரும் நிரையும் என்றிசின் பெயரே",
+  "பொருள். 313": "இரு வகை உகரமொடு இயைந்தவை வரினே / நேர்பும் நிரைபும் ஆகும் என்ப / குறில் இணை உகரம் அல் வழியான",
+  "பொருள். 315": "தனிக் குறில் முதலசை மொழி சிதைந்து ஆகாது",
+  "பொருள். 320": "ஈர் அசை கொண்டும் மூ அசை புணர்த்தும் / சீர் இயைந்து இற்றது சீர் எனப்படுமே",
+  "பொருள். 342": "அடி இறந்து வருதல் இல் என மொழிப",
+  "பொருள். 344": "நால் எழுத்து ஆதி ஆக ஆறு எழுத்து / ஏறிய நிலத்தே குறளடி என்ப",
+  "பொருள். 345": "ஏழ் எழுத்து என்ப சிந்தடிக்கு அளவே / ஈர் எழுத்து ஏற்றம் அவ் வழியான",
+  "பொருள். 346": "பத்து எழுத்து என்ப நேரடிக்கு அளவே / ஒத்த நால் எழுத்து ஏற்றலங்கடையே",
+  "பொருள். 347": "மூ ஐந்து எழுத்தே நெடிலடிக்கு அளவே / ஈர் எழுத்து மிகுதலும் இயல்பு என மொழிப",
+  "பொருள். 348": "மூ ஆறு எழுத்தே கழிநெடிற்கு அளவே / ஈர் எழுத்து மிகுதலும் இயல்பு என மொழிப",
+  "பொருள். 351": "உயிர் இல் எழுத்தும் எண்ணப்படாஅ / உயிர்த் திறம் இயக்கம் இன்மையான",
+  "பொருள். 359": "ஐ வகை அடியும் ஆசிரியக்கு உரிய",
+  "பொருள். 397": "அடிதொறும் தலை எழுத்து ஒப்பது மோனை",
+  "பொருள். 398": "அஃது ஒழித்து ஒன்றின் எதுகை ஆகும்",
+  "பொருள். 399": "ஆயிரு தொடைக்கும் கிளையெழுத்து உரிய",
+  "பொருள். 401": "இறுவாய் ஒன்றல் இயைபின் யாப்பே",
+  "பொருள். 402": "அளபு எழின் அவையே அளபெடைத் தொடையே",
+  "பொருள். 403": "ஒரு சீர் இடையிட்டு எதுகை ஆயின் / பொழிப்பு என மொழிதல் புலவர் ஆறே",
+  "பொருள். 404": "இரு சீர் இடையிடின் ஒரூஉ என மொழிப",
+};
+
+let BOOKWORDS = new Set();                     // நூலுள் வரும் சொற்கள் — நூலே ஆள்வதை «மாறு» எனக் காட்டாமைக்கு
+function setBookWords(arr) { BOOKWORDS = new Set(arr); }
+const UYIR = "அஆஇஈஉஊஎஏஐஒஓஔ";
+const KURIL = "அஇஉஎஒ";
+const MEY = "கஙசஞடணதநபமயரலவழளறன";
+const VADA = "ஜஶஷஸஹ";
+const SIGN = { "ா": "ஆ", "ி": "இ", "ீ": "ஈ", "ு": "உ", "ூ": "ஊ", "ெ": "எ", "ே": "ஏ", "ை": "ஐ", "ொ": "ஒ", "ோ": "ஓ", "ௌ": "ஔ" };
+const PULLI = "்";
+const VAL = "கசடதபற", MEL = "ஙஞணநமன";
+const IRUTHI = "ஞணநமனயரலவழள";
+
+// உரை → எழுத்துகள். ஒவ்வொன்றும் {k: உயிர்|மெய்|உயிர்மெய்|ஆய்தம்|பிற, c: மெய், v: உயிர், vada, s: உரை, at: இடம்}
+function letters(text) {
+  text = text.normalize("NFC");
+  const out = [];
+  for (let i = 0; i < text.length; ) {
+    const ch = text[i];
+    if (MEY.includes(ch) || VADA.includes(ch)) {
+      const nx = text[i + 1] || "";
+      const vada = VADA.includes(ch);
+      if (nx === PULLI) { out.push({ k: "மெய்", c: ch, v: "", vada, s: ch + nx, at: i }); i += 2; }
+      else if (SIGN[nx]) { out.push({ k: "உயிர்மெய்", c: ch, v: SIGN[nx], vada, s: ch + nx, at: i }); i += 2; }
+      else { out.push({ k: "உயிர்மெய்", c: ch, v: "அ", vada, s: ch, at: i }); i += 1; }
+    } else if (UYIR.includes(ch)) { out.push({ k: "உயிர்", c: "", v: ch, s: ch, at: i }); i += 1; }
+    else if (ch === "ஃ") { out.push({ k: "ஆய்தம்", c: "", v: "", s: ch, at: i }); i += 1; }
+    else { out.push({ k: "பிற", s: ch, at: i }); i += 1; }
+  }
+  return out;
+}
+
+// சொற்கள் — தமிழ் எழுத்துத் தொடர்கள்
+function words(text) {
+  const L = letters(text), W = [];
+  let cur = [];
+  for (const l of L) {
+    if (l.k === "பிற") { if (cur.length) W.push(cur); cur = []; } else cur.push(l);
+  }
+  if (cur.length) W.push(cur);
+  return W.map(ls => ({ ls, s: ls.map(l => l.s).join(""), start: ls[0].at, end: ls[ls.length - 1].at + ls[ls.length - 1].s.length }));
+}
+
+const isShort = l => (l.k === "உயிர்" || l.k === "உயிர்மெய்") && KURIL.includes(l.v);
+const hasUyir = l => l.k === "உயிர்" || l.k === "உயிர்மெய்";
+const letterName = w => /^[க-ஹ](கர|கார|ஃகான்|கான்|னஃகான்)/.test(w.s) || /^[அ-ஔ](கர|கார)/.test(w.s);
+
+// ── இலக்கணச் சரிபார்ப்பு ─────────────────────────────────────────────
+// நிலை: "மாறு" = நூலுக்கு மாறு; "இல்லை" = நூலில் இல்லை (வட எழுத்து); "புணர்ச்சி" = மீறல் அல்ல, குறிப்பு
+function checkGrammar(text) {
+  const W = words(text), F = [];
+  const add = (w, rule, nilai, msg) => {
+    if (nilai === "மாறு" && BOOKWORDS.has(w.s)) { nilai = "ஒருதலை"; msg += " — ஆனால் இச்சொல் நூலுள்ளேயே வருகிறது"; }
+    F.push({ word: w.s, start: w.start, end: w.end, rule, nilai, msg });
+  };
+  W.forEach((w, wi) => {
+    const L = w.ls;
+    if (L.some(l => l.vada)) add(w, "சொல். 401", "இல்லை", "வட எழுத்து — நூலின் முப்பது எழுத்துள் அடங்காதது");
+    if (L.length === 1 || letterName(w)) return;            // எழுத்தின் தம் பெயர் (எழு. 66)
+    // மொழிமுதல் (எழு. 59–66)
+    const f = L[0];
+    if (!f.vada) {
+      if (f.k === "மெய்" || f.k === "ஆய்தம்") add(w, "எழு. 60", "மாறு", `«${f.s}» — உயிர்மெய் அல்லாதது மொழிமுதல் ஆகாது`);
+      else if (f.k === "உயிர்மெய்") {
+        const c = f.c, v = f.v;
+        if ("கதநபம".includes(c)) {}
+        else if (c === "ச") { if ("அஐஔ".includes(v)) add(w, "எழு. 62", "மாறு", `சகரம் ${v}-வோடு மொழிமுதல் ஆகாது`); }
+        else if (c === "வ") { if ("உஊஒஓ".includes(v)) add(w, "எழு. 63", "மாறு", `வகரம் ${v}-வோடு மொழிமுதல் ஆகாது`); }
+        else if (c === "ஞ") { if (!"ஆஎஒ".includes(v)) add(w, "எழு. 64", "மாறு", `ஞகரம் ஆ, எ, ஒ-வோடு மட்டுமே மொழிமுதல்`); }
+        else if (c === "ய") { if (v !== "ஆ") add(w, "எழு. 65", "மாறு", `யகரம் ஆகாரத்தோடு மட்டுமே மொழிமுதல்`); }
+        else add(w, "எழு. 61", "மாறு", `«${c}» மொழிமுதல் எழுத்துகளுள் இல்லை (எழு. 61–65)`);
+      }
+    }
+    // மொழியிறுதி (எழு. 69–78)
+    const z = L[L.length - 1];
+    if (!z.vada) {
+      if (z.k === "உயிர்மெய்") {
+        if (z.v === "ஔ" && !"கவ".includes(z.c)) add(w, "எழு. 70", "மாறு", "ஔ ககர வகரத்தோடு மட்டுமே இறுதி");
+        if (z.v === "எ") add(w, "எழு. 71", "மாறு", "எகரம் உயிர்மெய்யாக மொழியிறுதி ஆகாது");
+        if (z.v === "ஒ" && z.c !== "ந") add(w, "எழு. 72", "மாறு", "ஒகரம் நகரத்தோடு மட்டுமே உயிர்மெய் இறுதி");
+        if (z.c === "ஞ" && "ஏஓ".includes(z.v)) add(w, "எழு. 73", "மாறு", "ஞகரத்தோடு ஏ, ஓ இறுதி இல்லை");
+        if ("நவ".includes(z.c) && "உஊ".includes(z.v))
+          add(w, "எழு. 74", "ஒருதலை", "நகர வகரத்தோடு உ, ஊ — நூலே «அளவு», «பிரிவு» போன்ற சொற்களை ஆள்வதால் இவ்விலக்கின் எல்லை ஒருதலை அன்மை");
+      } else if (z.k === "உயிர்" && z.v === "ஔ") add(w, "எழு. 69", "மாறு", "ஔ தனித்து மொழியிறுதி ஆகாது");
+      else if (z.k === "மெய்" && !IRUTHI.includes(z.c) || z.k === "ஆய்தம்") {
+        const nx = W[wi + 1];
+        const touching = nx && text.slice(w.end, nx.start).trim() === "";
+        if (touching && nx.ls[0].k === "உயிர்மெய்" && VAL.includes(nx.ls[0].c))
+          add(w, "எழு. 108", "புணர்ச்சி", `«${z.s}» — அடுத்த சொல்லின் வல்லின முதலோடு புணர்ந்த ஒற்று; மொழியிறுதி அன்று`);
+        else add(w, "எழு. 78", "மாறு", `«${z.s}» — புள்ளியிறுதி பதினொன்றுள் இல்லை`);
+      }
+    }
+    if (L.length === 2 && isShort(L[0]) && L[1].k === "மெய்" && "ரழ".includes(L[1].c))
+      add(w, "எழு. 49", "ஒருதலை", `«${w.s}» — குறிலை அடுத்து ர், ழ் ஒற்றாக நிற்கும் ஈரெழுத்துச் சொல்; நூற்பாவின் பொருள் எல்லை ஒருதலை அன்மை`);
+    // மெய்ம்மயக்கம் (எழு. 22–30, 48)
+    for (let i = 0; i < L.length - 1; i++) {
+      const a = L[i], b = L[i + 1];
+      if (a.k !== "மெய்" || !b.c || a.vada || b.vada) continue;
+      const X = a.c, Y = b.c;
+      let ok = false, rule = "எழு. 22";
+      if (X === Y) { ok = !"ரழ".includes(X); rule = "எழு. 30"; }
+      else if ("டறலள".includes(X) && "கசப".includes(Y)) ok = true;
+      else if ("லள".includes(X) && "யவ".includes(Y)) ok = true;
+      else if (MEL.includes(X) && VAL[MEL.indexOf(X)] === Y) ok = true;
+      else if ("ணன".includes(X) && "கசஞபமயவ".includes(Y)) ok = true;
+      else if ("ஞநமவ".includes(X) && Y === "ய") ok = true;
+      else if (X === "ம" && Y === "வ") ok = true;
+      else if ("யரழ".includes(X) && "கசதநபமவயஞங".includes(Y)) ok = true;
+      if (!ok) {
+        if (IRUTHI.includes(X) && "கசதநபமவஞய".includes(Y))
+          add(w, rule, "ஒருதலை", `«${a.s}${b.s}» — ஒரு சொல்லுள் இம்மயக்கம் நூலில் இல்லை; இரு சொல் இடைவெளியின்றி எழுதப்பட்டிருக்கலாம் (புணர்ச்சி — எழு. 108)`);
+        else add(w, rule, "மாறு", `«${a.s}${b.s}» — இம்மெய்ம்மயக்கம் நூலில் கூறப்படவில்லை (எழு. 22–30)`);
+      }
+      if (b.k === "மெய்" && L[i + 2] && L[i + 2].c) {               // ஈரொற்று
+        if (!("யரழ".includes(X) && "கசதபஙஞநம".includes(Y)))
+          add(w, "எழு. 48", "மாறு", `«${a.s}${b.s}» — ஈரொற்று ய, ர, ழ-வுக்குப் பின் மட்டும்`);
+
+      }
+    }
+  });
+  return { words: W.length, findings: F };
+}
+
+// ── யாப்புச் சோதனை ───────────────────────────────────────────────────
+// அசை (பொருள். 312, 313, 315)
+function syllables(L) {
+  const S = [];
+  for (const l of L) {
+    if (hasUyir(l)) S.push({ head: l, tail: [] });
+    else if (S.length) S[S.length - 1].tail.push(l);
+    else S.push({ head: null, tail: [l] });
+  }
+  return S;
+}
+function asai(word) {
+  const S = syllables(word.ls), A = [];
+  let i = 0;
+  while (i < S.length) {
+    const s = S[i];
+    let a;
+    if (s.head && isShort(s.head) && !s.tail.length && i + 1 < S.length && S[i + 1].head) {
+      a = { peyar: "நிரை", parts: [s, S[i + 1]] }; i += 2;            // குறில் இணை, குறில் நெடில் (± ஒற்று)
+    } else { a = { peyar: "நேர்", parts: [s] }; i += 1; }             // குறில், நெடில் (± ஒற்று)
+    const n = S[i];
+    if (n && i === S.length - 1 && n.head && n.head.v === "உ") {       // இறுதி உகரம் (இரு வகை) — பொருள். 313
+      a.peyar += "பு"; a.parts.push(n); i += 1;
+    }
+    a.s = a.parts.map(p => (p.head ? p.head.s : "") + p.tail.map(t => t.s).join("")).join("");
+    A.push(a);
+  }
+  return A;
+}
+function adiVagai(n) {
+  if (n >= 4 && n <= 6) return ["குறளடி", "பொருள். 344"];
+  if (n >= 7 && n <= 9) return ["சிந்தடி", "பொருள். 345"];
+  if (n >= 10 && n <= 14) return ["நேரடி", "பொருள். 346"];
+  if (n >= 15 && n <= 17) return ["நெடிலடி", "பொருள். 347"];
+  if (n >= 18 && n <= 20) return ["கழிநெடிலடி", "பொருள். 348"];
+  return [n < 4 ? "நூல் கூறும் அளவுக்குக் குறைவு" : "நூல் கூறும் அளவுக்கு மேல்", "பொருள். 342"];
+}
+const firstL = w => w.ls.find(l => l.k !== "பிற");
+const secondL = w => w.ls[1];
+function sameLetter(a, b) { return a && b && a.c === b.c && a.v === b.v; }
+function kilai(a, b) { return a && b && ((a.c && a.c === b.c) || (!a.c && !b.c && a.v && b.v)); }
+
+function checkYappu(text) {
+  const lines = text.split(/\n/).map(s => s.trim()).filter(Boolean);
+  const out = lines.map(line => {
+    const W = words(line);
+    const seer = W.map(w => {
+      const A = asai(w);
+      const P = A.map(a => a.peyar), uri = P.some(p => p.endsWith("பு"));
+      let vagai, ref;
+      if (A.length === 1) { vagai = "அசைச்சீர்"; ref = "பொருள். 335"; }
+      else if (A.length === 2) { vagai = uri ? "ஆசிரிய உரிச்சீர்" : "இயற்சீர்"; ref = "பொருள். 321"; }
+      else if (A.length === 3) {
+        if (!P.slice(0, 2).some(p => p.endsWith("பு")) && P[2] === "நேர்") { vagai = "வெண்சீர்"; ref = "பொருள். 327"; }
+        else { vagai = "வஞ்சிச்சீர்"; ref = "பொருள். 328"; }
+      } else { vagai = "நூல் கூறும் சீர் அளவுக்கு மேல்"; ref = "பொருள். 320"; }
+      return { s: w.s, asai: A, vagai, ref, ok: A.length >= 2 && A.length <= 3 };
+    });
+    const ezhuthu = W.reduce((n, w) => n + w.ls.filter(hasUyir).length, 0);   // பொருள். 351
+    const [vagai, vref] = adiVagai(ezhuthu);
+    const within = [];
+    if (W.length >= 3 && sameLetter(secondL(W[0]), secondL(W[2]))) within.push(["பொழிப்பு எதுகை", "பொருள். 403", `${W[0].s} · ${W[2].s}`]);
+    if (W.length >= 4 && sameLetter(secondL(W[0]), secondL(W[3]))) within.push(["ஒரூஉ எதுகை", "பொருள். 404", `${W[0].s} · ${W[3].s}`]);
+    const alabu = W.filter(w => w.ls.some((l, i) => i > 0 && l.k === "உயிர்" && hasUyir(w.ls[i - 1])));
+    if (alabu.length) within.push(["அளபெடை", "பொருள். 402", alabu.map(w => w.s).join(", ")]);
+    const seerN = W.length;
+    const adi = seerN === 4 ? ["நாற்சீர் அடி", "பொருள். 340"] : seerN === 2 ? ["இருசீர் அடி (வஞ்சி)", "பொருள். 352"] :
+      seerN === 3 ? ["முச்சீர் அடி", "பொருள். 354"] : [`${seerN} சீர்`, "பொருள். 340"];
+    return { line, W, seer, ezhuthu, vagai, vref, within, adi };
+  });
+  const pairs = [];
+  for (let i = 0; i + 1 < out.length; i++) {
+    const a = out[i].W, b = out[i + 1].W;
+    if (!a.length || !b.length) continue;
+    const fa = firstL(a[0]), fb = firstL(b[0]);
+    const mo = sameLetter(fa, fb) ? "மோனை" : (kilai(fa, fb) ? "கிளை மோனை" : "");
+    const eth = sameLetter(secondL(a[0]), secondL(b[0])) ? "எதுகை" : "";
+    const la = a[a.length - 1].ls, lb = b[b.length - 1].ls;
+    const iy = sameLetter(la[la.length - 1], lb[lb.length - 1]) ? "இயைபு" : "";
+    pairs.push({ i, mo, eth, iy, fa: fa && fa.s, fb: fb && fb.s, sa: secondL(a[0]) && secondL(a[0]).s, sb: secondL(b[0]) && secondL(b[0]).s });
+  }
+  return { lines: out, pairs };
+}
+
+if (false && typeof module !== "undefined") module.exports = { NOOL, letters, words, checkGrammar, asai, checkYappu, adiVagai, setBookWords };
+
+
+// ── நூல் தரும் திணைக் கூறுகள் (பொருள். 5, 6–12, 20) — பயனருக்குக் காட்டப்படுவதில்லை; ஆக்கத்தை வழிநடத்த மட்டும்
+const THINAI = {
+  "முல்லை": { nilam: "காடும் காடு சார்ந்த இடமும் (மாயோன் மேய காடுறை உலகம்)", pozhuthu: "கார்காலம், மாலைப் பொழுது" },
+  "குறிஞ்சி": { nilam: "மலையும் மலை சார்ந்த இடமும் (சேயோன் மேய மைவரை உலகம்)", pozhuthu: "கூதிர்காலம், முன்பனி, நள்ளிரவு (யாமம்)" },
+  "மருதம்": { nilam: "வயலும் வயல் சார்ந்த இடமும் (வேந்தன் மேய தீம்புனல் உலகம்)", pozhuthu: "வைகறை, விடியல்" },
+  "நெய்தல்": { nilam: "கடலும் கடல் சார்ந்த இடமும் (வருணன் மேய பெருமணல் உலகம்)", pozhuthu: "எற்பாடு (பகல் சாயும் பொழுது)" },
+  "பாலை": { nilam: "நிலம் பெயரிடப்படாத வறண்ட வழி (நடுவுநிலைத் திணை)", pozhuthu: "நண்பகல், வேனில், பின்பனி" },
+};
+const ALLOWED_INITIAL = "உயிர் பன்னிரண்டும்; க த ந ப ம எல்லா உயிரோடும்; ச (அ, ஐ, ஔ தவிர); வ (உ, ஊ, ஒ, ஓ தவிர); ஞ (ஆ, எ, ஒ-வோடு மட்டும்); ய (ஆ-வோடு மட்டும்). ட, ண, ர, ற, ல, ள, ழ, ன, ங சொல்லின் முதலில் வரக் கூடாது.";
+const ALLOWED_FINAL = "புள்ளியிறுதி ஞ் ண் ந் ம் ன் ய் ர் ல் வ் ழ் ள் மட்டும் (க் ச் ட் த் ப் ற் சொல்லின் இறுதியில் வரக் கூடாது, அடுத்த சொல்லோடு புணர்ந்தால் தவிர).";
+const COMMON = "ஜ, ஷ, ஸ, ஹ, ஶ முதலிய வட எழுத்துகளோ ஆங்கிலச் சொற்களோ வேண்டாம்; தூய செந்தமிழ்ச் சொற்கள் மட்டும். " +
+  "சொல்லின் முதல் எழுத்து விதி: " + ALLOWED_INITIAL + " சொல்லின் இறுதி: " + ALLOWED_FINAL;
+
+const $ = id => document.getElementById(id);
+let kind = "paa", sample = null, ctl = null, last = null;
+
+function paaPrompt(o, feedback, prev) {
+  const t = THINAI[o.thinai];
+  let p = `சங்கத் தமிழ் அகப்பாடல் மரபில் ஒரு புதிய அகவல் (ஆசிரியப்பா) எழுது.\n\n` +
+    `திணை: ${o.thinai}. நிலம்: ${t.nilam}. பொழுது: ${t.pozhuthu}.\n` +
+    `உணர்வு (உரிப்பொருள்): ${o.uri}. கூறுபவர்: ${o.koorru}.\n` +
+    (o.karu ? `காட்சியில் வர வேண்டியவை: ${o.karu}.\n` : "") +
+    `அடிகள்: சரியாக ${o.adi}.\n\n` +
+    `யாப்பு: ஒவ்வோர் அடியிலும் நான்கு சீர் (இறுதிக்கு முந்திய அடி மூன்று சீராகவும் வரலாம்). ஒவ்வொரு சீரும் இரண்டு அல்லது மூன்று அசை. ` +
+    `அசை: நேர் = தனிக் குறில், தனி நெடில், அல்லது அவற்றோடு ஒற்று; நிரை = இரண்டு குறில், அல்லது குறிலும் நெடிலும், ஒற்றோடோ இன்றியோ. ` +
+    `அடுத்தடுத்த அடிகளின் முதல் சீரில் மோனை (முதல் எழுத்து ஒத்தல்) அல்லது எதுகை (இரண்டாம் எழுத்து ஒத்தல்) இயன்றவரை வரட்டும். இறுதி அடி ஏகாரத்தில் முடியட்டும்.\n` +
+    `மொழி: ${COMMON}\n` +
+    `உவமமும் இயற்கைக் காட்சியும் உணர்வைச் சுட்டட்டும்; உணர்வை நேரடியாகப் பெயர் சொல்லாதே. புதிதாக எழுது; பழைய பாடல் வரிகளை எடுக்காதே.\n\n` +
+    `பதில்: பாடலின் அடிகள் மட்டும், ஓர் அடிக்கு ஒரு வரி. தலைப்பு, விளக்கம், எண், குறிப்பு எதுவும் வேண்டாம்.`;
+  if (feedback) p += `\n\nமுன் எழுதியது:\n${prev}\n\nஇவற்றைத் திருத்தி முழுப் பாடலையும் மீண்டும் தா (அதே வடிவில், அடிகள் மட்டும்):\n${feedback}`;
+  return p;
+}
+function katturaiPrompt(o, feedback, prev) {
+  let p = `«${o.thalaippu}» என்ற தலைப்பில் செந்தமிழில் ஒரு கட்டுரை எழுது, ${o.neelam} பத்திகள்.\n` +
+    (o.kuripu ? `சேர்க்க வேண்டிய கருத்துகள்: ${o.kuripu}.\n` : "") +
+    `அமைப்பு: முதல் பத்தியில் பொருளைத் தொகுத்துக் கூறு; அடுத்த பத்திகளில் அதை வகைப்படுத்தி விரி; ஒரு பத்தியில் எழக்கூடிய மறுப்பு ஒன்றைக் கூறி அதற்கு விடை தா; இறுதிப் பத்தியில் தெளிவான முடிவு. ` +
+    `ஒரே கருத்தை மீண்டும் கூறாதே; முன்னும் பின்னும் முரண் வேண்டாம்; சான்றில்லாத எண்களோ மேற்கோள்களோ வேண்டாம்.\n` +
+    `மொழி: ${COMMON}\n\n` +
+    `பதில்: முதல் வரியில் தலைப்பு மட்டும், பின் பத்திகள்; பத்திகளுக்கு இடையே ஒரு வெற்று வரி. குறிகள், தலைப்புக் குறிகள், பட்டியல்கள் வேண்டாம்.`;
+  if (feedback) p += `\n\nமுன் எழுதியது:\n${prev}\n\nஇவற்றைத் திருத்தி முழுக் கட்டுரையையும் மீண்டும் தா (அதே வடிவில்):\n${feedback}`;
+  return p;
+}
+const clean = s => s.replace(/```[a-z]*\n?|```/g, "").replace(/^[#>*\-\s]+/gm, m => m.includes("\n") ? "\n" : "").replace(/\*\*/g, "").trim();
+
+// நூல் விதிகளால் அமைதியான சோதனை — முடிவு பயனருக்குக் காட்டப்படுவதில்லை; திருத்தக் குறிப்பாக மட்டும்
+function audit(text, k, adiWanted) {
+  const issues = [];
+  const g = checkGrammar(text).findings.filter(f => f.nilai === "மாறு" || f.nilai === "இல்லை");
+  for (const f of g.slice(0, 12)) issues.push(`«${f.word}» — ${f.msg}`);
+  if (k === "paa") {
+    const y = checkYappu(text);
+    if (y.lines.length !== adiWanted) issues.push(`அடிகள் ${y.lines.length}; வேண்டியது ${adiWanted}.`);
+    y.lines.forEach((l, i) => {
+      const n = l.seer.length;
+      const lastButOne = i === y.lines.length - 2;
+      if (!(n === 4 || (n === 3 && lastButOne))) issues.push(`${i + 1}-ஆம் அடியில் ${n} சீர்; நான்கு வேண்டும்.`);
+      for (const s of l.seer) if (s.asai.length > 3) issues.push(`«${s.s}» — ${s.asai.length} அசை; ஒரு சீரில் மூன்றுக்கு மேல் வேண்டாம்.`);
+    });
+  }
+  return issues;
+}
+
+function form() {
+  return { thinai: $("thinai").value, uri: $("uri").value, koorru: $("koorru").value,
+    adi: Math.min(12, Math.max(3, parseInt($("adi").value, 10) || 6)), karu: $("karu").value.trim(),
+    thalaippu: $("thalaippu").value.trim() || "தாய்மொழியில் கல்வி", neelam: $("neelam").value, kuripu: $("kuripu").value.trim() };
+}
+function status(t) { $("status").hidden = !t; $("status-t").textContent = t || ""; }
+function show(text, k, tag) {
+  $("tag").textContent = tag;
+  if (k === "paa") { $("poem").hidden = false; $("essay").hidden = true; $("poem").textContent = text; }
+  else {
+    $("poem").hidden = true; $("essay").hidden = false;
+    const parts = text.split(/\n\s*\n|\n(?=\S)/).map(s => s.trim()).filter(Boolean);
+    $("essay").replaceChildren();
+    parts.forEach((p, i) => { const el = document.createElement(i === 0 ? "h2" : "p"); el.textContent = p; $("essay").append(el); });
+  }
+  last = { text, k };
+}
+const ERR = { no_key: "முதலில் Anthropic API திறவுகோலைச் சேமியுங்கள்.", bad_key: "API திறவுகோல் ஏற்கப்படவில்லை; அமைப்பில் சரிபாருங்கள்.",
+  bad_model: "தேர்ந்த மாதிரி கிடைக்கவில்லை; அமைப்பில் வேறொன்றைத் தேருங்கள்.", offline: "இணைய இணைப்பு இல்லை. ஆக்கத்துக்கு இணையம் வேண்டும்; முந்தைய ஆக்கங்களைப் பார்க்கலாம்.",
+  empty_completion: "பதில் வரவில்லை; மீண்டும் முயலுங்கள்.", upstream_error: "Claude சேவை தற்போது பதிலளிக்கவில்லை; சிறிது நேரம் கழித்து முயலுங்கள்.",
+  not_granted: "Claude-ஐப் பயன்படுத்த இப்பக்கத்துக்கு இசைவு தரப்படவில்லை.", sampling_disabled: "இக்கணக்கில் Claude கிடைக்கவில்லை.",
+  rate_limited: "சிறிது நேரம் கழித்து மீண்டும் முயலுங்கள்.", refused: "இவ்வேண்டுகோளுக்கு ஆக்கம் தர இயலவில்லை; பொருளை மாற்றிப் பாருங்கள்.",
+  session_expired: "மீண்டும் உள்நுழையுங்கள்." };
+
+// ── Claude-ஐ அழைத்தல்: Claude-இல் திறந்தால் அதன் வழி; தனிச் செயலியாக இருந்தால் பயனரின் API திறவுகோல் வழி
+const store = { get: k => { try { return localStorage.getItem(k) || ""; } catch { return ""; } },
+  set: (k, v) => { try { v ? localStorage.setItem(k, v) : localStorage.removeItem(k); } catch {} } };
+let mode = "wait";                                   // "claude" | "api" | "wait"
+async function generate(prompt, signal, fresh) {
+  if (mode === "claude") {
+    const r = await sample(prompt, { modelTier: "complex", signal, cache: fresh ? false : undefined });
+    return r.text;
+  }
+  const key = store.get("sm.key");
+  if (!key) throw { code: "no_key" };
+  if (!navigator.onLine) throw { code: "offline" };
+  let res;
+  try {
+    res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST", signal,
+      headers: { "content-type": "application/json", "x-api-key": key, "anthropic-version": "2023-06-01",
+        "anthropic-dangerous-direct-browser-access": "true" },
+      body: JSON.stringify({ model: store.get("sm.model") || "claude-sonnet-5-5", max_tokens: 4000,
+        messages: [{ role: "user", content: prompt }] }),
+    });
+  } catch (e) {
+    if (e && e.name === "AbortError") throw { code: "cancelled" };
+    throw { code: "offline" };
+  }
+  if (!res.ok) {
+    const c = res.status === 401 || res.status === 403 ? "bad_key" : res.status === 429 ? "rate_limited" :
+      res.status === 529 || res.status >= 500 ? "upstream_error" : res.status === 404 ? "bad_model" : "upstream_error";
+    throw { code: c };
+  }
+  const data = await res.json();
+  const text = (data.content || []).filter(b => b.type === "text").map(b => b.text).join("");
+  if (!text.trim()) throw { code: "empty_completion" };
+  return text;
+}
+
+function saveHistory(text, k, tag) {
+  let h = [];
+  try { h = JSON.parse(store.get("sm.hist") || "[]"); } catch {}
+  h.unshift({ text, k, tag, at: Date.now() });
+  store.set("sm.hist", JSON.stringify(h.slice(0, 30)));
+  renderHistory();
+}
+function clearHistory() { store.set("sm.hist", ""); renderHistory(); }
+function renderHistory() {
+  let h = [];
+  try { h = JSON.parse(store.get("sm.hist") || "[]"); } catch {}
+  $("history").hidden = !h.length;
+  $("hist").replaceChildren(...h.map(x => {
+    const b = document.createElement("button"); b.type = "button";
+    const sm = document.createElement("small");
+    sm.textContent = x.tag + " · " + new Date(x.at).toLocaleDateString("ta-IN");
+    b.append(sm, document.createTextNode(x.text.split("\n")[0].slice(0, 80)));
+    b.onclick = () => { show(x.text, x.k, x.tag); scrollTo({ top: 0, behavior: "smooth" }); };
+    return b;
+  }));
+}
+
+async function make(fresh) {
+  if (mode === "wait") return;
+  if (mode === "api" && !store.get("sm.key")) { $("settings").hidden = false; $("settings").open = true; $("apikey").focus();
+    $("msg").textContent = "முதலில் Anthropic API திறவுகோலைச் சேமியுங்கள்."; $("msg").hidden = false; return; }
+  const o = form(), k = kind;
+  const tag = k === "paa" ? `${o.thinai} · ${o.uri} · ${o.koorru} கூற்று` : o.thalaippu;
+  ctl = new AbortController();
+  $("go").disabled = true; $("again").hidden = true; $("stop").hidden = false; $("msg").hidden = true;
+  $("poem").hidden = true; $("essay").hidden = true; $("tag").textContent = tag;
+  let text = "", prev = "", feedback = "";
+  try {
+    for (let round = 0; round < 3; round++) {
+      status(round === 0 ? "எழுதுகிறது…" : "செம்மைப்படுத்துகிறது…");
+      const prompt = k === "paa" ? paaPrompt(o, feedback, prev) : katturaiPrompt(o, feedback, prev);
+      text = clean(await generate(prompt, ctl.signal, fresh || round > 0));
+      status("சரிபார்க்கிறது…");
+      const issues = audit(text, k, o.adi);
+      if (!issues.length) break;
+      prev = text; feedback = issues.map(s => "- " + s).join("\n");
+    }
+    show(text, k, tag);
+    saveHistory(text, k, tag);
+    $("again").hidden = false;
+    if (matchMedia("(max-width: 760px)").matches) document.querySelector(".out").scrollIntoView({ block: "start", behavior: "smooth" });
+  } catch (e) {
+    if (text) show(text, k, tag);
+    else if (last) show(last.text, last.k, $("tag").textContent);
+    if (e && e.code !== "cancelled") { $("msg").textContent = ERR[e.code] || "ஆக்கம் தடைப்பட்டது; மீண்டும் முயலுங்கள்."; $("msg").hidden = false; }
+    if (e && (e.code === "not_granted" || e.code === "sampling_disabled")) $("go").hidden = true;
+  } finally {
+    status(""); $("go").disabled = false; $("stop").hidden = true;
+  }
+}
+
+function setKind(k) {
+  kind = k;
+  $("k-paa").setAttribute("aria-pressed", String(k === "paa"));
+  $("k-katturai").setAttribute("aria-pressed", String(k === "katturai"));
+  $("f-paa").hidden = k !== "paa"; $("f-katturai").hidden = k !== "katturai";
+}
+$("k-paa").onclick = () => setKind("paa");
+$("k-katturai").onclick = () => setKind("katturai");
+$("form").addEventListener("submit", e => { e.preventDefault(); make(false); });
+$("again").onclick = () => make(true);
+$("stop").onclick = () => ctl && ctl.abort();
+$("copy").onclick = async () => {
+  const t = last ? last.text : $("poem").textContent;
+  try { await navigator.clipboard.writeText(t); $("copy").textContent = "படியெடுக்கப்பட்டது"; }
+  catch { const r = document.createRange(); r.selectNodeContents($("poem").hidden ? $("essay") : $("poem")); getSelection().removeAllRanges(); getSelection().addRange(r); }
+  setTimeout(() => $("copy").textContent = "படியெடு", 1500);
+};
+last = { text: $("poem").textContent, k: "paa" };
+
+$("apikey").value = store.get("sm.key") ? "••••••••" : "";
+$("model").value = store.get("sm.model") || "claude-sonnet-5-5";
+$("savekey").onclick = () => {
+  const v = $("apikey").value.trim();
+  if (v && !v.startsWith("••")) store.set("sm.key", v);
+  store.set("sm.model", $("model").value);
+  $("keynote").textContent = store.get("sm.key") ? "சேமிக்கப்பட்டது. திறவுகோல் இத்தொலைபேசியில் மட்டுமே." : "திறவுகோல் இல்லை.";
+  $("apikey").value = store.get("sm.key") ? "••••••••" : ""; $("msg").hidden = true;
+  if (store.get("sm.key")) $("settings").open = false;
+};
+$("histclear").onclick = clearHistory;
+$("delkey").onclick = () => { store.set("sm.key", ""); $("apikey").value = ""; $("keynote").textContent = "திறவுகோல் நீக்கப்பட்டது."; };
+renderHistory();
+
+(async () => {
+  try { sample = window.claude ? await window.claude.use("sample") : null; } catch { sample = null; }
+  mode = sample ? "claude" : "api";
+  if (mode === "api") { $("settings").hidden = false; if (!store.get("sm.key")) $("settings").open = true; }
+})();
+</script>
+
+<script>
+if ("serviceWorker" in navigator) addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+</script>
+</body>
+</html>

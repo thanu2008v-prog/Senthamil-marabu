@@ -1,0 +1,259 @@
+<title>நூல்வழிச் சோதனை</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:wght@500;700&family=Hind+Madurai:wght@400;500;600&display=swap">
+<style>
+/* ஓலைச்சுவடியின் இலைப் பச்சையும் மையும்: மேலே தலைப்பு, கீழே இரு தாவல்; முடிவுகள் உரைக்குக் கீழே, நூற்பாச் சான்றோடு */
+:root {
+  --bg: #eef2ee; --surface: #ffffff; --ink: #16201b; --muted: #56655d; --line: #d3dbd5;
+  --accent: #145c50; --accent-soft: #dcebe6;
+  --maaru: #b3261e; --maaru-soft: #fbe3e0;
+  --oru: #9a5800; --oru-soft: #fbeed6;
+  --illai: #6a3e9e; --illai-soft: #efe5fa;
+  --punar: #2f6585; --punar-soft: #e1edf5;
+  --display: "Noto Serif Tamil", "Latha", "Tamil Sangam MN", serif;
+  --body: "Hind Madurai", "Noto Sans Tamil", "Latha", "Tamil Sangam MN", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0e1411; --surface: #16201b; --ink: #e1eae4; --muted: #95a59c; --line: #29352f;
+  --accent: #5cc3ad; --accent-soft: #173a33;
+  --maaru: #ff8f85; --maaru-soft: #3d1c19; --oru: #f0b65e; --oru-soft: #3a2a10;
+  --illai: #c8a6f2; --illai-soft: #2c2140; --punar: #93c6e6; --punar-soft: #152c3b; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0e1411; --surface: #16201b; --ink: #e1eae4; --muted: #95a59c; --line: #29352f;
+  --accent: #5cc3ad; --accent-soft: #173a33;
+  --maaru: #ff8f85; --maaru-soft: #3d1c19; --oru: #f0b65e; --oru-soft: #3a2a10;
+  --illai: #c8a6f2; --illai-soft: #2c2140; --punar: #93c6e6; --punar-soft: #152c3b; color-scheme: dark }
+* { box-sizing: border-box }
+[hidden] { display: none !important }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.65;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 40px }
+.wrap { max-width: 960px; margin: 0 auto; display: grid; gap: 22px }
+header { display: grid; gap: 6px }
+.eyebrow { font-size: 13px; color: var(--accent); letter-spacing: .04em; font-weight: 600 }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 5vw, 40px); line-height: 1.25; margin: 0; text-wrap: balance }
+.lede { color: var(--muted); margin: 0; max-width: 65ch }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line) }
+.tab { font: inherit; font-weight: 600; background: none; border: 0; color: var(--muted); padding: 10px 16px; cursor: pointer;
+  border-bottom: 3px solid transparent; margin-bottom: -1px }
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent) }
+.tab:focus-visible, button:focus-visible, textarea:focus-visible, mark:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.panel { display: grid; gap: 18px }
+.inputbox { display: grid; gap: 8px }
+.inputbox label { font-size: 14px; color: var(--muted) }
+textarea { width: 100%; min-height: 150px; resize: vertical; font: inherit; font-size: 17px; line-height: 1.7; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center }
+.btn { font: inherit; font-size: 14px; font-weight: 600; border-radius: 6px; padding: 7px 14px; cursor: pointer; border: 1px solid var(--line);
+  background: var(--surface); color: var(--ink) }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--surface) }
+.sample-note { font-size: 13px; color: var(--muted) }
+.chips { display: flex; flex-wrap: wrap; gap: 8px }
+.chip { display: inline-flex; gap: 6px; align-items: baseline; border-radius: 999px; padding: 4px 12px; font-size: 14px; font-weight: 600;
+  font-variant-numeric: tabular-nums }
+.chip b { font-size: 17px }
+.c-maaru { background: var(--maaru-soft); color: var(--maaru) }
+.c-oru { background: var(--oru-soft); color: var(--oru) }
+.c-illai { background: var(--illai-soft); color: var(--illai) }
+.c-punar { background: var(--punar-soft); color: var(--punar) }
+.c-ok { background: var(--accent-soft); color: var(--accent) }
+.annot { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; font-size: 17px; line-height: 2.1;
+  white-space: pre-wrap; overflow-wrap: anywhere }
+mark { background: none; color: inherit; border-bottom: 3px solid; padding: 0 1px; cursor: pointer; border-radius: 2px }
+mark.m-maaru { border-color: var(--maaru); background: var(--maaru-soft) }
+mark.m-oru { border-color: var(--oru); background: var(--oru-soft) }
+mark.m-illai { border-color: var(--illai); background: var(--illai-soft) }
+mark.m-punar { border-color: var(--punar); border-bottom-style: dotted }
+.findings { display: grid; gap: 10px }
+.find { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--line); border-radius: 6px; padding: 10px 14px;
+  display: grid; gap: 4px; min-width: 0 }
+.find.f-maaru { border-left-color: var(--maaru) } .find.f-oru { border-left-color: var(--oru) }
+.find.f-illai { border-left-color: var(--illai) } .find.f-punar { border-left-color: var(--punar) }
+.find.flash { box-shadow: 0 0 0 2px var(--accent) }
+.find-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline }
+.find-word { font-weight: 600; font-size: 17px }
+.ref { font-size: 13px; color: var(--accent); font-weight: 600; font-variant-numeric: tabular-nums }
+.pill { font-size: 12px; font-weight: 600; border-radius: 4px; padding: 1px 7px }
+.quote { font-family: var(--display); font-size: 14px; color: var(--muted); border-left: 2px solid var(--line); padding-left: 10px; margin: 2px 0 0 }
+.empty { color: var(--muted); font-size: 15px }
+h2 { font-family: var(--display); font-size: 19px; margin: 6px 0 0; font-weight: 700 }
+.adi { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; display: grid; gap: 10px; min-width: 0 }
+.adi-text { font-family: var(--display); font-size: 18px }
+.adi-meta { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 14px; color: var(--muted) }
+.adi-meta strong { color: var(--ink); font-weight: 600 }
+.seers { display: flex; flex-wrap: wrap; gap: 8px }
+.seer { border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; display: grid; gap: 4px; min-width: 0 }
+.seer.warn { border-color: var(--oru) }
+.seer-w { font-weight: 600 }
+.asais { display: flex; gap: 4px; flex-wrap: wrap }
+.asai { font-size: 13px; border-radius: 4px; padding: 1px 6px; background: var(--accent-soft); color: var(--accent); white-space: nowrap }
+.asai.uri { background: var(--punar-soft); color: var(--punar) }
+.asai small { opacity: .8 }
+.seer-v { font-size: 12px; color: var(--muted) }
+.thodai { font-size: 14px; color: var(--muted); padding: 2px 0 2px 14px; border-left: 2px dashed var(--line); margin-left: 10px }
+.thodai .yes { color: var(--accent); font-weight: 600 }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px }
+summary { cursor: pointer; font-weight: 600 }
+.rules { display: grid; gap: 8px; margin-top: 10px; font-size: 14px }
+.rules div { display: grid; gap: 2px }
+footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; display: grid; gap: 4px }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">செந்தமிழ் மரபு · தொல்காப்பிய நூற்பாக்களால்</div>
+    <h1>நூல்வழிச் சோதனை</h1>
+    <p class="lede">உரையையோ பாடலையோ இட்டால், நூல் விதிக்கு மாறான இடங்களையும் யாப்பின் அசை, சீர், அடி, தொடையையும் நூற்பா எண்ணோடும் சூத்திர மூலத்தோடும் காட்டும்.</p>
+  </header>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="tab-ilakkanam" aria-controls="p-ilakkanam" aria-selected="true">இலக்கணச் சரிபார்ப்பு</button>
+    <button class="tab" role="tab" id="tab-yappu" aria-controls="p-yappu" aria-selected="false">யாப்புச் சோதனை</button>
+  </div>
+
+  <section class="panel" id="p-ilakkanam" role="tabpanel" aria-labelledby="tab-ilakkanam">
+    <div class="inputbox">
+      <label for="in-ilakkanam">தமிழ் உரை</label>
+      <textarea id="in-ilakkanam" spellcheck="false"></textarea>
+      <div class="row">
+        <button class="btn" id="sample-ilakkanam">எடுத்துக்காட்டை இடு</button>
+        <button class="btn" id="clear-ilakkanam">அழி</button>
+        <span class="sample-note" id="note-ilakkanam">எடுத்துக்காட்டு உரை — உங்கள் உரையை இட்டால் முடிவு உடனே மாறும்.</span>
+      </div>
+    </div>
+    <div class="chips" id="sum-ilakkanam"></div>
+    <div class="annot" id="annot-ilakkanam"></div>
+    <div class="findings" id="find-ilakkanam"></div>
+    <details>
+      <summary>இக்கருவி சோதிக்கும் விதிகள்</summary>
+      <div class="rules" id="rules-ilakkanam"></div>
+    </details>
+  </section>
+
+  <section class="panel" id="p-yappu" role="tabpanel" aria-labelledby="tab-yappu" hidden>
+    <div class="inputbox">
+      <label for="in-yappu">பாடல் — ஒவ்வொரு அடியும் தனி வரியில்</label>
+      <textarea id="in-yappu" spellcheck="false"></textarea>
+      <div class="row">
+        <button class="btn" id="sample-yappu">எடுத்துக்காட்டை இடு</button>
+        <button class="btn" id="clear-yappu">அழி</button>
+        <span class="sample-note" id="note-yappu">எடுத்துக்காட்டு: குறுந்தொகை 40.</span>
+      </div>
+    </div>
+    <div class="chips" id="sum-yappu"></div>
+    <div id="out-yappu" class="findings"></div>
+    <details>
+      <summary>இக்கருவி பயன்படுத்தும் நூற்பாக்கள்</summary>
+      <div class="rules" id="rules-yappu"></div>
+    </details>
+  </section>
+
+  <footer>
+    <div>விதிகள்: «செந்தமிழ் மரபு» வழிநூல், DOI 10.5281/zenodo.24011591. «நூலுக்கு மாறு» என்பது நூல் கூறும் விதிக்கு மாறு என்பதே; பிறமொழிச் சொல்லும் இக்கால வழக்கும் அதனுள் வரலாம்.</div>
+    <div>© 2026 தனுசாந்தன் வர்ணகுலசிங்கம் — உரிமம்: CC BY-NC 4.0; வணிக உரிமை ஆசிரியருக்கு மட்டும்; தொழில்நுட்ப உதவி: Claude (Anthropic).</div>
+  </footer>
+</div>
+
+<script>
+/*LOGIC*/
+setBookWords(/*BOOKWORDS*/);
+
+const SAMPLE_G = "ரவி நேற்று பஸ்ஸில் ஊருக்குச் சென்றான். அங்கே லட்டும் டீயும் வாங்கினான். தன் பேக் எடுத்துக்கொண்டு டாக்டர் வீட்டுக்குப் போனான். தமிழ்ப் பாடல் கேட்டு மகிழ்ந்தான்.";
+const SAMPLE_Y = "யாயும் ஞாயும் யாரா கியரோ\nஎந்தையும் நுந்தையும் எம்முறைக் கேளிர்\nயானும் நீயும் எவ்வழி யறிதும்\nசெம்புலப் பெயல்நீர் போல\nஅன்புடை நெஞ்சம் தாங்கலந் தனவே";
+const NILAI = { "மாறு": ["நூலுக்கு மாறு", "maaru"], "ஒருதலை": ["ஒருதலை அன்மை", "oru"], "இல்லை": ["நூலில் இல்லை", "illai"], "புணர்ச்சி": ["புணர்ச்சி — மீறல் அல்ல", "punar"] };
+const $ = id => document.getElementById(id);
+const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const q = ref => NOOL[ref] ? `<p class="quote">${esc(NOOL[ref]).replace(/ \/ /g, "<br>")}</p>` : "";
+
+function renderGrammar() {
+  const text = $("in-ilakkanam").value;
+  const r = checkGrammar(text);
+  const F = r.findings.slice().sort((a, b) => a.start - b.start);
+  const n = k => F.filter(f => f.nilai === k).length;
+  $("sum-ilakkanam").innerHTML = `<span class="chip c-ok"><b>${r.words}</b> சொல்</span>` +
+    Object.entries(NILAI).map(([k, [lab, cls]]) => `<span class="chip c-${cls}"><b>${n(k)}</b> ${lab}</span>`).join("");
+  // உரையில் குறித்தல் — ஒரு சொல்லுக்கு மிகக் கடுமையான நிலை
+  const rank = { "மாறு": 0, "இல்லை": 1, "ஒருதலை": 2, "புணர்ச்சி": 3 };
+  const byStart = new Map();
+  F.forEach((f, i) => { const cur = byStart.get(f.start); if (!cur || rank[f.nilai] < rank[cur.f.nilai]) byStart.set(f.start, { f, i }); });
+  let html = "", pos = 0;
+  [...byStart.values()].sort((a, b) => a.f.start - b.f.start).forEach(({ f, i }) => {
+    if (f.start < pos) return;
+    html += esc(text.slice(pos, f.start)) + `<mark class="m-${NILAI[f.nilai][1]}" tabindex="0" data-i="${i}" title="${esc(f.rule)}">${esc(text.slice(f.start, f.end))}</mark>`;
+    pos = f.end;
+  });
+  html += esc(text.slice(pos));
+  $("annot-ilakkanam").innerHTML = text.trim() ? html : `<span class="empty">உரை இடுங்கள்.</span>`;
+  $("find-ilakkanam").innerHTML = F.length ? F.map((f, i) => {
+    const [lab, cls] = NILAI[f.nilai];
+    return `<div class="find f-${cls}" id="f-${i}"><div class="find-head"><span class="find-word">${esc(f.word)}</span>
+      <span class="pill c-${cls}">${lab}</span><span class="ref">${esc(f.rule)}</span></div><div>${esc(f.msg)}</div>${q(f.rule)}</div>`;
+  }).join("") : (text.trim() ? `<p class="empty">நூல் விதிக்கு மாறான இடம் எதுவும் இல்லை.</p>` : "");
+}
+
+function renderYappu() {
+  const text = $("in-yappu").value;
+  const r = checkYappu(text);
+  const out = [];
+  let seerTot = 0, warn = 0, thodai = 0;
+  r.lines.forEach((l, i) => {
+    seerTot += l.seer.length; warn += l.seer.filter(s => !s.ok).length;
+    out.push(`<div class="adi"><div class="adi-text">${esc(l.line)}</div>
+      <div class="adi-meta"><span>உயிருள்ள எழுத்து <strong>${l.ezhuthu}</strong> → <strong>${esc(l.vagai)}</strong> <span class="ref">${l.vref}</span></span>
+      <span><strong>${esc(l.adi[0])}</strong> <span class="ref">${l.adi[1]}</span></span></div>
+      <div class="seers">${l.seer.map(s => `<div class="seer${s.ok ? "" : " warn"}"><span class="seer-w">${esc(s.s)}</span>
+        <span class="asais">${s.asai.map(a => `<span class="asai${a.peyar.endsWith("பு") ? " uri" : ""}">${esc(a.s)} <small>${a.peyar}</small></span>`).join("")}</span>
+        <span class="seer-v">${esc(s.vagai)} · ${s.ref}</span></div>`).join("")}</div>
+      ${l.within.length ? `<div class="adi-meta">${l.within.map(w => `<span><strong>${w[0]}</strong> ${esc(w[2])} <span class="ref">${w[1]}</span></span>`).join("")}</div>` : ""}
+    </div>`);
+    const p = r.pairs.find(p => p.i === i);
+    if (p) {
+      const parts = [];
+      parts.push(p.mo ? `<span class="yes">${p.mo}</span> (${esc(p.fa)} · ${esc(p.fb)}) <span class="ref">${p.mo === "மோனை" ? "பொருள். 397" : "பொருள். 399"}</span>` : `மோனை இல்லை (${esc(p.fa || "")} · ${esc(p.fb || "")})`);
+      parts.push(p.eth ? `<span class="yes">எதுகை</span> (${esc(p.sa)} · ${esc(p.sb)}) <span class="ref">பொருள். 398</span>` : `எதுகை இல்லை (${esc(p.sa || "")} · ${esc(p.sb || "")})`);
+      if (p.iy) parts.push(`<span class="yes">இயைபு</span> <span class="ref">பொருள். 401</span>`);
+      if (p.mo || p.eth || p.iy) thodai++;
+      out.push(`<div class="thodai">அடுத்த அடியோடு: ${parts.join(" · ")}</div>`);
+    }
+  });
+  $("out-yappu").innerHTML = out.length ? out.join("") : `<p class="empty">பாடலை இடுங்கள் — ஒவ்வொரு அடியும் தனி வரியில்.</p>`;
+  $("sum-yappu").innerHTML = `<span class="chip c-ok"><b>${r.lines.length}</b> அடி</span><span class="chip c-ok"><b>${seerTot}</b> சீர்</span>` +
+    `<span class="chip c-oru"><b>${warn}</b> ஈரசை, மூவசை அல்லாத சீர்</span><span class="chip c-punar"><b>${thodai}</b> தொடையுள்ள அடியிணை</span>`;
+}
+
+function rulesList(ids) { return ids.map(id => `<div><span class="ref">${id}</span>${q(id)}</div>`).join(""); }
+$("rules-ilakkanam").innerHTML = rulesList(["எழு. 22", "எழு. 23", "எழு. 24", "எழு. 25", "எழு. 26", "எழு. 27", "எழு. 28", "எழு. 29", "எழு. 30", "எழு. 48", "எழு. 49", "எழு. 59", "எழு. 60", "எழு. 61", "எழு. 62", "எழு. 63", "எழு. 64", "எழு. 65", "எழு. 66", "எழு. 69", "எழு. 70", "எழு. 71", "எழு. 72", "எழு. 73", "எழு. 74", "எழு. 78", "சொல். 401"]) +
+  `<div class="empty">புணர்ச்சியால் வந்த ஒற்றும் (எழு. 108), நூலுள்ளேயே வரும் சொற்களும் மீறலாகக் காட்டப்படுவதில்லை. நூலின் 1602 சூத்திரத்தையும் இக்கருவியால் சோதித்தபோது «நூலுக்கு மாறு» 0.</div>`;
+$("rules-yappu").innerHTML = rulesList(["பொருள். 312", "பொருள். 313", "பொருள். 315", "பொருள். 320", "பொருள். 321", "பொருள். 327", "பொருள். 328", "பொருள். 335", "பொருள். 340", "பொருள். 344", "பொருள். 345", "பொருள். 346", "பொருள். 347", "பொருள். 348", "பொருள். 351", "பொருள். 359", "பொருள். 397", "பொருள். 398", "பொருள். 399", "பொருள். 401", "பொருள். 402", "பொருள். 403", "பொருள். 404"]) +
+  `<div class="empty">ஒவ்வொரு சொல்லும் ஒரு சீர் எனக் கொள்ளப்படுகிறது. நேர்பு, நிரைபு சொல்லிறுதி உகரத்தில் மட்டும் (பொருள். 313, 318) — அதன் எல்லை ஒருதலை அன்மை.</div>`;
+
+let t1, t2;
+$("in-ilakkanam").addEventListener("input", () => { clearTimeout(t1); t1 = setTimeout(renderGrammar, 150); $("note-ilakkanam").textContent = "உங்கள் உரை."; });
+$("in-yappu").addEventListener("input", () => { clearTimeout(t2); t2 = setTimeout(renderYappu, 150); $("note-yappu").textContent = "உங்கள் பாடல்."; });
+$("sample-ilakkanam").onclick = () => { $("in-ilakkanam").value = SAMPLE_G; $("note-ilakkanam").textContent = "எடுத்துக்காட்டு உரை."; renderGrammar(); };
+$("sample-yappu").onclick = () => { $("in-yappu").value = SAMPLE_Y; $("note-yappu").textContent = "எடுத்துக்காட்டு: குறுந்தொகை 40."; renderYappu(); };
+$("clear-ilakkanam").onclick = () => { $("in-ilakkanam").value = ""; renderGrammar(); $("in-ilakkanam").focus(); };
+$("clear-yappu").onclick = () => { $("in-yappu").value = ""; renderYappu(); $("in-yappu").focus(); };
+$("annot-ilakkanam").addEventListener("click", e => {
+  const m = e.target.closest("mark"); if (!m) return;
+  const card = $("f-" + m.dataset.i); if (!card) return;
+  card.scrollIntoView({ block: "center", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  card.classList.add("flash"); setTimeout(() => card.classList.remove("flash"), 1200);
+});
+$("annot-ilakkanam").addEventListener("keydown", e => { if (e.key === "Enter" && e.target.matches("mark")) e.target.click(); });
+
+function show(name) {
+  ["ilakkanam", "yappu"].forEach(n => {
+    $("tab-" + n).setAttribute("aria-selected", String(n === name));
+    $("p-" + n).hidden = n !== name;
+  });
+}
+$("tab-ilakkanam").onclick = () => { show("ilakkanam"); history.replaceState(null, "", "#ilakkanam"); };
+$("tab-yappu").onclick = () => { show("yappu"); history.replaceState(null, "", "#yappu"); };
+window.addEventListener("hashchange", () => show(location.hash === "#yappu" ? "yappu" : "ilakkanam"));
+$("in-ilakkanam").value = SAMPLE_G; $("in-yappu").value = SAMPLE_Y;
+show(location.hash === "#yappu" ? "yappu" : "ilakkanam");
+renderGrammar(); renderYappu();
+</script>

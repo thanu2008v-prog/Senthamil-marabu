@@ -1,0 +1,123 @@
+{
+ "name": "senthamil-marabu",
+ "title": "செந்தமிழ் மரபு — Senthamil Marabu",
+ "version": "1.0.0",
+ "description": "1602 தொல்காப்பிய நூற்பா (Tolkappiyam sutras) with a new commentary (காண்டிகை, உரை, துணிவு) judged solely by the text itself.",
+ "id": "https://doi.org/10.5281/zenodo.24011590",
+ "homepage": "https://github.com/thanu2008v-prog/senthamil-marabu",
+ "licenses": [
+  {
+   "name": "CC-BY-NC-4.0",
+   "path": "https://creativecommons.org/licenses/by-nc/4.0/",
+   "title": "Creative Commons Attribution-NonCommercial 4.0"
+  }
+ ],
+ "contributors": [
+  {
+   "title": "Thanushanthan Varnakulasingam",
+   "path": "https://orcid.org/0009-0005-4309-7476",
+   "role": "author"
+  }
+ ],
+ "keywords": [
+  "Tamil",
+  "Tolkappiyam",
+  "தொல்காப்பியம்",
+  "grammar",
+  "prosody",
+  "commentary"
+ ],
+ "languages": [
+  "ta"
+ ],
+ "resources": [
+  {
+   "name": "sutras-csv",
+   "path": "build/sutras_v2.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "description": "சூத்திர அடையாளம்: «ezhu.N», «sol.N», «porul.N» — அதிகாரத்துள் தொடர் எண்"
+     },
+     {
+      "name": "padalam",
+      "type": "string",
+      "description": "அதிகாரம்: ezhuthu / sol / porul"
+     },
+     {
+      "name": "othu",
+      "type": "integer",
+      "description": "அதிகாரத்துள் ஓத்து (இயல்) எண்"
+     },
+     {
+      "name": "sutra",
+      "type": "integer",
+      "description": "ஓத்துக்குள் சூத்திர எண்"
+     },
+     {
+      "name": "moolam",
+      "type": "string",
+      "description": "சூத்திர மூலம், மாற்றமின்றி; அடிகள் «\\n» ஆல் பிரிக்கப்பட்டவை"
+     },
+     {
+      "name": "kaandigai_porul",
+      "type": "string",
+      "description": "காண்டிகை — சூத்திரப் பொருள்"
+     },
+     {
+      "name": "kaandigai_ethu",
+      "type": "string",
+      "description": "ஏது நடை (முன்–பின் தொடர்பு, காரணம்), நூலுள் எடுத்துக்காட்டோடு"
+     },
+     {
+      "name": "urai",
+      "type": "string",
+      "description": "உரை: இயைபு, மறுதலைக் கடாஅ முதலியன. «(645)», «(649)», «(650)» என்ற குறிகள் உரையின் எந்தக் கூறு என்பதைச் சுட்டுகின்றன; «ஆய்வு N» நூலின் «ஆய்வுகள்» பிற்சேர்க்கை எண்"
+     },
+     {
+      "name": "vagai",
+      "type": "string",
+      "description": "விதி / விலக்கு / விதி-விலக்கு"
+     },
+     {
+      "name": "utthi",
+      "type": "string",
+      "description": "{peyar, saanru}: சூத்திரச் சொல்லில் அடையாளம் உள்ள உத்தியும் அச்சொல்லும்; அடையாளம் இல்லாத உத்திகள் குறிக்கப்படுவதில்லை"
+     },
+     {
+      "name": "thunivu",
+      "type": "string",
+      "description": "ஒரே துணிவு — நிலையும் தீராத கூறும்"
+     },
+     {
+      "name": "nilai",
+      "type": "string",
+      "description": "துணிவின் நிலை: நூலில் நேரடியாக / ஒருதலை அன்மை / நூலில் இல்லை"
+     }
+    ],
+    "primaryKey": "id"
+   }
+  },
+  {
+   "name": "sutras-jsonl",
+   "path": "senthamil_marabu/data/sutras.jsonl",
+   "format": "jsonl",
+   "mediatype": "application/jsonl",
+   "encoding": "utf-8",
+   "description": "முழுப் பதிவுகள் — schema/sutra.v2.schema.json",
+   "schema": "schema/sutra.v2.schema.json"
+  },
+  {
+   "name": "sqlite",
+   "path": "build/senthamil_v2.db",
+   "format": "sqlite",
+   "mediatype": "application/vnd.sqlite3",
+   "description": "tables: sutra, edu, link, maruthalai, utthi; FTS: sutra_fts"
+  }
+ ]
+}

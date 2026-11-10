@@ -1,0 +1,9 @@
+build/
+export/
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+*.egg-info/
+node_modules/
+dist/

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#145c50">
+<meta name="description" content="செந்தமிழ் மரபு நூலில் ஆதாரம் தேடும் AI உதவியும் செந்தமிழ் ஆக்கமும்.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="manifest" href="./manifest.webmanifest">
+<title>செந்தமிழ் — AI மற்றும் ஆக்கம்</title>
+<style>
+@font-face { font-family: "Noto Sans Tamil"; src: url("../aakkam/fonts/noto-sans-tamil-tamil-400-normal.woff2") format("woff2"); font-weight:400; font-display:swap }
+@font-face { font-family: "Noto Sans Tamil"; src: url("../aakkam/fonts/noto-sans-tamil-tamil-700-normal.woff2") format("woff2"); font-weight:700; font-display:swap }
+:root { color-scheme:light; --bg:#eef2ee; --surface:#fff; --ink:#16201b; --muted:#56655d; --line:#d3dbd5; --accent:#145c50; --soft:#dcebe6 }
+* { box-sizing:border-box }
+body { margin:0; height:100vh; height:100dvh; display:grid; grid-template-rows:auto 1fr; overflow:hidden; background:var(--bg); color:var(--ink); font-family:"Noto Sans Tamil","Latha",system-ui,sans-serif; line-height:1.55 }
+header { background:var(--surface); border-bottom:1px solid var(--line); padding:12px 16px 0 }
+h1 { margin:0; color:var(--accent); font-size:clamp(21px,5vw,28px) }
+.lede { margin:2px 0 8px; color:var(--muted); font-size:13px }
+nav { display:flex; gap:4px }
+nav button { border:0; border-bottom:3px solid transparent; padding:8px 14px; background:none; color:var(--muted); font:inherit; font-weight:700 }
+nav button[aria-selected="true"] { border-color:var(--accent); color:var(--accent) }
+main,.panel { min-height:0; height:100% }
+#ai { max-width:900px; margin:auto; padding:12px; display:grid; grid-template-rows:1fr auto; gap:9px }
+#messages { min-height:0; overflow:auto; background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:13px }
+.message { margin:0 0 13px; white-space:pre-wrap; overflow-wrap:anywhere }
+.message strong { display:block; color:var(--accent) }
+.result { margin:10px 0; padding:10px; border-left:3px solid var(--accent); background:#f7f9f7; border-radius:4px }
+.result h2 { margin:0 0 5px; font-size:16px; color:var(--accent) }
+.result p { margin:4px 0; white-space:pre-wrap }
+.source { color:var(--muted); font-size:13px }
+form { display:grid; grid-template-columns:1fr auto; gap:8px; padding:9px; background:var(--surface); border:1px solid var(--line); border-radius:10px }
+input { width:100%; min-width:0; padding:10px; border:1px solid var(--line); border-radius:7px; background:white; color:var(--ink); font:inherit; font-size:16px }
+button { cursor:pointer; font:inherit }
+.send { border:0; border-radius:7px; padding:9px 16px; background:var(--accent); color:white; font-weight:700 }
+.examples { grid-column:1/-1; display:flex; align-items:center; flex-wrap:wrap; gap:6px; color:var(--muted); font-size:12px }
+.examples button { border:0; border-radius:16px; padding:5px 9px; background:var(--soft); color:var(--accent) }
+#write { height:100%; }
+#aakkam { width:100%; height:100%; border:0; background:white }
+button:focus-visible,input:focus-visible { outline:2px solid #347e70; outline-offset:2px }
+@media(max-width:480px) { header { padding-inline:10px } nav button { padding:7px 10px } #ai { padding:8px; gap:7px } #messages { padding:10px } }
+</style>
+</head>
+<body>
+<header>
+  <h1>செந்தமிழ்</h1>
+  <p class="lede">நூலின் ஆதாரமும் ஆக்கமும் — ஒரே செயலியில்</p>
+  <nav role="tablist" aria-label="செயலி">
+    <button id="ai-tab" type="button" role="tab" aria-selected="true" aria-controls="ai">செந்தமிழ் AI</button>
+    <button id="write-tab" type="button" role="tab" aria-selected="false" aria-controls="write">செந்தமிழ் ஆக்கம்</button>
+  </nav>
+</header>
+<main>
+  <section id="ai" class="panel" role="tabpanel" aria-labelledby="ai-tab">
+    <div id="messages" aria-live="polite">
+      <p class="message"><strong>செந்தமிழ் AI</strong>வினாவை எழுதுங்கள். பதில் நூற்பா/காண்டிகை/உரை ஆகிய நூல் பகுதிகளிலிருந்து தேடப்படும்; பொருந்திய ஆதாரம் இல்லையெனில் அதையும் தெரிவிக்கும். எடுத்துக்காட்டு: ezhu.3, தேடு: நிலம்</p>
+    </div>
+    <form id="ask-form">
+      <input id="question" type="text" autocomplete="off" placeholder="உங்கள் வினாவை இங்கே எழுதுங்கள்…" aria-label="வினா" autofocus>
+      <button class="send" type="submit">கேள்</button>
+      <div class="examples"><span>எடுத்துக்காட்டு:</span>
+        <button type="button" data-query="ezhu.3">நூற்பா</button>
+        <button type="button" data-query="நிலம் எதை குறிக்கிறது?">நூலில் கேள்</button>
+        <button type="button" data-query="தேடு: நிலம்">சொல் தேடல்</button>
+      </div>
+    </form>
+  </section>
+  <section id="write" class="panel" role="tabpanel" aria-labelledby="write-tab" hidden>
+    <iframe id="aakkam" title="செந்தமிழ் ஆக்கம்" src="../aakkam/index.html"></iframe>
+  </section>
+</main>
+<script src="./app/app.js"></script>
+<script src="./app.js"></script>
+<script>
+if ("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js"));
+</script>
+</body>
+</html>

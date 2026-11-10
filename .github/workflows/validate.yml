@@ -1,0 +1,56 @@
+name: Validate Senthamil Marabu
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data_v2/**'
+      - 'data/sutras/**'
+      - 'sources/**'
+      - 'schema/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'Makefile'
+      - 'senthamil_marabu/**'
+      - 'karuvi/**'
+  pull_request:
+    branches: [main]
+jobs:
+  validate:
+    name: Check (v2) + Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Check (validate, migrate, nool-check, rules, nool, build-v2)
+        run: make check
+      - name: Uncommitted changes after build (data_v2, packed data, docs)
+        run: git diff --exit-code -- data_v2 senthamil_marabu/data docs datapackage.json
+      - name: Install package and run example
+        run: |
+          pip install .
+          cd /tmp && python -c "import senthamil_marabu as sm; assert sm.info()['sutras'] == 1602"
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: senthamil-build
+          path: |
+            build/senthamil_v2.db
+            build/bundle_v2.json
+            build/sutras_v2.csv
+            build/senthamil_marabu.md
+            senthamil_marabu/data/sutras.jsonl
+            datapackage.json
+          retention-days: 30
+      - name: Report counts
+        run: |
+          echo "### Build summary" >> $GITHUB_STEP_SUMMARY
+          echo "- Records: $(cat data_v2/*/*.jsonl | wc -l)" >> $GITHUB_STEP_SUMMARY
+          echo "- With urai: $(python -c "import json,glob;print(sum(1 for p in glob.glob('data_v2/*/*.jsonl') for l in open(p,encoding='utf-8') if (json.loads(l).get('urai') or {}).get('text','').strip()))")" >> $GITHUB_STEP_SUMMARY
+          echo "- Bundle size: $(du -h build/bundle_v2.json | cut -f1)" >> $GITHUB_STEP_SUMMARY

@@ -1,0 +1,36 @@
+name: Release (book + data)
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install tools
+        run: |
+          pip install -r requirements.txt pillow
+          sudo apt-get update && sudo apt-get install -y pandoc
+          npm install --no-save playwright@1.48.2
+          npx playwright install --with-deps chromium
+      - name: Check
+        run: make check
+      - name: Book (PDF, EPUB)
+        run: make book
+      - name: Data bundle
+        run: |
+          mkdir -p dist
+          cp build/book/senthamil_marabu.pdf build/book/senthamil_marabu.epub dist/
+          zip -j dist/senthamil-marabu-data-${GITHUB_REF_NAME}.zip senthamil_marabu/data/sutras.jsonl build/sutras_v2.csv build/senthamil_v2.db datapackage.json docs/TARAVU.md docs/DATA_CARD.md schema/sutra.v2.schema.json LICENSE.md CITATION.cff
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true

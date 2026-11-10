@@ -1,0 +1,368 @@
+<title>செந்தமிழ் ஆக்கம்</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<!--FONTS-->
+<style>
+/* இடப்பக்கம் ஆணை, வலப்பக்கம் ஆக்கம் — ஓலையின் இலைப் பச்சையும் மையும்; ஆக்கமே பக்கத்தின் மையம் */
+:root {
+  --bg: #eef2ee; --surface: #ffffff; --ink: #16201b; --muted: #56655d; --line: #d3dbd5;
+  --accent: #145c50; --accent-soft: #dcebe6; --leaf: #f6f4ea; --warn: #9a5800;
+  --display: "Noto Serif Tamil", "Latha", "Tamil Sangam MN", serif;
+  --body: "Hind Madurai", "Noto Sans Tamil", "Latha", "Tamil Sangam MN", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0e1411; --surface: #16201b; --ink: #e1eae4; --muted: #95a59c; --line: #29352f;
+  --accent: #5cc3ad; --accent-soft: #173a33; --leaf: #1b231e; --warn: #f0b65e; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0e1411; --surface: #16201b; --ink: #e1eae4; --muted: #95a59c; --line: #29352f;
+  --accent: #5cc3ad; --accent-soft: #173a33; --leaf: #1b231e; --warn: #f0b65e; color-scheme: dark }
+* { box-sizing: border-box }
+[hidden] { display: none !important }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 40px }
+.wrap { max-width: 1040px; margin: 0 auto; display: grid; gap: 22px }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 5vw, 40px); line-height: 1.25; margin: 0 }
+.lede { color: var(--muted); margin: 4px 0 0; max-width: 60ch }
+.grid { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 24px; align-items: start }
+@media (max-width: 760px) { .grid { grid-template-columns: minmax(0, 1fr) } }
+form { display: grid; gap: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px }
+.seg { display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden }
+.seg button { flex: 1; font: inherit; font-weight: 600; padding: 8px; border: 0; background: none; color: var(--muted); cursor: pointer }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--surface) }
+.field { display: grid; gap: 5px }
+.field label { font-size: 14px; color: var(--muted); font-weight: 500 }
+select, input, textarea { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; width: 100% }
+textarea { min-height: 70px; resize: vertical }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px }
+button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.go { font: inherit; font-weight: 600; font-size: 16px; padding: 10px; border-radius: 8px; border: 0; background: var(--accent); color: var(--surface); cursor: pointer }
+.go:disabled { opacity: .55; cursor: default }
+.out { display: grid; gap: 12px; min-width: 0 }
+.leaf { background: var(--leaf); border: 1px solid var(--line); border-radius: 10px; padding: clamp(18px, 4vw, 34px); min-height: 280px; min-width: 0 }
+.tag { font-size: 13px; color: var(--muted); margin-bottom: 14px }
+.poem { font-family: var(--display); font-size: clamp(18px, 2.6vw, 22px); line-height: 2; white-space: pre-wrap; overflow-wrap: anywhere; margin: 0 }
+.essay { font-family: var(--display); font-size: 18px; line-height: 1.9; overflow-wrap: anywhere }
+.essay h2 { font-size: 22px; margin: 0 0 12px }
+.essay p { margin: 0 0 14px; max-width: 68ch }
+.status { color: var(--muted); font-size: 15px; display: flex; gap: 10px; align-items: center }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); animation: p 1.2s infinite ease-in-out }
+@keyframes p { 50% { opacity: .25 } }
+@media (prefers-reduced-motion: reduce) { .dot { animation: none } }
+.actions { display: flex; flex-wrap: wrap; gap: 8px }
+.btn { font: inherit; font-size: 14px; font-weight: 600; border-radius: 6px; padding: 7px 14px; cursor: pointer; border: 1px solid var(--line); background: var(--surface); color: var(--ink) }
+.msg { color: var(--warn); font-size: 14px }
+details.box { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px }
+details.box summary { cursor: pointer; font-weight: 600 }
+.note { font-size: 13px; color: var(--muted); margin: 0 }
+.hist { display: grid; gap: 6px; margin-top: 10px }
+.hist button { text-align: left; font: inherit; font-size: 14px; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; color: var(--ink); cursor: pointer; overflow-wrap: anywhere }
+.hist small { color: var(--muted); display: block }
+footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px }
+footer a { color: var(--accent) }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>செந்தமிழ் ஆக்கம்</h1>
+    <p class="lede">வடிவம், திணை, பொருள் தேர்ந்தால் புதிய பாடலோ கட்டுரையோ உருவாகும்.</p>
+  </header>
+
+  <div class="grid">
+    <form id="form" autocomplete="off">
+      <div class="seg" role="group" aria-label="வடிவம்">
+        <button type="button" id="k-paa" aria-pressed="true">பாடல்</button>
+        <button type="button" id="k-katturai" aria-pressed="false">கட்டுரை</button>
+      </div>
+
+      <div id="f-paa" class="field" style="gap:14px">
+        <div class="two">
+          <div class="field"><label for="thinai">திணை</label>
+            <select id="thinai">
+              <option>முல்லை</option><option>குறிஞ்சி</option><option>மருதம்</option><option>நெய்தல்</option><option>பாலை</option>
+            </select></div>
+          <div class="field"><label for="uri">உணர்வு</label>
+            <select id="uri">
+              <option>இருத்தல்</option><option>புணர்தல்</option><option>பிரிதல்</option><option>இரங்கல்</option><option>ஊடல்</option>
+            </select></div>
+        </div>
+        <div class="two">
+          <div class="field"><label for="koorru">கூறுபவர்</label>
+            <select id="koorru"><option>தலைவி</option><option>தோழி</option><option>தலைவன்</option><option>செவிலி</option></select></div>
+          <div class="field"><label for="adi">அடிகள்</label>
+            <input id="adi" type="number" min="3" max="12" value="6"></div>
+        </div>
+        <div class="field"><label for="karu">காட்சியில் வர வேண்டியவை (விருப்பம்)</label>
+          <textarea id="karu" placeholder="எ.கா. மழை மேகம், கொன்றை மலர், மான்"></textarea></div>
+      </div>
+
+      <div id="f-katturai" class="field" style="gap:14px" hidden>
+        <div class="field"><label for="thalaippu">தலைப்பு</label>
+          <input id="thalaippu" value="தாய்மொழியில் கல்வி"></div>
+        <div class="field"><label for="neelam">நீளம்</label>
+          <select id="neelam"><option value="3">சிறிது — மூன்று பத்தி</option><option value="5" selected>நடுத்தரம் — ஐந்து பத்தி</option><option value="8">விரிவு — எட்டுப் பத்தி</option></select></div>
+        <div class="field"><label for="kuripu">சேர்க்க வேண்டிய கருத்துகள் (விருப்பம்)</label>
+          <textarea id="kuripu" placeholder="எ.கா. அறிவியல் கலைச்சொற்கள், பெற்றோர் பங்கு"></textarea></div>
+      </div>
+
+      <button class="go" id="go" type="submit">ஆக்கு</button>
+      <div class="msg" id="msg" hidden></div>
+      <details class="box" id="settings" hidden>
+        <summary>அமைப்பு — Claude இணைப்பு</summary>
+        <div class="field" style="margin-top:10px"><label for="apikey">Anthropic API திறவுகோல்</label>
+          <input id="apikey" type="password" placeholder="sk-ant-…" autocomplete="off" spellcheck="false"></div>
+        <div class="field"><label for="model">மாதிரி</label>
+          <select id="model">
+            <option value="claude-sonnet-5-5">Claude Sonnet 5.5 — தரமும் வேகமும்</option>
+            <option value="claude-opus-5-5">Claude Opus 5.5 — மிக உயர் தரம்</option>
+            <option value="claude-haiku-5-5">Claude Haiku 5.5 — விரைவு, குறைந்த செலவு</option>
+          </select></div>
+        <div class="actions"><button class="btn" id="savekey" type="button">சேமி</button><button class="btn" id="delkey" type="button">நீக்கு</button></div>
+        <p class="note" id="keynote">திறவுகோல் இத்தொலைபேசியில் மட்டுமே சேமிக்கப்படும்; நேரடியாக Anthropic-க்கு மட்டுமே அனுப்பப்படும். செலவு உங்கள் API கணக்கில்.</p>
+      </details>
+    </form>
+
+    <section class="out" aria-live="polite">
+      <div class="leaf">
+        <div class="tag" id="tag">எடுத்துக்காட்டு · முல்லை · இருத்தல்</div>
+        <div id="status" class="status" hidden><span class="dot"></span><span id="status-t"></span></div>
+        <pre class="poem" id="poem">கார்வான் முழங்கக் கானம் தளிர்ப்ப
+மாலை வந்தது மனையகம் நோக்கி
+வருவர் என்ற சொல்லே துணையாக
+இருந்தனள் தலைவி இனிதுயில் மறந்தே</pre>
+        <div class="essay" id="essay" hidden></div>
+      </div>
+      <div class="actions">
+        <button class="btn" id="copy" type="button">படியெடு</button>
+        <button class="btn" id="again" type="button" hidden>இன்னொன்று</button>
+        <button class="btn" id="stop" type="button" hidden>நிறுத்து</button>
+      </div>
+      <details class="box" id="history" hidden>
+        <summary>முந்தைய ஆக்கங்கள்</summary>
+        <div class="hist" id="hist"></div>
+        <div class="actions"><button class="btn" id="histclear" type="button">எல்லாவற்றையும் அழி</button></div>
+      </details>
+    </section>
+  </div>
+
+  <footer>© 2026 தனுசாந்தன் வர்ணகுலசிங்கம் — உரிமம்: CC BY-NC 4.0; வணிக உரிமை ஆசிரியருக்கு மட்டும்; தொழில்நுட்ப உதவி: Claude (Anthropic).</footer>
+</div>
+
+<script>
+/*LOGIC*/
+
+// ── நூல் தரும் திணைக் கூறுகள் (பொருள். 5, 6–12, 20) — பயனருக்குக் காட்டப்படுவதில்லை; ஆக்கத்தை வழிநடத்த மட்டும்
+const THINAI = {
+  "முல்லை": { nilam: "காடும் காடு சார்ந்த இடமும் (மாயோன் மேய காடுறை உலகம்)", pozhuthu: "கார்காலம், மாலைப் பொழுது" },
+  "குறிஞ்சி": { nilam: "மலையும் மலை சார்ந்த இடமும் (சேயோன் மேய மைவரை உலகம்)", pozhuthu: "கூதிர்காலம், முன்பனி, நள்ளிரவு (யாமம்)" },
+  "மருதம்": { nilam: "வயலும் வயல் சார்ந்த இடமும் (வேந்தன் மேய தீம்புனல் உலகம்)", pozhuthu: "வைகறை, விடியல்" },
+  "நெய்தல்": { nilam: "கடலும் கடல் சார்ந்த இடமும் (வருணன் மேய பெருமணல் உலகம்)", pozhuthu: "எற்பாடு (பகல் சாயும் பொழுது)" },
+  "பாலை": { nilam: "நிலம் பெயரிடப்படாத வறண்ட வழி (நடுவுநிலைத் திணை)", pozhuthu: "நண்பகல், வேனில், பின்பனி" },
+};
+const ALLOWED_INITIAL = "உயிர் பன்னிரண்டும்; க த ந ப ம எல்லா உயிரோடும்; ச (அ, ஐ, ஔ தவிர); வ (உ, ஊ, ஒ, ஓ தவிர); ஞ (ஆ, எ, ஒ-வோடு மட்டும்); ய (ஆ-வோடு மட்டும்). ட, ண, ர, ற, ல, ள, ழ, ன, ங சொல்லின் முதலில் வரக் கூடாது.";
+const ALLOWED_FINAL = "புள்ளியிறுதி ஞ் ண் ந் ம் ன் ய் ர் ல் வ் ழ் ள் மட்டும் (க் ச் ட் த் ப் ற் சொல்லின் இறுதியில் வரக் கூடாது, அடுத்த சொல்லோடு புணர்ந்தால் தவிர).";
+const COMMON = "ஜ, ஷ, ஸ, ஹ, ஶ முதலிய வட எழுத்துகளோ ஆங்கிலச் சொற்களோ வேண்டாம்; தூய செந்தமிழ்ச் சொற்கள் மட்டும். " +
+  "சொல்லின் முதல் எழுத்து விதி: " + ALLOWED_INITIAL + " சொல்லின் இறுதி: " + ALLOWED_FINAL;
+
+const $ = id => document.getElementById(id);
+let kind = "paa", sample = null, ctl = null, last = null;
+
+function paaPrompt(o, feedback, prev) {
+  const t = THINAI[o.thinai];
+  let p = `சங்கத் தமிழ் அகப்பாடல் மரபில் ஒரு புதிய அகவல் (ஆசிரியப்பா) எழுது.\n\n` +
+    `திணை: ${o.thinai}. நிலம்: ${t.nilam}. பொழுது: ${t.pozhuthu}.\n` +
+    `உணர்வு (உரிப்பொருள்): ${o.uri}. கூறுபவர்: ${o.koorru}.\n` +
+    (o.karu ? `காட்சியில் வர வேண்டியவை: ${o.karu}.\n` : "") +
+    `அடிகள்: சரியாக ${o.adi}.\n\n` +
+    `யாப்பு: ஒவ்வோர் அடியிலும் நான்கு சீர் (இறுதிக்கு முந்திய அடி மூன்று சீராகவும் வரலாம்). ஒவ்வொரு சீரும் இரண்டு அல்லது மூன்று அசை. ` +
+    `அசை: நேர் = தனிக் குறில், தனி நெடில், அல்லது அவற்றோடு ஒற்று; நிரை = இரண்டு குறில், அல்லது குறிலும் நெடிலும், ஒற்றோடோ இன்றியோ. ` +
+    `அடுத்தடுத்த அடிகளின் முதல் சீரில் மோனை (முதல் எழுத்து ஒத்தல்) அல்லது எதுகை (இரண்டாம் எழுத்து ஒத்தல்) இயன்றவரை வரட்டும். இறுதி அடி ஏகாரத்தில் முடியட்டும்.\n` +
+    `மொழி: ${COMMON}\n` +
+    `உவமமும் இயற்கைக் காட்சியும் உணர்வைச் சுட்டட்டும்; உணர்வை நேரடியாகப் பெயர் சொல்லாதே. புதிதாக எழுது; பழைய பாடல் வரிகளை எடுக்காதே.\n\n` +
+    `பதில்: பாடலின் அடிகள் மட்டும், ஓர் அடிக்கு ஒரு வரி. தலைப்பு, விளக்கம், எண், குறிப்பு எதுவும் வேண்டாம்.`;
+  if (feedback) p += `\n\nமுன் எழுதியது:\n${prev}\n\nஇவற்றைத் திருத்தி முழுப் பாடலையும் மீண்டும் தா (அதே வடிவில், அடிகள் மட்டும்):\n${feedback}`;
+  return p;
+}
+function katturaiPrompt(o, feedback, prev) {
+  let p = `«${o.thalaippu}» என்ற தலைப்பில் செந்தமிழில் ஒரு கட்டுரை எழுது, ${o.neelam} பத்திகள்.\n` +
+    (o.kuripu ? `சேர்க்க வேண்டிய கருத்துகள்: ${o.kuripu}.\n` : "") +
+    `அமைப்பு: முதல் பத்தியில் பொருளைத் தொகுத்துக் கூறு; அடுத்த பத்திகளில் அதை வகைப்படுத்தி விரி; ஒரு பத்தியில் எழக்கூடிய மறுப்பு ஒன்றைக் கூறி அதற்கு விடை தா; இறுதிப் பத்தியில் தெளிவான முடிவு. ` +
+    `ஒரே கருத்தை மீண்டும் கூறாதே; முன்னும் பின்னும் முரண் வேண்டாம்; சான்றில்லாத எண்களோ மேற்கோள்களோ வேண்டாம்.\n` +
+    `மொழி: ${COMMON}\n\n` +
+    `பதில்: முதல் வரியில் தலைப்பு மட்டும், பின் பத்திகள்; பத்திகளுக்கு இடையே ஒரு வெற்று வரி. குறிகள், தலைப்புக் குறிகள், பட்டியல்கள் வேண்டாம்.`;
+  if (feedback) p += `\n\nமுன் எழுதியது:\n${prev}\n\nஇவற்றைத் திருத்தி முழுக் கட்டுரையையும் மீண்டும் தா (அதே வடிவில்):\n${feedback}`;
+  return p;
+}
+const clean = s => s.replace(/```[a-z]*\n?|```/g, "").replace(/^[#>*\-\s]+/gm, m => m.includes("\n") ? "\n" : "").replace(/\*\*/g, "").trim();
+
+// நூல் விதிகளால் அமைதியான சோதனை — முடிவு பயனருக்குக் காட்டப்படுவதில்லை; திருத்தக் குறிப்பாக மட்டும்
+function audit(text, k, adiWanted) {
+  const issues = [];
+  const g = checkGrammar(text).findings.filter(f => f.nilai === "மாறு" || f.nilai === "இல்லை");
+  for (const f of g.slice(0, 12)) issues.push(`«${f.word}» — ${f.msg}`);
+  if (k === "paa") {
+    const y = checkYappu(text);
+    if (y.lines.length !== adiWanted) issues.push(`அடிகள் ${y.lines.length}; வேண்டியது ${adiWanted}.`);
+    y.lines.forEach((l, i) => {
+      const n = l.seer.length;
+      const lastButOne = i === y.lines.length - 2;
+      if (!(n === 4 || (n === 3 && lastButOne))) issues.push(`${i + 1}-ஆம் அடியில் ${n} சீர்; நான்கு வேண்டும்.`);
+      for (const s of l.seer) if (s.asai.length > 3) issues.push(`«${s.s}» — ${s.asai.length} அசை; ஒரு சீரில் மூன்றுக்கு மேல் வேண்டாம்.`);
+    });
+  }
+  return issues;
+}
+
+function form() {
+  return { thinai: $("thinai").value, uri: $("uri").value, koorru: $("koorru").value,
+    adi: Math.min(12, Math.max(3, parseInt($("adi").value, 10) || 6)), karu: $("karu").value.trim(),
+    thalaippu: $("thalaippu").value.trim() || "தாய்மொழியில் கல்வி", neelam: $("neelam").value, kuripu: $("kuripu").value.trim() };
+}
+function status(t) { $("status").hidden = !t; $("status-t").textContent = t || ""; }
+function show(text, k, tag) {
+  $("tag").textContent = tag;
+  if (k === "paa") { $("poem").hidden = false; $("essay").hidden = true; $("poem").textContent = text; }
+  else {
+    $("poem").hidden = true; $("essay").hidden = false;
+    const parts = text.split(/\n\s*\n|\n(?=\S)/).map(s => s.trim()).filter(Boolean);
+    $("essay").replaceChildren();
+    parts.forEach((p, i) => { const el = document.createElement(i === 0 ? "h2" : "p"); el.textContent = p; $("essay").append(el); });
+  }
+  last = { text, k };
+}
+const ERR = { no_key: "முதலில் Anthropic API திறவுகோலைச் சேமியுங்கள்.", bad_key: "API திறவுகோல் ஏற்கப்படவில்லை; அமைப்பில் சரிபாருங்கள்.",
+  bad_model: "தேர்ந்த மாதிரி கிடைக்கவில்லை; அமைப்பில் வேறொன்றைத் தேருங்கள்.", offline: "இணைய இணைப்பு இல்லை. ஆக்கத்துக்கு இணையம் வேண்டும்; முந்தைய ஆக்கங்களைப் பார்க்கலாம்.",
+  empty_completion: "பதில் வரவில்லை; மீண்டும் முயலுங்கள்.", upstream_error: "Claude சேவை தற்போது பதிலளிக்கவில்லை; சிறிது நேரம் கழித்து முயலுங்கள்.",
+  not_granted: "Claude-ஐப் பயன்படுத்த இப்பக்கத்துக்கு இசைவு தரப்படவில்லை.", sampling_disabled: "இக்கணக்கில் Claude கிடைக்கவில்லை.",
+  rate_limited: "சிறிது நேரம் கழித்து மீண்டும் முயலுங்கள்.", refused: "இவ்வேண்டுகோளுக்கு ஆக்கம் தர இயலவில்லை; பொருளை மாற்றிப் பாருங்கள்.",
+  session_expired: "மீண்டும் உள்நுழையுங்கள்." };
+
+// ── Claude-ஐ அழைத்தல்: Claude-இல் திறந்தால் அதன் வழி; தனிச் செயலியாக இருந்தால் பயனரின் API திறவுகோல் வழி
+const store = { get: k => { try { return localStorage.getItem(k) || ""; } catch { return ""; } },
+  set: (k, v) => { try { v ? localStorage.setItem(k, v) : localStorage.removeItem(k); } catch {} } };
+let mode = "wait";                                   // "claude" | "api" | "wait"
+async function generate(prompt, signal, fresh) {
+  if (mode === "claude") {
+    const r = await sample(prompt, { modelTier: "complex", signal, cache: fresh ? false : undefined });
+    return r.text;
+  }
+  const key = store.get("sm.key");
+  if (!key) throw { code: "no_key" };
+  if (!navigator.onLine) throw { code: "offline" };
+  let res;
+  try {
+    res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST", signal,
+      headers: { "content-type": "application/json", "x-api-key": key, "anthropic-version": "2023-06-01",
+        "anthropic-dangerous-direct-browser-access": "true" },
+      body: JSON.stringify({ model: store.get("sm.model") || "claude-sonnet-5-5", max_tokens: 4000,
+        messages: [{ role: "user", content: prompt }] }),
+    });
+  } catch (e) {
+    if (e && e.name === "AbortError") throw { code: "cancelled" };
+    throw { code: "offline" };
+  }
+  if (!res.ok) {
+    const c = res.status === 401 || res.status === 403 ? "bad_key" : res.status === 429 ? "rate_limited" :
+      res.status === 529 || res.status >= 500 ? "upstream_error" : res.status === 404 ? "bad_model" : "upstream_error";
+    throw { code: c };
+  }
+  const data = await res.json();
+  const text = (data.content || []).filter(b => b.type === "text").map(b => b.text).join("");
+  if (!text.trim()) throw { code: "empty_completion" };
+  return text;
+}
+
+function saveHistory(text, k, tag) {
+  let h = [];
+  try { h = JSON.parse(store.get("sm.hist") || "[]"); } catch {}
+  h.unshift({ text, k, tag, at: Date.now() });
+  store.set("sm.hist", JSON.stringify(h.slice(0, 30)));
+  renderHistory();
+}
+function clearHistory() { store.set("sm.hist", ""); renderHistory(); }
+function renderHistory() {
+  let h = [];
+  try { h = JSON.parse(store.get("sm.hist") || "[]"); } catch {}
+  $("history").hidden = !h.length;
+  $("hist").replaceChildren(...h.map(x => {
+    const b = document.createElement("button"); b.type = "button";
+    const sm = document.createElement("small");
+    sm.textContent = x.tag + " · " + new Date(x.at).toLocaleDateString("ta-IN");
+    b.append(sm, document.createTextNode(x.text.split("\n")[0].slice(0, 80)));
+    b.onclick = () => { show(x.text, x.k, x.tag); scrollTo({ top: 0, behavior: "smooth" }); };
+    return b;
+  }));
+}
+
+async function make(fresh) {
+  if (mode === "wait") return;
+  if (mode === "api" && !store.get("sm.key")) { $("settings").hidden = false; $("settings").open = true; $("apikey").focus();
+    $("msg").textContent = "முதலில் Anthropic API திறவுகோலைச் சேமியுங்கள்."; $("msg").hidden = false; return; }
+  const o = form(), k = kind;
+  const tag = k === "paa" ? `${o.thinai} · ${o.uri} · ${o.koorru} கூற்று` : o.thalaippu;
+  ctl = new AbortController();
+  $("go").disabled = true; $("again").hidden = true; $("stop").hidden = false; $("msg").hidden = true;
+  $("poem").hidden = true; $("essay").hidden = true; $("tag").textContent = tag;
+  let text = "", prev = "", feedback = "";
+  try {
+    for (let round = 0; round < 3; round++) {
+      status(round === 0 ? "எழுதுகிறது…" : "செம்மைப்படுத்துகிறது…");
+      const prompt = k === "paa" ? paaPrompt(o, feedback, prev) : katturaiPrompt(o, feedback, prev);
+      text = clean(await generate(prompt, ctl.signal, fresh || round > 0));
+      status("சரிபார்க்கிறது…");
+      const issues = audit(text, k, o.adi);
+      if (!issues.length) break;
+      prev = text; feedback = issues.map(s => "- " + s).join("\n");
+    }
+    show(text, k, tag);
+    saveHistory(text, k, tag);
+    $("again").hidden = false;
+    if (matchMedia("(max-width: 760px)").matches) document.querySelector(".out").scrollIntoView({ block: "start", behavior: "smooth" });
+  } catch (e) {
+    if (text) show(text, k, tag);
+    else if (last) show(last.text, last.k, $("tag").textContent);
+    if (e && e.code !== "cancelled") { $("msg").textContent = ERR[e.code] || "ஆக்கம் தடைப்பட்டது; மீண்டும் முயலுங்கள்."; $("msg").hidden = false; }
+    if (e && (e.code === "not_granted" || e.code === "sampling_disabled")) $("go").hidden = true;
+  } finally {
+    status(""); $("go").disabled = false; $("stop").hidden = true;
+  }
+}
+
+function setKind(k) {
+  kind = k;
+  $("k-paa").setAttribute("aria-pressed", String(k === "paa"));
+  $("k-katturai").setAttribute("aria-pressed", String(k === "katturai"));
+  $("f-paa").hidden = k !== "paa"; $("f-katturai").hidden = k !== "katturai";
+}
+$("k-paa").onclick = () => setKind("paa");
+$("k-katturai").onclick = () => setKind("katturai");
+$("form").addEventListener("submit", e => { e.preventDefault(); make(false); });
+$("again").onclick = () => make(true);
+$("stop").onclick = () => ctl && ctl.abort();
+$("copy").onclick = async () => {
+  const t = last ? last.text : $("poem").textContent;
+  try { await navigator.clipboard.writeText(t); $("copy").textContent = "படியெடுக்கப்பட்டது"; }
+  catch { const r = document.createRange(); r.selectNodeContents($("poem").hidden ? $("essay") : $("poem")); getSelection().removeAllRanges(); getSelection().addRange(r); }
+  setTimeout(() => $("copy").textContent = "படியெடு", 1500);
+};
+last = { text: $("poem").textContent, k: "paa" };
+
+$("apikey").value = store.get("sm.key") ? "••••••••" : "";
+$("model").value = store.get("sm.model") || "claude-sonnet-5-5";
+$("savekey").onclick = () => {
+  const v = $("apikey").value.trim();
+  if (v && !v.startsWith("••")) store.set("sm.key", v);
+  store.set("sm.model", $("model").value);
+  $("keynote").textContent = store.get("sm.key") ? "சேமிக்கப்பட்டது. திறவுகோல் இத்தொலைபேசியில் மட்டுமே." : "திறவுகோல் இல்லை.";
+  $("apikey").value = store.get("sm.key") ? "••••••••" : ""; $("msg").hidden = true;
+  if (store.get("sm.key")) $("settings").open = false;
+};
+$("histclear").onclick = clearHistory;
+$("delkey").onclick = () => { store.set("sm.key", ""); $("apikey").value = ""; $("keynote").textContent = "திறவுகோல் நீக்கப்பட்டது."; };
+renderHistory();
+
+(async () => {
+  try { sample = window.claude ? await window.claude.use("sample") : null; } catch { sample = null; }
+  mode = sample ? "claude" : "api";
+  if (mode === "api") { $("settings").hidden = false; if (!store.get("sm.key")) $("settings").open = true; }
+})();
+</script>

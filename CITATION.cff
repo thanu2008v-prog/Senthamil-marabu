@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "இக்களஞ்சியத்தைப் பயன்படுத்தினால் கீழ்க்கண்டவாறு மேற்கோள் காட்டுக."
+title: "செந்தமிழ் மரபு — 1602 நூற்பா, காண்டிகை, உரை"
+authors:
+  - family-names: "Varnakulasingam"
+    given-names: "Thanushanthan"
+    orcid: "https://orcid.org/0009-0005-4309-7476"
+type: dataset
+version: "1.0.0"
+date-released: "2026-11-10"
+abstract: "1602 தொல்காப்பிய நூற்பாக்களுக்கு நூலின் சொந்த அளவுகோலால் எழுதிய காண்டிகை, உரை, துணிவு; கணினி வடிவம் (JSON Lines, CSV, SQLite), Python தொகுப்பு, இலக்கண, யாப்பு, குறியாக்கக் கருவிகள்."
+license: CC-BY-NC-4.0
+repository-code: "https://github.com/thanu2008v-prog/senthamil-marabu"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24011590
+    description: "Zenodo கருத்தாக்க DOI — எல்லாப் பதிப்புகளும்"
+keywords:
+  - தொல்காப்பியம்
+  - Tolkappiyam
+  - தமிழ் இலக்கணம்
+  - Tamil grammar
