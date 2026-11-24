@@ -14,7 +14,7 @@ DOC = ('<!doctype html>\n<html lang="ta">\n<head>\n<meta charset="utf-8">\n'
 
 # தேடல் — செயலி
 (OUT / "thedal/app").mkdir(parents=True)
-idx = (ROOT / "index.html").read_text("utf-8").replace("./build/bundle_v2.json", "./bundle_v2.json")
+idx = (ROOT / "index.html").read_text("utf-8").replace("./build/bundle_v2.json", "./bundle_v2.json").replace("tamizh_kuriyiyal/chinnam/", "../tamizh_kuriyiyal/chinnam/")
 (OUT / "thedal/index.html").write_text(idx, "utf-8")
 shutil.copy(ROOT / "app/app.js", OUT / "thedal/app/app.js")
 shutil.copy(ROOT / "build/bundle_v2.json", OUT / "thedal/bundle_v2.json")
@@ -33,7 +33,17 @@ shutil.copy(ROOT / "app/app.js", OUT / "senthamil/app/app.js")
 shutil.copy(ROOT / "build/bundle_v2.json", OUT / "senthamil/bundle_v2.json")
 
 # முகப்பு
-home = """<title>செந்தமிழ் மரபு</title>
+# தமிழ் நுண்ணறிவு · Tamil AI சின்னம்
+(OUT / "tamizh_kuriyiyal/chinnam").mkdir(parents=True)
+shutil.copy(ROOT / "tamizh_kuriyiyal/chinnam/tamil_ai_logo.svg", OUT / "tamizh_kuriyiyal/chinnam/tamil_ai_logo.svg")
+
+home = """<title>தமிழ் நுண்ணறிவு · Tamil AI — செந்தமிழ் மரபு</title>
+<meta name="description" content="தமிழ் நுண்ணறிவு (Tamil AI): தொல்காப்பிய விதிகளால் மட்டும் விடை தரும் விளக்க இலக்கண நுண்ணறிவு — தமிழ் குறியியல், புணர்ச்சி, ௧௬௦௨ நூற்பா. Explainable Tamil AI built on Tolkappiyam by Thanushanthan Varnakulasingam.">
+<meta name="keywords" content="Tamil AI, தமிழ் AI, தமிழ் நுண்ணறிவு, தமிழ் குறியியல், செந்தமிழ் மரபு, தொல்காப்பியம், Tolkappiyam, Tamil grammar, புணர்ச்சி, Tamil sandhi, Tamil NLP">
+<meta name="author" content="தனுசாந்தன் வர்ணகுலசிங்கம் (Thanushanthan Varnakulasingam)">
+<meta property="og:title" content="தமிழ் நுண்ணறிவு · Tamil AI">
+<meta property="og:description" content="தொல்காப்பிய விதிகளால் மட்டும் விடை தரும் தமிழ் இலக்கண நுண்ணறிவு — தமிழ் குறியியல் · செந்தமிழ் மரபு">
+<link rel="icon" href="tamizh_kuriyiyal/chinnam/tamil_ai_logo.svg">
 <style>
 :root { --bg:#eef2ee; --surface:#fff; --ink:#16201b; --muted:#56655d; --line:#d3dbd5; --accent:#145c50 }
 @media (prefers-color-scheme: dark) { :root { --bg:#0e1411; --surface:#16201b; --ink:#e1eae4; --muted:#95a59c; --line:#29352f; --accent:#5cc3ad; color-scheme: dark } }
@@ -49,13 +59,15 @@ a.card:focus-visible { outline:2px solid var(--accent) }
 small { color:var(--muted) }
 </style>
 <main>
-  <h1>செந்தமிழ் மரபு</h1>
+  <p style="text-align:center"><img src="tamizh_kuriyiyal/chinnam/tamil_ai_logo.svg" alt="தமிழ் நுண்ணறிவு — Tamil AI" width="360" style="max-width:100%"></p>
+  <h1>செந்தமிழ் மரபு · தமிழ் நுண்ணறிவு (Tamil AI)</h1>
   <p>தொல்காப்பிய நூற்பாக்கள் 1602 — காண்டிகை, உரை, துணிவு; நூலின் சொந்த அளவுகோலால்.</p>
   <div class="cards">
     <a class="card" href="senthamil/"><b>செந்தமிழ் — AI மற்றும் ஆக்கம்</b><span>நூலில் ஆதாரம் தேடவும், ஆக்கம் உருவாக்கவும் ஒரே செயலியைத் திறக்க.</span></a>
     <a class="card" href="thedal/"><b>தேடல்</b><span>சூத்திரங்களை எண், சொல், நிலை, உத்தி வாரியாகத் தேடிப் படிக்க.</span></a>
     <a class="card" href="sothanai/"><b>நூல்வழிச் சோதனை</b><span>உரையின் இலக்கணத்தையும் பாடலின் யாப்பையும் நூற்பாக்களால் சோதிக்க.</span></a>
     <a class="card" href="aakkam/"><b>செந்தமிழ் ஆக்கம்</b><span>புதிய பாடலோ கட்டுரையோ உருவாக்க. தொலைபேசியில் «முகப்புத் திரையில் சேர்» வழி தனிச் செயலியாக நிறுவலாம்.</span></a>
+    <a class="card" href="https://github.com/thanu2008v-prog/senthamil-marabu/tree/main/tamizh_kuriyiyal"><b>தமிழ் குறியியல் · Tamil AI</b><span>௨௪௭ எழுத்தின் ௧௫ பிட்டுக் குறி, புணர்ச்சி வழிச் சொல்லாக்கம், நூல் இலக்கணத்தில் கட்டுரை, கவிதை.</span></a>
     <a class="card" href="https://github.com/thanu2008v-prog/senthamil-marabu/releases/latest"><b>நூல் — PDF, மின்னூல்</b><span>அச்சு நூலும் மின்னூலும் கணினி வடிவத் தரவும்.</span></a>
   </div>
   <small>கருத்தாக்க DOI 10.5281/zenodo.24011590 · © 2026 தனுசாந்தன் வர்ணகுலசிங்கம் — உரிமம்: CC BY-NC 4.0; வணிக உரிமை ஆசிரியருக்கு மட்டும்; தொழில்நுட்ப உதவி: Claude (Anthropic).</small>
