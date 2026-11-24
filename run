@@ -1,1 +1,0 @@
-python3 scripts/set_doi.py 10.5281/zenodo.<N1> 10.5281/zenodo.<N2>

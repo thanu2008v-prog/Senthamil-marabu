@@ -1,3 +1,0 @@
-curl -sI https://doi.org/10.5281/zenodo.<N2> | head -3
-# → HTTP/2 302
-# → location: https://zenodo.org/records/<N2>

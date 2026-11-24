@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 548 64" width="548" height="64">
+<g fill="none" stroke="#7a1f1f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M14.0,19.4 L34.5,19.4"/>
+<path d="M17.1,19.4 L17.1,33.6"/>
+<path d="M38.7,29.7 L44.2,29.7"/>
+<circle fill="#7a1f1f" cx="41.4" cy="26.6" r="0.5"/>
+<path d="M42.6,21.5 L71.2,21.5"/>
+<path d="M59.3,21.5 L59.3,37.1"/>
+<circle cx="59.3" cy="39.2" r="2.0"/>
+<circle fill="#7a1f1f" cx="56.9" cy="16.7" r="1.4"/>
+<path d="M70.5,21.5 L99.0,21.5"/>
+<path d="M87.1,21.5 L87.1,41.2"/>
+<path d="M97.6,19.4 L118.2,19.4"/>
+<path d="M114.0,19.4 L114.0,30.6"/>
+<circle cx="114.0" cy="32.1" r="1.5"/>
+<path d="M122.3,27.5 L127.8,27.5"/>
+<path d="M126.2,21.5 L154.8,21.5"/>
+<path d="M136.8,21.5 C142.2,27.6 131.3,34.4 136.8,41.2"/>
+<path d="M134.4,43.9 L139.2,43.9"/>
+<circle fill="#7a1f1f" cx="140.5" cy="16.7" r="1.4"/>
+<path d="M170.8,21.5 L199.4,21.5"/>
+<path d="M193.6,21.5 L193.6,37.1"/>
+<circle cx="193.6" cy="39.2" r="2.0"/>
+<path d="M198.7,21.5 L227.3,21.5"/>
+<path d="M209.3,21.5 C214.7,27.6 203.8,34.4 209.3,41.2"/>
+<path d="M225.8,19.4 L246.4,19.4"/>
+<path d="M242.2,19.4 L242.2,33.6"/>
+<ellipse cx="253.3" cy="27.5" rx="1.7" ry="1.8"/>
+</g>
+<text x="274" y="44" font-family="Noto Sans Tamil,Latha,sans-serif" font-size="22" fill="#2b1a10">செந்தமிழ் மரபு</text></svg>
