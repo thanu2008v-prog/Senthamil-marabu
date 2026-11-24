@@ -1,3 +1,0 @@
-git add .github/workflows/build-nool.yml
-git commit -m "ci: trigger on v* tag pushes (release + Zenodo)"
-git push

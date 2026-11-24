@@ -1,3 +1,0 @@
-git remote set-url origin \
-  https://github.com/thanu2008v-prog/senthamil-marabu.git
-git remote -v        # சரிபார்
