@@ -36,6 +36,7 @@ jobs:
             !/sources/ *
             /tests/
             /urai_kit/
+            /tamizh_kuriyiyal/
             /.gitattributes
             /.gitignore
             /.zenodo.json
