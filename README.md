@@ -1,3 +1,21 @@
+<p align="center"><img src="tamizh_kuriyiyal/chinnam/tamil_ai_logo.svg" alt="தமிழ் நுண்ணறிவு — Tamil AI" width="430"></p>
+
+<h1 align="center">தமிழ் நுண்ணறிவு · Tamil AI</h1>
+<p align="center"><b>தமிழ் குறியியல் · செந்தமிழ் மரபு</b><br>
+தொல்காப்பிய விதிகளால் மட்டும் விடை தரும் தமிழ் இலக்கண நுண்ணறிவு — An explainable Tamil AI built only on Tolkāppiyam's own rules</p>
+
+**தமிழ் நுண்ணறிவு (Tamil AI)** — தனுசாந்தன் வர்ணகுலசிங்கம் உருவாக்கிய, தொல்காப்பியத்தின் ௧௬௦௨ நூற்பாக்களை மட்டும் அளவுகோலாகக் கொண்ட தமிழ் இலக்கண இயந்திரம். ஒவ்வொரு விடையும் நூற்பாச் சான்றுடன் வருகிறது (explainable AI).
+
+- **தமிழ் குறியியல்** — ௨௪௭ எழுத்தும் நூல் பிறப்புக் கூறுகளால் ஆன ௧௫ பிட்டுக் குறி; மெய்ம்மயக்கம் ௮௬/௮௬, மொழிமுதல் ௨௪௭/௨௪௭, மொழியிறுதி ௨௪௭/௨௪௭ நூலோடு ஒத்தன → [`tamizh_kuriyiyal/`](tamizh_kuriyiyal/)
+- **சொல்லாக்கம் (Tamil sandhi / புணர்ச்சி)** — நூல் புணர்ச்சி விதிகளால் ௭,௩௮௯ சேர்க்கைச் சொல் → [`tamizh_kuriyiyal/sollaakkam/`](tamizh_kuriyiyal/sollaakkam/)
+- **ஆக்கங்கள்** — நூல் இலக்கணத்தில் அமைந்த கட்டுரை, கவிதை → [`tamizh_kuriyiyal/aakkangal/`](tamizh_kuriyiyal/aakkangal/)
+
+*Keywords: Tamil AI, தமிழ் AI, தமிழ் நுண்ணறிவு, Tamil grammar engine, Tolkappiyam, தொல்காப்பியம், Tamil sandhi, புணர்ச்சி, Tamil NLP, explainable AI, Tamil script encoding.*
+
+> © 2026 தனுசாந்தன் வர்ணகுலசிங்கம் (Thanushanthan Varnakulasingam). இக்களஞ்சியத்தின் தரவையும் விதிகளையும் எந்த AI மாதிரியின் பயிற்சிக்கும் உரிமையாளர் எழுத்து அனுமதியின்றிப் பயன்படுத்தக் கூடாது.
+
+---
+
 # செந்தமிழ் மரபு
 
 தொல்காப்பிய நூற்பாக்கள் 1602 — எழுத்து 483, சொல் 463, பொருள் 656 — மூலம் ஒரு சொல்லும் மாற்றப்படாமல் (பொருள். 652). ஒவ்வொரு நூற்பாவுக்கும்:
