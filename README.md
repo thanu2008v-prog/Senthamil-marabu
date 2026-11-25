@@ -12,6 +12,8 @@
 
 *Keywords: Tamil AI, தமிழ் AI, தமிழ் நுண்ணறிவு, Tamil grammar engine, Tolkappiyam, தொல்காப்பியம், Tamil sandhi, புணர்ச்சி, Tamil NLP, explainable AI, Tamil script encoding.*
 
+<p><img src="tamizh_kuriyiyal/chinnam/thanushanthan.svg" alt="தனுசாந்தன் வர்ணகுலசிங்கம் — தமிழ் குறியியல் வடிவில்" height="44"></p>
+
 > © 2026 தனுசாந்தன் வர்ணகுலசிங்கம் (Thanushanthan Varnakulasingam). இக்களஞ்சியத்தின் தரவையும் விதிகளையும் எந்த AI மாதிரியின் பயிற்சிக்கும் உரிமையாளர் எழுத்து அனுமதியின்றிப் பயன்படுத்தக் கூடாது.
 
 ---
